@@ -14,5 +14,7 @@
     "framework": "ubuntu-sdk-14.10",
     "x-license": "@APP_LICENSE@",
     "x-copyright-year": "@APP_COPYRIGHT_YEAR@",
-    "x-icon-url": "@ICON_PATH_FROM_MAIN_QML@"
+    "x-icon-url": "@ICON_PATH_FROM_MAIN_QML@",
+    "x-source-code-url": "@APP_SOURCE_URL@",
+    "x-source-code-service": "@APP_SOURCE_SERVICE@"
 }
