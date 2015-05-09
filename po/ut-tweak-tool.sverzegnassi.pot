@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-09 18:41+0200\n"
+"POT-Creation-Date: 2015-05-09 19:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,81 +220,81 @@ msgid "Choose a keyb layout"
 msgstr ""
 
 #: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:34
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:152
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:156
 msgid "Add new favorite"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:62
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:66
 msgid ""
 "Set your favorite apps to be shown in the applications scope.<br><br>Swipe "
 "to right to delete an item.<br>Press and hold to enable the sorting mode."
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:65
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:69
 msgid "Favorite apps"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:73
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:77
 msgid "No favorite specified"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:74
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:78
 msgid ""
 "Default applications will be shown in the 'App' scope.\n"
 "Tap the '+' in the header to add a favorite app."
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:91
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:95
 msgid "Reset"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:108
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:112
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:130
 msgid "Delete"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:170
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:174
 msgid "Add more used applications"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:177
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:181
 msgid "Back"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:183
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:187
 msgid "Add favorites to the list"
 msgstr ""
 
 #. TRANSLATORS: %1 is a time duration, expressed in hours
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:212
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:216
 #: ../app/ui/mainPage/systemTab/AppsStats.qml:47
 #, qt-format
 msgid "%1 hours"
 msgstr ""
 
 #. TRANSLATORS: %1 is a time duration, expressed in minutes
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:216
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:220
 #: ../app/ui/mainPage/systemTab/AppsStats.qml:51
 #, qt-format
 msgid "%1 mins"
 msgstr ""
 
 #. TRANSLATORS: %1 is a time duration, expressed in seconds
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:219
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:223
 #: ../app/ui/mainPage/systemTab/AppsStats.qml:54
 #, qt-format
 msgid "%1 secs"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:248
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:252
 msgid "Number of top apps to select:"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:270
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:274
 msgid "Most used apps"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:303
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:307
 msgid "Available apps"
 msgstr ""
 

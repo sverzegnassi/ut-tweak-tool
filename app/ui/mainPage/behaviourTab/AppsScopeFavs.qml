@@ -42,7 +42,12 @@ Page {
         }
     }
 
-    onActiveChanged: view.anchors.fill = view.parent
+    // WORKAROUND: Fix anchoring for the ListView. This is necessary because of
+    // some issue with the custom header.
+    Component.onCompleted: {
+        view.anchors.fill = null
+        view.anchors.fill = view.parent
+    }
 
     /*
       FIXME: Disable drag mode when windows/page is no more active and/or user
@@ -50,6 +55,7 @@ Page {
     */
     ListView {
         id: view
+        anchors.fill: parent
 
         model: settings.coreApps
 
