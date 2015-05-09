@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo $1 | sudo -S test -e /userdata/.adb_onlock && echo "Found" || echo "Not found"
+
+

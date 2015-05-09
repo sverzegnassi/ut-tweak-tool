@@ -1,0 +1,21 @@
+### Building and running on Ubuntu Desktop
+
+Building and running the UT Tweak Tool is quite simple. You will require Ubuntu
+15.04 and higher to run on the desktop.
+
+### Building and running on Ubuntu for devices (a.k.a. Ubuntu Touch)
+
+If you want to compile the app for your device from the desktop, you need the
+latest version of Ubuntu SDK, available on Ubuntu 14.10 and higher.
+
+### Dependencies
+
+Install development files:
+sudo apt-get install libpam0g-dev qtdeclarative5-gsettings1.0
+
+If you want to create an arm click package from Ubuntu SDK (Qt Creator), you
+need to install those packages in your Ubuntu SDK kit.
+
+From Qt Creator, open Options -> Ubuntu -> Maintain, and then enter:
+apt-get install libpam0g-dev:armhf qtdeclarative5-gsettings1.0:armhf
+

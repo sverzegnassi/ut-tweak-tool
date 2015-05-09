@@ -1,0 +1,11 @@
+[Desktop Entry]
+_Name=@APP_NAME@
+_Comment=@APP_DESC@
+Exec=@EXEC@
+Icon=@ICON@
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+
+
+

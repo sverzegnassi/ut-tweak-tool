@@ -1,0 +1,18 @@
+{
+    "name": "@APP_ID@",
+    "description": "@APP_DESC@",
+    "architecture": "@CLICK_ARCH@",
+    "title": "@APP_NAME@",
+    "hooks": {
+        "ut-tweak-tool": {
+            "apparmor": "ut-tweak-tool.apparmor",
+            "desktop": "ut-tweak-tool.desktop"
+        }
+    },
+    "version": "@APP_VERSION@.@BZR_REVNO@",
+    "maintainer": "Stefano Verzegnassi <verzegnassi.stefano@gmail.com>",
+    "framework": "ubuntu-sdk-14.10",
+    "x-license": "@APP_LICENSE@",
+    "x-copyright-year": "@APP_COPYRIGHT_YEAR@",
+    "x-icon-url": "@ICON_PATH_FROM_MAIN_QML@"
+}
