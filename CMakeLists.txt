@@ -12,6 +12,7 @@ find_package(Qt5Quick)
 
 # Automatically create moc files
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fno-permissive -pedantic -Wall -Wextra -fPIC")
 
 # Components PATH
 execute_process(
@@ -25,7 +26,7 @@ set(QT_IMPORTS_DIR "lib/${ARCH_TRIPLET}")
 option(INSTALL_TESTS "Install the tests on make install" on)
 
 set(APP_NAME           "Ubuntu Touch Tweak Tool")
-set(APP_DESC           "Tweak your device! Unlock full power!")
+set(APP_DESC           "Tweak your device! Unlock its full power!")
 set(APP_ID             ${PROJECT_NAME})
 set(APP_LICENSE        "GNU GPL v3")
 set(APP_COPYRIGHT_YEAR "2015")
