@@ -11,7 +11,7 @@
     },
     "version": "@APP_VERSION@.@BZR_REVNO@",
     "maintainer": "Stefano Verzegnassi <verzegnassi.stefano@gmail.com>",
-    "framework": "ubuntu-sdk-14.10",
+    "framework": "ubuntu-sdk-15.04",
     "x-license": "@APP_LICENSE@",
     "x-copyright-year": "@APP_COPYRIGHT_YEAR@",
     "x-icon-url": "@ICON_PATH_FROM_MAIN_QML@",
