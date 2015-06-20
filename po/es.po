@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-09 19:22+0200\n"
-"PO-Revision-Date: 2015-05-30 09:14+0000\n"
+"PO-Revision-Date: 2015-06-19 06:24+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-06-11 05:41+0000\n"
-"X-Generator: Launchpad (build 17549)\n"
+"X-Launchpad-Export-Date: 2015-06-20 05:37+0000\n"
+"X-Generator: Launchpad (build 17572)\n"
 
 #: ../app/components/Dialogs/FileChooserDialog.qml:43
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:62
@@ -121,7 +121,7 @@ msgstr "Unity 8"
 #: ../app/ui/mainPage/BehaviourTab.qml:31
 #: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:49
 msgid "Usage mode"
-msgstr ""
+msgstr "Modo de uso"
 
 #: ../app/ui/mainPage/BehaviourTab.qml:36
 msgid "App scope favorites"
@@ -175,7 +175,7 @@ msgstr "Modo USB"
 
 #: ../app/ui/mainPage/SystemTab.qml:47
 msgid "Set USB behavior when connected to a PC"
-msgstr ""
+msgstr "Definir comportamiento de USB al conectar con PC"
 
 #: ../app/ui/mainPage/SystemTab.qml:51
 msgid "Stats"
@@ -218,7 +218,7 @@ msgstr "Añadir perfil personalizado"
 
 #: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:76
 msgid "Choose a keyb layout"
-msgstr ""
+msgstr "Elija un estilo de teclado"
 
 #: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:34
 #: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:156
@@ -233,7 +233,7 @@ msgstr ""
 
 #: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:69
 msgid "Favorite apps"
-msgstr ""
+msgstr "Aplicaciones favoritas"
 
 #: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:77
 msgid "No favorite specified"
@@ -332,11 +332,11 @@ msgstr ""
 
 #: ../app/ui/mainPage/behaviourTab/Audio.qml:140
 msgid "Choose a ringtone"
-msgstr ""
+msgstr "Elija un tono de llamada"
 
 #: ../app/ui/mainPage/behaviourTab/Audio.qml:154
 msgid "Restore default"
-msgstr ""
+msgstr "Restablecer predeterminado"
 
 #: ../app/ui/mainPage/behaviourTab/Audio.qml:155
 msgid "Are you sure?"
@@ -355,7 +355,7 @@ msgstr "No"
 
 #: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:29
 msgid "Gesture tutorial"
-msgstr ""
+msgstr "Tutorial de gestos"
 
 #: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:31
 msgid "Show"
@@ -363,11 +363,11 @@ msgstr "Mostrar"
 
 #: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:55
 msgid "Enable tutorial"
-msgstr ""
+msgstr "Activar tutorial"
 
 #: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:56
 msgid "In order to show the tutorial, you need to reboot your device."
-msgstr ""
+msgstr "Reinicie el dispositivo para mostrar el tutorial."
 
 #: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:59
 msgid "Enable tutorial and reboot"
@@ -427,10 +427,11 @@ msgstr "Activar permisos L/E"
 #: ../app/ui/mainPage/systemTab/ImageWritable.qml:110
 msgid "In order to disable RW permissions, you need to reboot your device."
 msgstr ""
+"Reinicie el dispositivo para desactivar el modo de lectura/escritura."
 
 #: ../app/ui/mainPage/systemTab/ImageWritable.qml:111
 msgid "In order to enable RW permissions, you need to reboot your device."
-msgstr ""
+msgstr "Reinicie el dispositivo para activar el modo de lectura/escritura."
 
 #: ../app/ui/mainPage/systemTab/ImageWritable.qml:114
 msgid "Reboot"
@@ -457,7 +458,7 @@ msgstr ""
 
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:114
 msgid "Tap the 'Add package' button to add a package in the list"
-msgstr ""
+msgstr "Pulse en «Añadir paquete» para agregar elementos a la lista"
 
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:171
 msgid "Install package..."
@@ -501,7 +502,7 @@ msgstr "Paquete %1 de %2"
 
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:273
 msgid "Install completed"
-msgstr ""
+msgstr "Instalación finalizada"
 
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:274
 #, qt-format
@@ -510,7 +511,7 @@ msgstr ""
 
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:317
 msgid "Hide log"
-msgstr ""
+msgstr "Ocultar registro"
 
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:317
 msgid "Show log"
@@ -558,7 +559,7 @@ msgstr ""
 
 #: ../app/ui/mainPage/systemTab/UsbMode.qml:126
 msgid "Enable ADB on lock"
-msgstr ""
+msgstr "Activar ADB al bloquear"
 
 #: ../app/ui/mainPage/systemTab/UsbMode.qml:127
 msgid ""
@@ -570,7 +571,7 @@ msgstr ""
 
 #: ../app/ui/mainPage/systemTab/UsbMode.qml:130
 msgid "Yes, I'm feeling brave!"
-msgstr ""
+msgstr "Sí, ¡soy valiente!"
 
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:25
 msgid "Authentication required"
@@ -587,11 +588,11 @@ msgstr "contraseña"
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:50
 #: ../plugins/pamauthentication/NotifyDialog.qml:25
 msgid "Ok"
-msgstr ""
+msgstr "Aceptar"
 
 #: ../plugins/pamauthentication/AuthenticationService.qml:59
 msgid "Authentication failed"
-msgstr ""
+msgstr "Falló la autenticación"
 
 #: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:1
 msgid "Ubuntu Touch Tweak Tool"
