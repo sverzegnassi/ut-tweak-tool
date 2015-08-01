@@ -1,0 +1,603 @@
+# Russian translation for ubuntu-touch-tweak-tool
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the ubuntu-touch-tweak-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-touch-tweak-tool\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-09 19:22+0200\n"
+"PO-Revision-Date: 2015-07-31 11:13+0000\n"
+"Last-Translator: Aleksey Kabanov <Unknown>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2015-08-01 05:50+0000\n"
+"X-Generator: Launchpad (build 17656)\n"
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:43
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:62
+msgid "Cancel"
+msgstr "Отменить"
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:57
+msgid "Select None"
+msgstr ""
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:59
+msgid "Select All"
+msgstr ""
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:130
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:67
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:69
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:105
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:84
+msgid "Pick"
+msgstr ""
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:195
+msgid "Back to parent folder"
+msgstr ""
+
+#: ../app/components/ToastWithAction.qml:97
+msgid "Dismiss"
+msgstr ""
+
+#: ../app/ui/AboutPage.qml:23 ../app/ui/mainPage/MainPageDefaultHeader.qml:57
+msgid "About"
+msgstr "О приложении"
+
+#: ../app/ui/AboutPage.qml:25
+msgid "General"
+msgstr ""
+
+#: ../app/ui/AboutPage.qml:27
+msgid "Copyright"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:25
+msgid "UT Tweak Tool"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:27
+msgid "Behavior"
+msgstr "Поведение"
+
+#: ../app/ui/MainPage.qml:27
+msgid "Apps & Scopes"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:27
+msgid "System"
+msgstr "Система"
+
+#: ../app/ui/aboutPage/AboutCreditsSection.qml:27
+msgid "A big thanks to:"
+msgstr "Огромное спасибо:"
+
+#. TRANSLATORS: Version of the software (e.g. "Version 0.3.51")
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:63
+#, qt-format
+msgid "Version %1"
+msgstr "Версия %1"
+
+#. TRANSLATORS: This string will look like "(C) 2015 Tizio Caio"
+#. %1 is the years, %2 is the name of the maintainer
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:74
+#, qt-format
+msgid "(C) %1 %2"
+msgstr ""
+
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:84
+#, qt-format
+msgid "Released under the terms of the %1"
+msgstr ""
+
+#. TRANSLATORS: <a href=\"%1\">%2</a> is the HTML tag for hyperlinks
+#. %1 is the URL, %2 is the text shown for the URL.
+#. e.g. <a href=\"http://www.ubuntu.com\">Ubuntu</a>
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:101
+#, qt-format
+msgid "Source code available on <a href=\"%1\">%2</a>"
+msgstr "Исходный код доступен на <a href=\"%1\">%2</a>"
+
+#: ../app/ui/mainPage/ApplicationsTab.qml:80
+msgid "No supported application"
+msgstr ""
+
+#: ../app/ui/mainPage/ApplicationsTab.qml:81
+msgid "All the applications supported by this tool will be listed here."
+msgstr ""
+
+#: ../app/ui/mainPage/BehaviourTab.qml:28
+msgid "Unity 8"
+msgstr ""
+
+#: ../app/ui/mainPage/BehaviourTab.qml:31
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:49
+msgid "Usage mode"
+msgstr ""
+
+#: ../app/ui/mainPage/BehaviourTab.qml:36
+msgid "App scope favorites"
+msgstr ""
+
+#: ../app/ui/mainPage/BehaviourTab.qml:47
+msgid "Audio"
+msgstr ""
+
+#: ../app/ui/mainPage/BehaviourTab.qml:50
+msgid "Set a custom ringtone"
+msgstr ""
+
+#: ../app/ui/mainPage/MainPageDefaultHeader.qml:34
+msgid "Search in this tab"
+msgstr ""
+
+#: ../app/ui/mainPage/MainPageDefaultHeader.qml:40
+msgid "Open a terminal session"
+msgstr ""
+
+#. TRANSLATORS: "Open Store" is the name of the unofficial free software store from Michael Zanetti.
+#: ../app/ui/mainPage/MainPageDefaultHeader.qml:49
+msgid "Launch Open Store"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:24
+msgid "Click packages"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:28
+msgid "Install click packages from a local path"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:33
+msgid "Uninstall scopes"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:37
+msgid "OS Image"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:40
+msgid "Make image writable"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:44
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:87
+msgid "USB mode"
+msgstr "Режим USB"
+
+#: ../app/ui/mainPage/SystemTab.qml:47
+msgid "Set USB behavior when connected to a PC"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:51
+msgid "Stats"
+msgstr ""
+
+#: ../app/ui/mainPage/SystemTab.qml:54
+msgid "Application usage"
+msgstr ""
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:39
+#, qt-format
+msgid "Keyboard layout '%1' successfully imported!"
+msgstr "Раскладка клавиатуры '%1' успешно импортирована!"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:40
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:42
+msgid "Error while importing the keyboard layout!"
+msgstr "Ошибка при импорте раскладки клавиатуры!"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:41
+#, qt-format
+msgid "Keyboard layout '%1' already exists!"
+msgstr "Раскладка клавиатуры '%1' уже существует!"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:57
+msgid "Keyboard profiles"
+msgstr "Профили клавиатуры"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:61
+msgid ""
+"Ubuntu Terminal App allows users to add custom preset for the frequently "
+"used commands.<br>Check out <a "
+"href=\"https://swordfishslabs.wordpress.com/2015/02/27/json-profiles-in-"
+"ubuntu-terminal-app/\">Filippo Scognamiglio's post</a> for the details."
+msgstr ""
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:65
+msgid "Add a custom profile"
+msgstr ""
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:76
+msgid "Choose a keyb layout"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:34
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:156
+msgid "Add new favorite"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:66
+msgid ""
+"Set your favorite apps to be shown in the applications scope.<br><br>Swipe "
+"to right to delete an item.<br>Press and hold to enable the sorting mode."
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:69
+msgid "Favorite apps"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:77
+msgid "No favorite specified"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:78
+msgid ""
+"Default applications will be shown in the 'App' scope.\n"
+"Tap the '+' in the header to add a favorite app."
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:95
+msgid "Reset"
+msgstr "Сбросить"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:112
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:130
+msgid "Delete"
+msgstr "Удалить"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:174
+msgid "Add more used applications"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:181
+msgid "Back"
+msgstr "Назад"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:187
+msgid "Add favorites to the list"
+msgstr ""
+
+#. TRANSLATORS: %1 is a time duration, expressed in hours
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:216
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:47
+#, qt-format
+msgid "%1 hours"
+msgstr "%1 час."
+
+#. TRANSLATORS: %1 is a time duration, expressed in minutes
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:220
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:51
+#, qt-format
+msgid "%1 mins"
+msgstr "%1 мин."
+
+#. TRANSLATORS: %1 is a time duration, expressed in seconds
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:223
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:54
+#, qt-format
+msgid "%1 secs"
+msgstr "%1 сек."
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:252
+msgid "Number of top apps to select:"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:274
+msgid "Most used apps"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:307
+msgid "Available apps"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:57
+msgid ""
+"Please note that if you choose an audio file from an external media (e.g. SD "
+"card), that file could not be played if the media will be removed."
+msgstr ""
+"Обратите внимание, что при выборе аудиофайла с внешнего носителя (например, "
+"карты памяти SD) его не удастся воспроизвести, если носитель будет извлечён."
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:60
+msgid "Ringtone"
+msgstr "Мелодия звонка"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:65
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:103
+msgid "Current sound:"
+msgstr "Текущий звук:"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:81
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:117
+msgid "Restore default..."
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:93
+msgid "Message received"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:97
+msgid ""
+"Ensure your audio file length is max. 10 seconds.<br><b>N.B.</b> The file "
+"will be played until its end: if you use a 3 minutes song, your device will "
+"be ringing for that time!"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:140
+msgid "Choose a ringtone"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:154
+msgid "Restore default"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:155
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:158
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:209
+msgid "Yes"
+msgstr "Да"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:167
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:218
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:144
+msgid "No"
+msgstr "Нет"
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:29
+msgid "Gesture tutorial"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:31
+msgid "Show"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:55
+msgid "Enable tutorial"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:56
+msgid "In order to show the tutorial, you need to reboot your device."
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:59
+msgid "Enable tutorial and reboot"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:68
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:123
+msgid "Not now!"
+msgstr "Не сейчас!"
+
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:46
+msgid ""
+"This setting allows you to switch from the stage mode (default for mobile "
+"device) to the windowed mode (which will become the UI of the future Ubuntu "
+"desktops)."
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:52
+msgid "Staged"
+msgstr ""
+
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:52
+msgid "Windowed"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:65
+msgid "This is the list of the top used application."
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:68
+msgid "Time of usage"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:79
+msgid ""
+"This setting unlocks write permission in the whole system image. You will be "
+"able to use commands like 'apt-get' on your device.<br /><b>NB:</b> Your "
+"device won't be enable to receive OTA updates. Be carefull!"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:82
+msgid "System image"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:90
+msgid "Write permissions"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:108
+msgid "Disable RW permissions"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:109
+msgid "Enable RW permissions"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:110
+msgid "In order to disable RW permissions, you need to reboot your device."
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:111
+msgid "In order to enable RW permissions, you need to reboot your device."
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:114
+msgid "Reboot"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:77
+msgid ""
+"Install a package from the storage.\n"
+"You can target a single package or all the packages in a given directory and "
+"its subfolders."
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:82
+msgid "Add package"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:103
+msgid "Packages from the following paths will be installed:"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:113
+msgid "No package added"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:114
+msgid "Tap the 'Add package' button to add a package in the list"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:171
+msgid "Install package..."
+msgid_plural "Install packages..."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:188
+msgid "Choose a package"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:203
+msgid "Install package"
+msgid_plural "Install packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:204
+#, qt-format
+msgid ""
+"You are about to install %1 package. This operation will take some time to "
+"be completed and cannot be interrupted.\n"
+"Are you sure to continue?"
+msgid_plural ""
+"You are about to install %1 packages. This operation will take some time to "
+"be completed and cannot be interrupted.\n"
+"Are you sure to continue?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:238
+msgid "Installing package"
+msgid_plural "Installing packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:239
+#, qt-format
+msgid "Package %1 of %2"
+msgstr "Пакет %1 из %2"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:273
+msgid "Install completed"
+msgstr "Установка завершена"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:274
+#, qt-format
+msgid "You can find the log of the installation in %1."
+msgstr "Журнал установки можно найти в %1."
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:317
+msgid "Hide log"
+msgstr "Скрыть журнал"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:317
+msgid "Show log"
+msgstr "Показать журнал"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:360
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../app/ui/mainPage/systemTab/UninstallScopes.qml:52
+msgid "Installed scopes"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UninstallScopes.qml:102
+msgid "No installed scope"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UninstallScopes.qml:103
+msgid "All the scopes installed from a click package will be listed here."
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:84
+msgid ""
+"Here you can switch your USB connection from MTP mode (data transfer) to the "
+"RNDIS mode, which allows you to share the internet connection of your PC "
+"when connected via USB."
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:92
+msgid "MTP - Media Transfer Protocol"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:93
+msgid "RNDIS - Remote Network Driver Interface Specification"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:100
+msgid "ADB settings"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:108
+msgid "Keep ADB active on screen locked"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:126
+msgid "Enable ADB on lock"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:127
+msgid ""
+"Before you confirm this operation, please mind that if you lose your device, "
+"anyone will be able to access to all the data on your phone, without the "
+"need to unlock it first.\n"
+"Do you want to continue?"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:130
+msgid "Yes, I'm feeling brave!"
+msgstr ""
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:25
+msgid "Authentication required"
+msgstr ""
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:27
+msgid "Enter password:"
+msgstr "Введите пароль:"
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:40
+msgid "password"
+msgstr ""
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:50
+#: ../plugins/pamauthentication/NotifyDialog.qml:25
+msgid "Ok"
+msgstr ""
+
+#: ../plugins/pamauthentication/AuthenticationService.qml:59
+msgid "Authentication failed"
+msgstr "Ошибка аутентификации"
+
+#: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:1
+msgid "Ubuntu Touch Tweak Tool"
+msgstr ""
+
+#: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:2
+msgid "Tweak your device! Unlock full power!"
+msgstr ""
