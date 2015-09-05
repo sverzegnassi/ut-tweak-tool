@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-09 19:22+0200\n"
-"PO-Revision-Date: 2015-08-04 12:36+0000\n"
+"PO-Revision-Date: 2015-09-04 11:48+0000\n"
 "Last-Translator: Krzysztof Tataradziński <Unknown>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-08-05 06:07+0000\n"
-"X-Generator: Launchpad (build 17656)\n"
+"X-Launchpad-Export-Date: 2015-09-05 05:41+0000\n"
+"X-Generator: Launchpad (build 17706)\n"
 
 #: ../app/components/Dialogs/FileChooserDialog.qml:43
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:62
@@ -38,7 +38,7 @@ msgstr "Zaznacz wszystko"
 #: ../app/ui/mainPage/behaviourTab/Audio.qml:105
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:84
 msgid "Pick"
-msgstr ""
+msgstr "Wybierz"
 
 #: ../app/components/Dialogs/FileChooserDialog.qml:195
 msgid "Back to parent folder"
@@ -96,7 +96,7 @@ msgstr ""
 #: ../app/ui/aboutPage/AboutGeneralSection.qml:84
 #, qt-format
 msgid "Released under the terms of the %1"
-msgstr ""
+msgstr "Wydano na licencji %1"
 
 #. TRANSLATORS: <a href=\"%1\">%2</a> is the HTML tag for hyperlinks
 #. %1 is the URL, %2 is the text shown for the URL.
@@ -150,7 +150,7 @@ msgstr ""
 
 #: ../app/ui/mainPage/SystemTab.qml:24
 msgid "Click packages"
-msgstr ""
+msgstr "Pakiety Click"
 
 #: ../app/ui/mainPage/SystemTab.qml:28
 msgid "Install click packages from a local path"
@@ -573,11 +573,11 @@ msgstr ""
 
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:25
 msgid "Authentication required"
-msgstr ""
+msgstr "Wymagane uwierzytelnienie"
 
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:27
 msgid "Enter password:"
-msgstr ""
+msgstr "Podaj hasło:"
 
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:40
 msgid "password"
@@ -586,7 +586,7 @@ msgstr ""
 #: ../plugins/pamauthentication/AuthenticationDialog.qml:50
 #: ../plugins/pamauthentication/NotifyDialog.qml:25
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: ../plugins/pamauthentication/AuthenticationService.qml:59
 msgid "Authentication failed"
@@ -594,7 +594,7 @@ msgstr ""
 
 #: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:1
 msgid "Ubuntu Touch Tweak Tool"
-msgstr ""
+msgstr "Ubuntu Touch Tweak Tool"
 
 #: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:2
 msgid "Tweak your device! Unlock full power!"
