@@ -1,0 +1,641 @@
+# Galician translation for ubuntu-touch-tweak-tool
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the ubuntu-touch-tweak-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-touch-tweak-tool\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-09 19:22+0200\n"
+"PO-Revision-Date: 2015-09-16 10:09+0000\n"
+"Last-Translator: Reidotoxo <Unknown>\n"
+"Language-Team: Galician <gl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-09-17 05:49+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:43
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:62
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:57
+msgid "Select None"
+msgstr "Deseleccionar todos"
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:59
+msgid "Select All"
+msgstr "Seleccionar todo"
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:130
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:67
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:69
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:105
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:84
+msgid "Pick"
+msgstr "Escoller"
+
+#: ../app/components/Dialogs/FileChooserDialog.qml:195
+msgid "Back to parent folder"
+msgstr "Volver ao cartafol pai"
+
+#: ../app/components/ToastWithAction.qml:97
+msgid "Dismiss"
+msgstr "Desbotar"
+
+#: ../app/ui/AboutPage.qml:23 ../app/ui/mainPage/MainPageDefaultHeader.qml:57
+msgid "About"
+msgstr "Sobre"
+
+#: ../app/ui/AboutPage.qml:25
+msgid "General"
+msgstr "Xeral"
+
+#: ../app/ui/AboutPage.qml:27
+msgid "Copyright"
+msgstr "Dereitos de copia"
+
+#: ../app/ui/MainPage.qml:25
+msgid "UT Tweak Tool"
+msgstr "UT Tweak Tool"
+
+#: ../app/ui/MainPage.qml:27
+msgid "Behavior"
+msgstr "Comportamento"
+
+#: ../app/ui/MainPage.qml:27
+msgid "Apps & Scopes"
+msgstr "Aplicacións e Ámbitos"
+
+#: ../app/ui/MainPage.qml:27
+msgid "System"
+msgstr "Sistema"
+
+#: ../app/ui/aboutPage/AboutCreditsSection.qml:27
+msgid "A big thanks to:"
+msgstr "Moitas grazas a:"
+
+#. TRANSLATORS: Version of the software (e.g. "Version 0.3.51")
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:63
+#, qt-format
+msgid "Version %1"
+msgstr "Versión %1"
+
+#. TRANSLATORS: This string will look like "(C) 2015 Tizio Caio"
+#. %1 is the years, %2 is the name of the maintainer
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:74
+#, qt-format
+msgid "(C) %1 %2"
+msgstr "(C) %2 %1"
+
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:84
+#, qt-format
+msgid "Released under the terms of the %1"
+msgstr "Lanzado cos termos de %1"
+
+#. TRANSLATORS: <a href=\"%1\">%2</a> is the HTML tag for hyperlinks
+#. %1 is the URL, %2 is the text shown for the URL.
+#. e.g. <a href=\"http://www.ubuntu.com\">Ubuntu</a>
+#: ../app/ui/aboutPage/AboutGeneralSection.qml:101
+#, qt-format
+msgid "Source code available on <a href=\"%1\">%2</a>"
+msgstr "O código fonte está dispoñíbel en <a href=\"%1\">%2</a>"
+
+#: ../app/ui/mainPage/ApplicationsTab.qml:80
+msgid "No supported application"
+msgstr "Ningunha aplicación compatíbel"
+
+#: ../app/ui/mainPage/ApplicationsTab.qml:81
+msgid "All the applications supported by this tool will be listed here."
+msgstr ""
+"Todas as aplicacións compatíbeis con esta ferramenta van aparecer aquí."
+
+#: ../app/ui/mainPage/BehaviourTab.qml:28
+msgid "Unity 8"
+msgstr "Unity 8"
+
+#: ../app/ui/mainPage/BehaviourTab.qml:31
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:49
+msgid "Usage mode"
+msgstr "Modo de uso"
+
+#: ../app/ui/mainPage/BehaviourTab.qml:36
+msgid "App scope favorites"
+msgstr "Favoritos no Ámbito de Aplicacións"
+
+#: ../app/ui/mainPage/BehaviourTab.qml:47
+msgid "Audio"
+msgstr "Son"
+
+#: ../app/ui/mainPage/BehaviourTab.qml:50
+msgid "Set a custom ringtone"
+msgstr "Seleccionar un ton de chamada personalizado"
+
+#: ../app/ui/mainPage/MainPageDefaultHeader.qml:34
+msgid "Search in this tab"
+msgstr "Buscar nesta lapela"
+
+#: ../app/ui/mainPage/MainPageDefaultHeader.qml:40
+msgid "Open a terminal session"
+msgstr "Abrir unha sesión da terminal"
+
+#. TRANSLATORS: "Open Store" is the name of the unofficial free software store from Michael Zanetti.
+#: ../app/ui/mainPage/MainPageDefaultHeader.qml:49
+msgid "Launch Open Store"
+msgstr "Abrir a Open Store"
+
+#: ../app/ui/mainPage/SystemTab.qml:24
+msgid "Click packages"
+msgstr "Paquetes Click"
+
+#: ../app/ui/mainPage/SystemTab.qml:28
+msgid "Install click packages from a local path"
+msgstr "Instalar paquetes Click dende unha ruta local"
+
+#: ../app/ui/mainPage/SystemTab.qml:33
+msgid "Uninstall scopes"
+msgstr "Desinstalar Ámbitos"
+
+#: ../app/ui/mainPage/SystemTab.qml:37
+msgid "OS Image"
+msgstr "Imaxe do SO"
+
+#: ../app/ui/mainPage/SystemTab.qml:40
+msgid "Make image writable"
+msgstr "Facer escribíbel a imaxe"
+
+#: ../app/ui/mainPage/SystemTab.qml:44
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:87
+msgid "USB mode"
+msgstr "Modo USB"
+
+#: ../app/ui/mainPage/SystemTab.qml:47
+msgid "Set USB behavior when connected to a PC"
+msgstr "Escoller o comportamento do USB ao conectarse ao PC"
+
+#: ../app/ui/mainPage/SystemTab.qml:51
+msgid "Stats"
+msgstr "Estatísticas"
+
+#: ../app/ui/mainPage/SystemTab.qml:54
+msgid "Application usage"
+msgstr "Uso de aplicacións"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:39
+#, qt-format
+msgid "Keyboard layout '%1' successfully imported!"
+msgstr "A disposición %1 do teclado foi importada con éxito!"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:40
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:42
+msgid "Error while importing the keyboard layout!"
+msgstr "Ocorreu un erro ao importar a disposición do teclado!"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:41
+#, qt-format
+msgid "Keyboard layout '%1' already exists!"
+msgstr "A disposición do teclado %1 xa existe!"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:57
+msgid "Keyboard profiles"
+msgstr "Perfiles do teclado"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:61
+msgid ""
+"Ubuntu Terminal App allows users to add custom preset for the frequently "
+"used commands.<br>Check out <a "
+"href=\"https://swordfishslabs.wordpress.com/2015/02/27/json-profiles-in-"
+"ubuntu-terminal-app/\">Filippo Scognamiglio's post</a> for the details."
+msgstr ""
+"A aplicación Terminal permite aos usuarios engadir preconfiguracións "
+"personalizadas para os comandos usados con máis frecuencia. .br>Revisa<a "
+"href=\"https://swordfishslabs.wordpress.com/2015/02/27/json-profiles-in-"
+"ubuntu-terminal-app/\">Filippo Scognamiglio's post</a> para máis detalles."
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:65
+msgid "Add a custom profile"
+msgstr "Engadir un perfil personalizado"
+
+#: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:76
+msgid "Choose a keyb layout"
+msgstr "Escoller unha disposición para o teclado"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:34
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:156
+msgid "Add new favorite"
+msgstr "Engadir un novo Favorito"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:66
+msgid ""
+"Set your favorite apps to be shown in the applications scope.<br><br>Swipe "
+"to right to delete an item.<br>Press and hold to enable the sorting mode."
+msgstr ""
+"Escolle cales das túas aplicacións favoritas aparecen no Ámbito de "
+"Aplicacións. .<br><br>Desliza calquer elemento cara a dereita para "
+"eliminalo.<br>Mantén pulsado para rearranxalos."
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:69
+msgid "Favorite apps"
+msgstr "Aplicacións favoritas"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:77
+msgid "No favorite specified"
+msgstr "Ningún favorito especificado"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:78
+msgid ""
+"Default applications will be shown in the 'App' scope.\n"
+"Tap the '+' in the header to add a favorite app."
+msgstr ""
+"As aplicacións por defecto van aparecer no Ámbito 'Aplicacións'.\n"
+"Toca o '+' na cabeceira para engadir unha aplicación favorita."
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:95
+msgid "Reset"
+msgstr "Restabelecer"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:112
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:130
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:174
+msgid "Add more used applications"
+msgstr "Engadir máis aplicacións utilizadas"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:181
+msgid "Back"
+msgstr "Volver"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:187
+msgid "Add favorites to the list"
+msgstr "Engadir favoritos á lista"
+
+#. TRANSLATORS: %1 is a time duration, expressed in hours
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:216
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:47
+#, qt-format
+msgid "%1 hours"
+msgstr "%1 horas"
+
+#. TRANSLATORS: %1 is a time duration, expressed in minutes
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:220
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:51
+#, qt-format
+msgid "%1 mins"
+msgstr "%1 minutos"
+
+#. TRANSLATORS: %1 is a time duration, expressed in seconds
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:223
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:54
+#, qt-format
+msgid "%1 secs"
+msgstr "%1 segundos"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:252
+msgid "Number of top apps to select:"
+msgstr "Número de aplicacións principais para seleccionar:"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:274
+msgid "Most used apps"
+msgstr "Aplicacións máis utilizadas"
+
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:307
+msgid "Available apps"
+msgstr "Aplicacións dispoñíbeis"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:57
+msgid ""
+"Please note that if you choose an audio file from an external media (e.g. SD "
+"card), that file could not be played if the media will be removed."
+msgstr ""
+"Recorda que se escoller un arquivo de audio dun medio externo (por exemplo "
+"tarxeta SD), o ficheiro pode non ser reproducido se o medio é desconectado."
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:60
+msgid "Ringtone"
+msgstr "Ton de chamada"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:65
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:103
+msgid "Current sound:"
+msgstr "Son actual"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:81
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:117
+msgid "Restore default..."
+msgstr "Restablecer o ton por defecto"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:93
+msgid "Message received"
+msgstr "Mensaxe recibida"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:97
+msgid ""
+"Ensure your audio file length is max. 10 seconds.<br><b>N.B.</b> The file "
+"will be played until its end: if you use a 3 minutes song, your device will "
+"be ringing for that time!"
+msgstr ""
+"Asegúrate de que a duración do arquivo é de 10 segundos máximo. "
+"<br><b>Nota:</b> O arquivo vai soar ata o final: se usas unha canción de 3 "
+"minutos, o teu dispositivo vai soar todo ese tempo!"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:140
+msgid "Choose a ringtone"
+msgstr "Escoller un tono de chamada"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:154
+msgid "Restore default"
+msgstr "Restablecer o ton por defecto"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:155
+msgid "Are you sure?"
+msgstr "Está seguro?"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:158
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:209
+msgid "Yes"
+msgstr "Si"
+
+#: ../app/ui/mainPage/behaviourTab/Audio.qml:167
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:218
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:144
+msgid "No"
+msgstr "Non"
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:29
+msgid "Gesture tutorial"
+msgstr "Tutorial de xestos"
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:31
+msgid "Show"
+msgstr "Amosar"
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:55
+msgid "Enable tutorial"
+msgstr "Habilitar o tutorial"
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:56
+msgid "In order to show the tutorial, you need to reboot your device."
+msgstr "Para amosar o tutorial, terá que reiniciar o seu dispositivo."
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:59
+msgid "Enable tutorial and reboot"
+msgstr "Habilitar o tutorial e reiniciar."
+
+#: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:68
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:123
+msgid "Not now!"
+msgstr "Agora non!"
+
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:46
+msgid ""
+"This setting allows you to switch from the stage mode (default for mobile "
+"device) to the windowed mode (which will become the UI of the future Ubuntu "
+"desktops)."
+msgstr ""
+"Este axuste permite mudar do modo en escea (usado por defecto nos teléfonos) "
+"ao modo en xanelas (que será a interface de usuario para o futuro escritorio "
+"de Ubuntu)."
+
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:52
+msgid "Staged"
+msgstr "Escea"
+
+#: ../app/ui/mainPage/behaviourTab/Unity8Mode.qml:52
+msgid "Windowed"
+msgstr "Xanelas"
+
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:65
+msgid "This is the list of the top used application."
+msgstr "Esta é a lista das aplicacións máis usadas."
+
+#: ../app/ui/mainPage/systemTab/AppsStats.qml:68
+msgid "Time of usage"
+msgstr "Tempo de uso"
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:79
+msgid ""
+"This setting unlocks write permission in the whole system image. You will be "
+"able to use commands like 'apt-get' on your device.<br /><b>NB:</b> Your "
+"device won't be enable to receive OTA updates. Be carefull!"
+msgstr ""
+"Este axuste desbloquea o permiso de escritura para toda a imaxe do sistema. "
+"Permitiralle usar comandos como 'apt-get' no teu dispositivo.<br "
+"/><b>NOTA:</b> o seu dispositivo non vai recibir actualizacións OTA. Úseo "
+"con coidado!"
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:82
+msgid "System image"
+msgstr "Imaxe do sistema"
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:90
+msgid "Write permissions"
+msgstr "Permisos de escritura"
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:108
+msgid "Disable RW permissions"
+msgstr "Deshabilitar permisos RW"
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:109
+msgid "Enable RW permissions"
+msgstr "Habilitar permisos RW"
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:110
+msgid "In order to disable RW permissions, you need to reboot your device."
+msgstr ""
+"Para poder deshabilitar os permisos RW, precisa reiniciar o seu dispositivo."
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:111
+msgid "In order to enable RW permissions, you need to reboot your device."
+msgstr "Para habilitar os permisos RW, precisa reiniciar o seu dispositivo."
+
+#: ../app/ui/mainPage/systemTab/ImageWritable.qml:114
+msgid "Reboot"
+msgstr "Reiniciar"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:77
+msgid ""
+"Install a package from the storage.\n"
+"You can target a single package or all the packages in a given directory and "
+"its subfolders."
+msgstr ""
+"Instalar un paquete dende o almacenamento.\n"
+"Podes sinalar un so paquete ou todos os paquetes dentro dun cartafol e "
+"subcartafoles."
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:82
+msgid "Add package"
+msgstr "Engadir un paquete"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:103
+msgid "Packages from the following paths will be installed:"
+msgstr "Vanse instalar os paquetes contidos nas seguintes rutas:"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:113
+msgid "No package added"
+msgstr "Non se engadiu ningún paquete"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:114
+msgid "Tap the 'Add package' button to add a package in the list"
+msgstr "Toca o botón \"Engadir paquete\" para engadir un paquete á lista."
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:171
+msgid "Install package..."
+msgid_plural "Install packages..."
+msgstr[0] "Instalar paquete..."
+msgstr[1] "Instalar paquetes..."
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:188
+msgid "Choose a package"
+msgstr "Escoller un paquete"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:203
+msgid "Install package"
+msgid_plural "Install packages"
+msgstr[0] "Instalar paquete"
+msgstr[1] "Instalar paquetes"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:204
+#, qt-format
+msgid ""
+"You are about to install %1 package. This operation will take some time to "
+"be completed and cannot be interrupted.\n"
+"Are you sure to continue?"
+msgid_plural ""
+"You are about to install %1 packages. This operation will take some time to "
+"be completed and cannot be interrupted.\n"
+"Are you sure to continue?"
+msgstr[0] ""
+"Vaise instalar o paquete %1. A esta operación pode levarlle un tempo ser "
+"completada e non pode ser interrompida\n"
+"Seguro que quere continuar?"
+msgstr[1] ""
+"Vanse instalar os paquetes %1. A esta operación pode levarlle un tempo ser "
+"completada e non pode ser interrompida\n"
+"Seguro que quere continuar?"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:238
+msgid "Installing package"
+msgid_plural "Installing packages"
+msgstr[0] "Instalando o paquete..."
+msgstr[1] "Instalando os paquetes..."
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:239
+#, qt-format
+msgid "Package %1 of %2"
+msgstr "Paquete %1 de %2"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:273
+msgid "Install completed"
+msgstr "Instalación completada"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:274
+#, qt-format
+msgid "You can find the log of the installation in %1."
+msgstr "Pode ver o rexistro da instalación en %1."
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:317
+msgid "Hide log"
+msgstr "Agochar o rexistro"
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:317
+msgid "Show log"
+msgstr "Amosar o rexistro."
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:360
+msgid "Close"
+msgstr "Pechar"
+
+#: ../app/ui/mainPage/systemTab/UninstallScopes.qml:52
+msgid "Installed scopes"
+msgstr "Ámbitos instalados"
+
+#: ../app/ui/mainPage/systemTab/UninstallScopes.qml:102
+msgid "No installed scope"
+msgstr "Ningún Ámbito instalado"
+
+#: ../app/ui/mainPage/systemTab/UninstallScopes.qml:103
+msgid "All the scopes installed from a click package will be listed here."
+msgstr ""
+"Todos os Ámbitos instalados a través dun paquete Click aparecerán listados "
+"aquí."
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:84
+msgid ""
+"Here you can switch your USB connection from MTP mode (data transfer) to the "
+"RNDIS mode, which allows you to share the internet connection of your PC "
+"when connected via USB."
+msgstr ""
+"Aquí poders mudar a súa conexión USB dende o modo MTP (transferencia de "
+"datos) ao modo RNDIS, que lle permitirá compartir a conexión á rede do seu "
+"PC ao estar conectado ao PC."
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:92
+msgid "MTP - Media Transfer Protocol"
+msgstr "MTP - Media Transfer Protocol"
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:93
+msgid "RNDIS - Remote Network Driver Interface Specification"
+msgstr "RNDIS - Remote Network Driver Interface Specification"
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:100
+msgid "ADB settings"
+msgstr "Axustes de ADB"
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:108
+msgid "Keep ADB active on screen locked"
+msgstr "Manter ADB activo coa pantalla bloqueada"
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:126
+msgid "Enable ADB on lock"
+msgstr "Habilitar ADB aínda bloqueado"
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:127
+msgid ""
+"Before you confirm this operation, please mind that if you lose your device, "
+"anyone will be able to access to all the data on your phone, without the "
+"need to unlock it first.\n"
+"Do you want to continue?"
+msgstr ""
+"Antes de confirmar esta operación, teña en mente que se perde o seu "
+"dispositivo, calquera pode ser quen de acceder a todos os datos do seu "
+"teléfono, sen precisar desbloquealo primeiro.\n"
+"Quere continuar?"
+
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:130
+msgid "Yes, I'm feeling brave!"
+msgstr "Si, síntome valente!"
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:25
+msgid "Authentication required"
+msgstr "Requírese autenticación"
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:27
+msgid "Enter password:"
+msgstr "Introduza o contrasinal:"
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:40
+msgid "password"
+msgstr "contrasinal"
+
+#: ../plugins/pamauthentication/AuthenticationDialog.qml:50
+#: ../plugins/pamauthentication/NotifyDialog.qml:25
+msgid "Ok"
+msgstr "Aceptar"
+
+#: ../plugins/pamauthentication/AuthenticationService.qml:59
+msgid "Authentication failed"
+msgstr "Fallou a autenticación"
+
+#: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:1
+msgid "Ubuntu Touch Tweak Tool"
+msgstr "Ubuntu Touch Tweak Tool"
+
+#: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:2
+msgid "Tweak your device! Unlock full power!"
+msgstr "Fedella no teu dispositivo! Desbloquea todo o seu poder!"
