@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-09 19:22+0200\n"
+"POT-Creation-Date: 2015-10-14 00:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,10 @@ msgstr ""
 
 #: ../app/ui/MainPage.qml:25
 msgid "UT Tweak Tool"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:27
+msgid "Overview"
 msgstr ""
 
 #: ../app/ui/MainPage.qml:27
@@ -147,6 +151,42 @@ msgstr ""
 msgid "Launch Open Store"
 msgstr ""
 
+#: ../app/ui/mainPage/OverviewTab.qml:67
+msgid "Ubuntu Touch Information"
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:70
+msgid "Kernel: "
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:74
+msgid "System Platform: "
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:78
+msgid "Distro: "
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:81
+msgid "Desktop: Unity 8"
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:84
+msgid "Hardware Information"
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:87
+msgid "Device: "
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:91
+msgid "CPU: "
+msgstr ""
+
+#: ../app/ui/mainPage/OverviewTab.qml:95
+msgid "Memory: "
+msgstr ""
+
 #: ../app/ui/mainPage/SystemTab.qml:24
 msgid "Click packages"
 msgstr ""
@@ -220,81 +260,81 @@ msgid "Choose a keyb layout"
 msgstr ""
 
 #: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:34
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:156
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:158
 msgid "Add new favorite"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:66
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:68
 msgid ""
 "Set your favorite apps to be shown in the applications scope.<br><br>Swipe "
 "to right to delete an item.<br>Press and hold to enable the sorting mode."
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:69
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:71
 msgid "Favorite apps"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:77
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:79
 msgid "No favorite specified"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:78
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:80
 msgid ""
 "Default applications will be shown in the 'App' scope.\n"
 "Tap the '+' in the header to add a favorite app."
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:95
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:97
 msgid "Reset"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:112
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:114
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:130
 msgid "Delete"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:174
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:176
 msgid "Add more used applications"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:181
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:183
 msgid "Back"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:187
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:189
 msgid "Add favorites to the list"
 msgstr ""
 
 #. TRANSLATORS: %1 is a time duration, expressed in hours
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:216
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:218
 #: ../app/ui/mainPage/systemTab/AppsStats.qml:47
 #, qt-format
 msgid "%1 hours"
 msgstr ""
 
 #. TRANSLATORS: %1 is a time duration, expressed in minutes
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:220
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:222
 #: ../app/ui/mainPage/systemTab/AppsStats.qml:51
 #, qt-format
 msgid "%1 mins"
 msgstr ""
 
 #. TRANSLATORS: %1 is a time duration, expressed in seconds
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:223
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:225
 #: ../app/ui/mainPage/systemTab/AppsStats.qml:54
 #, qt-format
 msgid "%1 secs"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:252
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:254
 msgid "Number of top apps to select:"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:274
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:276
 msgid "Most used apps"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:307
+#: ../app/ui/mainPage/behaviourTab/AppsScopeFavs.qml:309
 msgid "Available apps"
 msgstr ""
 
@@ -591,10 +631,10 @@ msgstr ""
 msgid "Authentication failed"
 msgstr ""
 
-#: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:1
+#: /tmp/build-ubuntu-touch-tweak-tool-Desktop-Default/po/ut-tweak-tool.desktop.in.h:1
 msgid "Ubuntu Touch Tweak Tool"
 msgstr ""
 
-#: /home/stefano/build-ut-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-Default/po/ut-tweak-tool.desktop.in.h:2
-msgid "Tweak your device! Unlock full power!"
+#: /tmp/build-ubuntu-touch-tweak-tool-Desktop-Default/po/ut-tweak-tool.desktop.in.h:2
+msgid "Tweak your device! Unlock its full power!"
 msgstr ""

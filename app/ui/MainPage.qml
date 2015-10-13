@@ -24,7 +24,7 @@ Page {
 
     title: i18n.tr("UT Tweak Tool")
 
-    head.sections.model: [i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System")]
+    head.sections.model: [i18n.tr("Overview"), i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System")]
 
     // *** HEADER ***
     state: "default"
@@ -50,6 +50,7 @@ Page {
         }
 
         model: [
+            Qt.resolvedUrl("mainPage/OverviewTab.qml"),
             Qt.resolvedUrl("mainPage/BehaviourTab.qml"),
             Qt.resolvedUrl("mainPage/ApplicationsTab.qml"),
             Qt.resolvedUrl("mainPage/SystemTab.qml")
