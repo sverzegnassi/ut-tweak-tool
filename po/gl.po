@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-10-14 00:55+0200\n"
-"PO-Revision-Date: 2015-09-16 10:09+0000\n"
+"PO-Revision-Date: 2015-10-15 10:46+0000\n"
 "Last-Translator: Reidotoxo <Unknown>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-14 06:03+0000\n"
+"X-Launchpad-Export-Date: 2015-10-16 06:03+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: ../app/components/Dialogs/FileChooserDialog.qml:43
@@ -65,7 +65,7 @@ msgstr "UT Tweak Tool"
 
 #: ../app/ui/MainPage.qml:27
 msgid "Overview"
-msgstr ""
+msgstr "Vista xeral"
 
 #: ../app/ui/MainPage.qml:27
 msgid "Behavior"
@@ -154,39 +154,39 @@ msgstr "Abrir a Open Store"
 
 #: ../app/ui/mainPage/OverviewTab.qml:67
 msgid "Ubuntu Touch Information"
-msgstr ""
+msgstr "Información de Ubuntu Touch"
 
 #: ../app/ui/mainPage/OverviewTab.qml:70
 msgid "Kernel: "
-msgstr ""
+msgstr "Núcleo: "
 
 #: ../app/ui/mainPage/OverviewTab.qml:74
 msgid "System Platform: "
-msgstr ""
+msgstr "Plataforma do sistema: "
 
 #: ../app/ui/mainPage/OverviewTab.qml:78
 msgid "Distro: "
-msgstr ""
+msgstr "Distro: "
 
 #: ../app/ui/mainPage/OverviewTab.qml:81
 msgid "Desktop: Unity 8"
-msgstr ""
+msgstr "Escritorio: Unity 8"
 
 #: ../app/ui/mainPage/OverviewTab.qml:84
 msgid "Hardware Information"
-msgstr ""
+msgstr "Información sobre o hardware"
 
 #: ../app/ui/mainPage/OverviewTab.qml:87
 msgid "Device: "
-msgstr ""
+msgstr "Dispositivo: "
 
 #: ../app/ui/mainPage/OverviewTab.qml:91
 msgid "CPU: "
-msgstr ""
+msgstr "CPU: "
 
 #: ../app/ui/mainPage/OverviewTab.qml:95
 msgid "Memory: "
-msgstr ""
+msgstr "Memoria: "
 
 #: ../app/ui/mainPage/SystemTab.qml:24
 msgid "Click packages"
@@ -678,7 +678,4 @@ msgstr "Ubuntu Touch Tweak Tool"
 
 #: /tmp/build-ubuntu-touch-tweak-tool-Desktop-Default/po/ut-tweak-tool.desktop.in.h:2
 msgid "Tweak your device! Unlock its full power!"
-msgstr ""
-
-#~ msgid "Tweak your device! Unlock full power!"
-#~ msgstr "Fedella no teu dispositivo! Desbloquea todo o seu poder!"
+msgstr "Fedella no teu dispositivo! Desbloquea todo o seu poder!"
