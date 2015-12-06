@@ -42,11 +42,5 @@ MainView {
 
     property alias pageStack: pageStack
     PageStack { id: pageStack }
-
-    property url copyrightUrl
-
-    property alias manifest: manifest
-    property alias manifestUrl: manifest.manifestUrl
-    ManifestParser { id: manifest }
 }
 

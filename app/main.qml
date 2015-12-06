@@ -31,8 +31,6 @@ TweakToolMainView {
 
     // applicationName is set by CMake while building.
     applicationName: "@APP_ID@"
-    manifestUrl: Qt.resolvedUrl("manifest.json")
-    copyrightUrl: Qt.resolvedUrl("../../../copyright")
 
     width: units.gu(100)
     height: units.gu(76)
