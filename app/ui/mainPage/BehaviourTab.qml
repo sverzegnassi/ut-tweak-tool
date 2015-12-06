@@ -42,12 +42,4 @@ Column {
         height: item ? item.height : 0
         source: Qt.resolvedUrl("behaviourTab/GestureTutorial.qml")
     }
-
-    // Audio section
-    ListItem.SectionDivider { text: i18n.tr("Audio") }
-
-    ListItem.Page {
-        text: i18n.tr("Set a custom ringtone")
-        pageUrl: Qt.resolvedUrl("behaviourTab/Audio.qml")
-    }
 }

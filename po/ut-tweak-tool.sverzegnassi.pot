@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-14 00:55+0200\n"
+"POT-Creation-Date: 2015-12-06 15:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,8 +33,6 @@ msgstr ""
 
 #: ../app/components/Dialogs/FileChooserDialog.qml:130
 #: ../app/ui/mainPage/applicationsTab/TerminalApp.qml:67
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:69
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:105
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:84
 msgid "Pick"
 msgstr ""
@@ -128,14 +126,6 @@ msgstr ""
 
 #: ../app/ui/mainPage/BehaviourTab.qml:36
 msgid "App scope favorites"
-msgstr ""
-
-#: ../app/ui/mainPage/BehaviourTab.qml:47
-msgid "Audio"
-msgstr ""
-
-#: ../app/ui/mainPage/BehaviourTab.qml:50
-msgid "Set a custom ringtone"
 msgstr ""
 
 #: ../app/ui/mainPage/MainPageDefaultHeader.qml:34
@@ -338,60 +328,6 @@ msgstr ""
 msgid "Available apps"
 msgstr ""
 
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:57
-msgid ""
-"Please note that if you choose an audio file from an external media (e.g. SD "
-"card), that file could not be played if the media will be removed."
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:60
-msgid "Ringtone"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:65
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:103
-msgid "Current sound:"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:81
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:117
-msgid "Restore default..."
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:93
-msgid "Message received"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:97
-msgid ""
-"Ensure your audio file length is max. 10 seconds.<br><b>N.B.</b> The file "
-"will be played until its end: if you use a 3 minutes song, your device will "
-"be ringing for that time!"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:140
-msgid "Choose a ringtone"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:154
-msgid "Restore default"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:155
-msgid "Are you sure?"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:158
-#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:209
-msgid "Yes"
-msgstr ""
-
-#: ../app/ui/mainPage/behaviourTab/Audio.qml:167
-#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:218
-#: ../app/ui/mainPage/systemTab/UsbMode.qml:144
-msgid "No"
-msgstr ""
-
 #: ../app/ui/mainPage/behaviourTab/GestureTutorial.qml:29
 msgid "Gesture tutorial"
 msgstr ""
@@ -526,6 +462,15 @@ msgid_plural ""
 "Are you sure to continue?"
 msgstr[0] ""
 msgstr[1] ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:209
+msgid "Yes"
+msgstr ""
+
+#: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:218
+#: ../app/ui/mainPage/systemTab/UsbMode.qml:144
+msgid "No"
+msgstr ""
 
 #: ../app/ui/mainPage/systemTab/InstallClickFromLocal.qml:238
 msgid "Installing package"
