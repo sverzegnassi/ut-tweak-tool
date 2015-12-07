@@ -49,7 +49,7 @@ MainView {
 
     Component.onCompleted: {
         // Push the main page on application start-up.
-        pageStack.push(Qt.resolvedUrl("ui/MainPage.qml"))
+        pageStack.push(Qt.resolvedUrl("mainPage/MainPage.qml"))
     }
 
     PageStack { id: pageStack }
