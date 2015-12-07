@@ -25,10 +25,13 @@ Page {
     title: i18n.tr("UT Tweak Tool")
 
     head.sections.model: [i18n.tr("Overview"), i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System")]
-
-    // *** HEADER ***
-    state: "default"
-    states: MainPageDefaultHeader { name: "default"; targetPage: mainPage }
+    head.actions: [
+        Action {
+            iconName: "search"
+            text: i18n.tr("Search in this tab")
+            enabled: false
+        }
+    ]
 
     ListView {
         id: view
