@@ -18,71 +18,19 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 
-import "../../components/Models" as TweakToolModels
-import "../../components/ListItems" as ListItem
 import "../../components/Upstream" as Upstream
 
 Item {
     anchors.fill: parent
 
-    TweakToolModels.ApplicationsModel {
-        id: appsModel
+    // TODO: Ideally we'd like to have the Tweak Geek application list here.
 
-        Component.onCompleted: {
-            var entries =
-                    [
-                        {
-                            appId: "com.ubuntu.terminal",
-                            pageUrl: Qt.resolvedUrl("applicationsTab/TerminalApp.qml")
-                        }
-                    ]
+    Upstream.EmptyState {
+        iconName: "ubuntu-store-symbolic"
+        title: i18n.tr("Work in progress")
+        subTitle: i18n.tr("Ideally we'd like to have the Tweak Geek application list here.")
 
-            appsModel.append(entries);
-            init();
-        }
-    }
-
-    Loader {
-        anchors.fill: parent
-        sourceComponent: (appsModel.availableApps.count) > 0 ? appsView : emptyState
-    }
-
-    Component {
-        id: appsView
-
-        ListView {
-            anchors.fill: parent
-
-            model: SortFilterModel {
-                model: appsModel.availableApps
-                sort.property: "title"
-                sort.order: Qt.AscendingOrder
-            }
-
-            delegate: ListItem.Application {
-                appEntry: model.appEntry
-                pageUrl: model.pageUrl
-            }
-        }
-    }
-
-    Component {
-        id: emptyState
-
-        Item {
-            anchors {
-                fill: parent
-                margins: units.gu(2)
-            }
-
-            Upstream.EmptyState {
-                iconName: "ubuntu-store-symbolic"
-                title: i18n.tr("No supported application")
-                subTitle: i18n.tr("All the applications supported by this tool will be listed here.")
-
-                anchors.centerIn: parent
-                width: parent.width
-            }
-        }
+        anchors.centerIn: parent
+        width: parent.width
     }
 }
