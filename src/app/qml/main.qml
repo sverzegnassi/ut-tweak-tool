@@ -28,8 +28,21 @@ import "components/Models" as Models
 TweakToolMainView {
     id: mainView
     objectName: "mainView"
-
     applicationName: "ut-tweak-tool.sverzegnassi"
+
+    function showNotification(args) {
+        var component = Qt.createComponent("Toast.qml")
+        var toast = component.createObject(mainView, args);
+
+        return toast;
+    }
+
+    function showNotificationWithAction(args) {
+        var component = Qt.createComponent("ToastWithAction.qml")
+        var toast = component.createObject(mainView, args);
+
+        return toast;
+    }
 
     width: units.gu(100)
     height: units.gu(76)
@@ -42,6 +55,8 @@ TweakToolMainView {
         // Push the main page on application start-up.
         pageStack.push(Qt.resolvedUrl("ui/MainPage.qml"))
     }
+
+    PageStack { id: pageStack }
 
     Models.ClickModel { id: clickModel }
 
