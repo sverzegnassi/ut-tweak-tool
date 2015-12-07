@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=UT Tweak Tool
+_Keywords=tweak;tool;settings;
+_Comment=Advanced settings for your Ubuntu device
+Exec=@EXEC@
+Icon=@ICON@
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+
+
+

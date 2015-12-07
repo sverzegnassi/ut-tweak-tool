@@ -29,8 +29,7 @@ TweakToolMainView {
     id: mainView
     objectName: "mainView"
 
-    // applicationName is set by CMake while building.
-    applicationName: "@APP_ID@"
+    applicationName: "ut-tweak-tool.sverzegnassi"
 
     width: units.gu(100)
     height: units.gu(76)
