@@ -25,7 +25,7 @@ import StorageManager 1.0
 import "components"
 import "components/Models" as Models
 
-TweakToolMainView {
+MainView {
     id: mainView
     objectName: "mainView"
     applicationName: "ut-tweak-tool.sverzegnassi"
@@ -48,10 +48,6 @@ TweakToolMainView {
     height: units.gu(76)
 
     Component.onCompleted: {
-        // Use a custom header for this application
-        mainView.header.style = Qt.createComponent(
-                    Qt.resolvedUrl("theme/PageHeadStyle.qml"))
-
         // Push the main page on application start-up.
         pageStack.push(Qt.resolvedUrl("ui/MainPage.qml"))
     }
