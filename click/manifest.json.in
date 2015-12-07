@@ -2,7 +2,7 @@
     "name": "ut-tweak-tool.sverzegnassi",
     "title": "UT Tweak Tool",
     "description": "Advanced settings for your Ubuntu device",
-    "framework": "ubuntu-sdk-15.04",
+    "framework": "ubuntu-sdk-15.04.1",
     "architecture": "@CLICK_ARCH@",
     "icon": "@ICON@",
     "hooks": {
