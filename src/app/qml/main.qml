@@ -50,10 +50,55 @@ MainView {
 
     Component.onCompleted: {
         // Push the main page on application start-up.
-        pageStack.push(Qt.resolvedUrl("mainPage/MainPage.qml"))
+        pageStack.push(primaryPage)
     }
 
     PageStack { id: pageStack }
+
+    Component {
+        id: primaryPage
+
+        Page {
+            id: mainPage
+
+            title: i18n.tr("UT Tweak Tool")
+
+            head.sections.model: [ i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System") ]
+            head.actions: [
+                Action {
+                    iconName: "search"
+                    text: i18n.tr("Search in this tab")
+                    enabled: false
+                }
+            ]
+
+            ListView {
+                id: view
+                anchors.fill: parent
+
+                orientation: ListView.Horizontal
+                interactive: false
+                snapMode: ListView.SnapOneItem
+
+                highlightMoveDuration: UbuntuAnimation.FastDuration
+
+                currentIndex: mainPage.head.sections.selectedIndex
+
+                delegate: Loader {
+                    width: view.width
+                    height: view.height
+
+                    source: modelData
+                }
+
+                model: [
+                    Qt.resolvedUrl("behaviourTab/BehaviourTab.qml"),
+                    Qt.resolvedUrl("applicationsTab/ApplicationsTab.qml"),
+                    Qt.resolvedUrl("systemTab/SystemTab.qml")
+                ]
+            }
+        }
+    }
 
     Models.ClickModel { id: clickModel }
 

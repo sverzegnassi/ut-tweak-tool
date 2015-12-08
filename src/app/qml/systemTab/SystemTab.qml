@@ -33,23 +33,28 @@ Column {
     // TO BE FINISHED (FileChooserDialog refactioring + support for new component)
     ListItem.Page {
         text: i18n.tr("Install click packages from a local path")
-        pageUrl: Qt.resolvedUrl("./systemTab/InstallClickFromLocal.qml")
+        pageUrl: Qt.resolvedUrl("InstallClickFromLocal.qml")
     }
 
     // TODO: This should be implemented in the Applications tab.
     ListItem.Page {
         text: i18n.tr("Uninstall scopes")
-        pageUrl: Qt.resolvedUrl("./systemTab/UninstallScopes.qml")
+        pageUrl: Qt.resolvedUrl("UninstallScopes.qml")
     }
 
     ListItem.SectionDivider {
         iconName: "ubuntu-logo-symbolic"
-        text: i18n.tr("OS Image")
+        text: i18n.tr("System")
     }
 
     ListItem.Page {
         text: i18n.tr("Make image writable")
-        pageUrl: Qt.resolvedUrl("./systemTab/ImageWritable.qml")
+        pageUrl: Qt.resolvedUrl("ImageWritable.qml")
+    }
+
+    ListItem.Page {
+        text: i18n.tr("System informations")
+        pageUrl: Qt.resolvedUrl("SystemInfo.qml")
     }
 
     ListItem.SectionDivider {
@@ -59,7 +64,7 @@ Column {
 
     ListItem.Page {
         text: i18n.tr("Set USB behavior when connected to a PC")
-        pageUrl: Qt.resolvedUrl("./systemTab/UsbMode.qml")
+        pageUrl: Qt.resolvedUrl("UsbMode.qml")
     }
 
     ListItem.SectionDivider {
@@ -69,6 +74,6 @@ Column {
 
     ListItem.Page {
         text: i18n.tr("Application usage")
-        pageUrl: Qt.resolvedUrl("./systemTab/AppsStats.qml")
+        pageUrl: Qt.resolvedUrl("AppsStats.qml")
     }
 }

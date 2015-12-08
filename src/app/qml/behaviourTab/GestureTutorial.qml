@@ -20,8 +20,7 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import TweakTool 1.0
 
-import "../../components/ListItems" as ListItem
-import "../../components/Commands" as Commands
+import "../components/ListItems" as ListItem
 
 ListItem.Button {
     id: rootItem

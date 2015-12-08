@@ -22,10 +22,10 @@ import QtQuick.Layouts 1.1
 import StorageManager 1.0
 import TweakTool 1.0
 
-import "../../components/Functions.js" as Utils
-import "../../components/ListItems" as ListItem
-import "../../components/Dialogs"
-import "../../components/Upstream"
+import "../components/Functions.js" as Utils
+import "../components/ListItems" as ListItem
+import "../components/Dialogs"
+import "../components/Upstream"
 
 // TODO: Add --allow-untrusted flag option
 

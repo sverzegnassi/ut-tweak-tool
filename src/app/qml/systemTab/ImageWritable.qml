@@ -21,9 +21,8 @@ import Ubuntu.Components.Popups 1.3
 import TweakTool 1.0
 import QtQuick.Layouts 1.1
 
-import "../../components"
-import "../../components/ListItems" as ListItem
-import "../../components/Commands" as Commands
+import "../components"
+import "../components/ListItems" as ListItem
 
 TweakToolPage {
     id: rootItem

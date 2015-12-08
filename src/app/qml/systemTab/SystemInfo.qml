@@ -19,14 +19,10 @@
 import QtQuick 2.4
 import TweakTool 1.0
 
+import "../components"
 import "../components/ListItems" as ListItems
 
-Column {
-    anchors {
-        fill: parent
-        topMargin: 0
-        margins: units.gu(2)
-    }
+TweakToolPage {
 
     readonly property string catCmd:      "cat /etc/machine-info"
     readonly property string kerCmd:      "uname -pro"

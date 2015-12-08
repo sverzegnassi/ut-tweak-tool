@@ -18,7 +18,6 @@
 import QtQuick 2.4
 
 import "../components/ListItems" as ListItem
-import "behaviourTab"
 
 Column {
     anchors {
@@ -35,12 +34,12 @@ Column {
 
     ListItem.Page {
         text: i18n.tr("Usage mode")
-        pageUrl: Qt.resolvedUrl("behaviourTab/Unity8Mode.qml")
+        pageUrl: Qt.resolvedUrl("Unity8Mode.qml")
     }
 
     ListItem.Page {
         text: i18n.tr("App scope favorites")
-        pageUrl: Qt.resolvedUrl("behaviourTab/AppsScopeFavs.qml")
+        pageUrl: Qt.resolvedUrl("AppsScopeFavs.qml")
     }
 
     GestureTutorial { }
