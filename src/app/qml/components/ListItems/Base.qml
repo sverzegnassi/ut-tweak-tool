@@ -21,9 +21,9 @@ import Ubuntu.Components 1.3
 ListItem {
     id: rootItem
 
-    height: units.gu(7)
+   /* height: units.gu(7)
     width: parent.width
-    color: "white"
+    color: "white"*/
 
     signal singleClicked
     signal doubleClicked

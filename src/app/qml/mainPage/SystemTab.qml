@@ -19,9 +19,16 @@ import QtQuick 2.4
 import "../components/ListItems" as ListItem
 
 Column {
-    anchors.fill: parent
+    anchors {
+        fill: parent
+        topMargin: 0
+        margins: units.gu(2)
+    }
 
-    ListItem.SectionDivider { text: i18n.tr("Click packages") }
+    ListItem.SectionDivider {
+        iconName: "stock_application"
+        text: i18n.tr("Click packages")
+    }
 
     // TO BE FINISHED (FileChooserDialog refactioring + support for new component)
     ListItem.Page {
@@ -29,26 +36,36 @@ Column {
         pageUrl: Qt.resolvedUrl("./systemTab/InstallClickFromLocal.qml")
     }
 
+    // TODO: This should be implemented in the Applications tab.
     ListItem.Page {
         text: i18n.tr("Uninstall scopes")
         pageUrl: Qt.resolvedUrl("./systemTab/UninstallScopes.qml")
     }
 
-    ListItem.SectionDivider { text: i18n.tr("OS Image") }
+    ListItem.SectionDivider {
+        iconName: "ubuntu-logo-symbolic"
+        text: i18n.tr("OS Image")
+    }
 
     ListItem.Page {
         text: i18n.tr("Make image writable")
         pageUrl: Qt.resolvedUrl("./systemTab/ImageWritable.qml")
     }
 
-    ListItem.SectionDivider { text: i18n.tr("USB mode") }
+    ListItem.SectionDivider {
+        iconName: "stock_usb"
+        text: i18n.tr("USB mode")
+    }
 
     ListItem.Page {
         text: i18n.tr("Set USB behavior when connected to a PC")
         pageUrl: Qt.resolvedUrl("./systemTab/UsbMode.qml")
     }
 
-    ListItem.SectionDivider { text: i18n.tr("Stats") }
+    ListItem.SectionDivider {
+        iconName: "like"
+        text: i18n.tr("Stats")
+    }
 
     ListItem.Page {
         text: i18n.tr("Application usage")

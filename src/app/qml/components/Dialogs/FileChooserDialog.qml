@@ -145,8 +145,6 @@ Page {
         }
     ]
 
-    onActiveChanged: view.anchors.fill = view.parent
-
     FolderListModel {
         id: folderModel
 
@@ -160,6 +158,7 @@ Page {
 
     MultipleSelectionListView {
         id: view
+        anchors.fill: parent
 
         multipleSelection: false
         currentIndex: -1

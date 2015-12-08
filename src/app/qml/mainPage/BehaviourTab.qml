@@ -20,26 +20,28 @@ import QtQuick 2.4
 import "../components/ListItems" as ListItem
 import "behaviourTab"
 
-
 Column {
-    anchors.fill: parent
+    anchors {
+        fill: parent
+        topMargin: 0
+        margins: units.gu(2)
+    }
 
     // Unity 8 section
-    ListItem.SectionDivider { text: i18n.tr("Unity 8") }
+    ListItem.SectionDivider {
+        iconName: "home"
+        text: i18n.tr("Unity 8")
+    }
 
     ListItem.Page {
         text: i18n.tr("Usage mode")
         pageUrl: Qt.resolvedUrl("behaviourTab/Unity8Mode.qml")
     }
 
-	ListItem.Page {
+    ListItem.Page {
         text: i18n.tr("App scope favorites")
         pageUrl: Qt.resolvedUrl("behaviourTab/AppsScopeFavs.qml")
     }
 
-    Loader {
-        width: parent.width
-        height: item ? item.height : 0
-        source: Qt.resolvedUrl("behaviourTab/GestureTutorial.qml")
-    }
+    GestureTutorial { }
 }

@@ -44,7 +44,12 @@ ListItem.Button {
         }
     }
 
-    Commands.Reboot { id: reboot }
+    CommandLine {
+        id: reboot
+        process: "dbus-send --system --print-reply --dest=org.freedesktop.login1 \
+                  /org/freedesktop/login1 org.freedesktop.login1.Manager.Reboot \
+                  boolean:true"
+    }
 
     Component {
         id: rebootDialog

@@ -16,11 +16,22 @@
 */
 
 import QtQuick 2.4
-import TweakTool 1.0
+import Ubuntu.Components 1.3
+import QtQuick.Layouts 1.1
 
-CommandLine {
-    id: reboot
-    process: "dbus-send --system --print-reply --dest=org.freedesktop.login1 \
-              /org/freedesktop/login1 org.freedesktop.login1.Manager.Reboot \
-              boolean:true"
+ListItem {
+    id: rootItem
+
+    property alias title: layout.title
+    property alias value: valueLabel.text
+
+    ListItemLayout {
+        id: layout
+        anchors.fill: parent
+
+        /* UITK 1.3 specs: Slot B */
+        Label {
+            id: valueLabel
+        }
+    }
 }

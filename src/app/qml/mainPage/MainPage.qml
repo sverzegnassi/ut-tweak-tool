@@ -40,7 +40,7 @@ Page {
         interactive: false
         snapMode: ListView.SnapOneItem
 
-        highlightMoveDuration: 200
+        highlightMoveDuration: UbuntuAnimation.FastDuration
 
         currentIndex: head.sections.selectedIndex
 

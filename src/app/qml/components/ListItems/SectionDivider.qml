@@ -5,26 +5,45 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 Rectangle {
     property alias text: sectionLabel.text
     property alias showDivider: divider.visible
+    property alias iconName: icon.name
+
     anchors {
         left: parent.left
         right: parent.right
     }
-    height: sectionLabel.height
+
+    height: sectionLabel.height + units.gu(2)
     color: Theme.palette.normal.background
-    Label {
-        id: sectionLabel
+
+    Row {
         anchors {
             left: parent.left
-            leftMargin: units.gu(2)
+            leftMargin: units.gu(1)
             right: parent.right
             rightMargin: units.gu(2)
+            bottom: divider.top
         }
         height: units.gu(4)
-        fontSize: "medium"
-        font.weight: Font.DemiBold
-        verticalAlignment: Text.AlignVCenter
-        
+        spacing: units.gu(1)
+
+        Icon {
+            id: icon
+            height: units.gu(2)
+            width: name ? units.gu(2) : 0
+            anchors.verticalCenter: parent.verticalCenter
+            color: UbuntuColors.orange
+        }
+
+        Label {
+            id: sectionLabel
+            height: parent.height
+            fontSize: "medium"
+            //font.weight: Font.DemiBold
+            verticalAlignment: Text.AlignVCenter
+            color: UbuntuColors.orange
+        }
     }
+
     ListItem.ThinDivider {
         id: divider
         anchors {

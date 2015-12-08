@@ -21,7 +21,11 @@ import Ubuntu.Components 1.3
 import "../components/Upstream" as Upstream
 
 Item {
-    anchors.fill: parent
+    anchors {
+        fill: parent
+        topMargin: 0
+        margins: units.gu(2)
+    }
 
     // TODO: Ideally we'd like to have the Tweak Geek application list here.
 

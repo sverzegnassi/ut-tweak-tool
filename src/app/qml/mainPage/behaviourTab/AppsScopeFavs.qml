@@ -42,13 +42,6 @@ Page {
         }
     }
 
-    // WORKAROUND: Fix anchoring for the ListView. This is necessary because of
-    // some issue with the custom header.
-    Component.onCompleted: {
-        view.anchors.fill = null
-        view.anchors.fill = view.parent
-    }
-
     /*
       FIXME: Disable drag mode when windows/page is no more active and/or user
       tap away from the items (use InverseMouseArea?) and/or the list is resetted.

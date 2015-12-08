@@ -24,7 +24,7 @@ Page {
 
     Flickable {
         id: flicky
-        //anchors.fill: parent
+        anchors.fill: parent
         interactive: true
 
         contentWidth: width
@@ -34,21 +34,11 @@ Page {
             id: layout
 
             anchors {
+                top: header.bottom
                 left: parent.left
                 right: parent.right
+                margins: units.gu(2)
             }
         }
-    }
-
-    onActiveChanged: {
-        /*
-           WORKAROUND: We use a custom header style, that completely hide the
-           header divider is there's no section.
-           This causes a wrong alignment of the page content when the new page
-           has no section. We need to force the re-aligning of the page, in
-           order to ensure that the first units.gu(3) pixel of the content are
-           visible.
-         */
-        flicky.anchors.fill = flicky.parent
     }
 }
