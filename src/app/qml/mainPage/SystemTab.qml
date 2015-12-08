@@ -16,7 +16,7 @@
 */
 
 import QtQuick 2.4
-import "../../components/ListItems" as ListItem
+import "../components/ListItems" as ListItem
 
 Column {
     anchors.fill: parent

@@ -60,7 +60,7 @@ Page {
                 }
             }
 
-            iconSource: {
+            iconName: {
                 var isDir;
                 var c=0;
                 for (var ii=0; ii<view.count; ii++) {
@@ -76,9 +76,9 @@ Page {
                 }
 
                 if(view.selectedItems.count === c) {
-                    return Qt.resolvedUrl("../../../../../graphics/select-none.svg")
+                    return "select-none"
                 } else {
-                    return Qt.resolvedUrl("../../../../../graphics/select.svg")
+                    return "select"
                 }
             }
 
@@ -187,7 +187,7 @@ Page {
 
                     Icon {
                         width: units.gu(2); height: width
-                        source: Qt.resolvedUrl("../../../../../graphics/back.svg")
+                        source: Qt.resolvedUrl("graphics/back.svg")
                         color: UbuntuColors.orange
                     }
 

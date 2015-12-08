@@ -22,9 +22,9 @@ import TweakTool 1.0
 import TweakTool.Click 1.0
 import QtQuick.Layouts 1.1
 
-import "../../../components"
-import "../../../components/ListItems" as ListItem
-import "../../../components/Upstream"
+import "../../components"
+import "../../components/ListItems" as ListItem
+import "../../components/Upstream"
 
 Page {
     id: rootItem
@@ -64,7 +64,7 @@ Page {
 
             ListItem.Warning {
                 id: warning
-                imageUrl: Qt.resolvedUrl("../../../../../../graphics/apps-scope.png")
+                imageUrl: Qt.resolvedUrl("graphics/apps-scope.png")
                 text: i18n.tr("Set your favorite apps to be shown in the applications scope.<br><br>Swipe to right to delete an item.<br>Press and hold to enable the sorting mode.")
             }
 

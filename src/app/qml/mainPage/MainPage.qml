@@ -17,7 +17,6 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import "mainPage"
 
 Page {
     id: mainPage
@@ -53,10 +52,10 @@ Page {
         }
 
         model: [
-            Qt.resolvedUrl("mainPage/OverviewTab.qml"),
-            Qt.resolvedUrl("mainPage/BehaviourTab.qml"),
-            Qt.resolvedUrl("mainPage/ApplicationsTab.qml"),
-            Qt.resolvedUrl("mainPage/SystemTab.qml")
+            Qt.resolvedUrl("OverviewTab.qml"),
+            Qt.resolvedUrl("BehaviourTab.qml"),
+            Qt.resolvedUrl("ApplicationsTab.qml"),
+            Qt.resolvedUrl("SystemTab.qml")
         ]
     }
 }

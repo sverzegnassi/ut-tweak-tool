@@ -21,8 +21,8 @@ import QtQuick.Layouts 1.1
 import TweakTool 1.0
 import TweakTool.Click 1.0
 
-import "../../../components/ListItems" as ListItem
-import "../../../components/Upstream" as Upstream
+import "../../components/ListItems" as ListItem
+import "../../components/Upstream" as Upstream
 
 Page {
     id: rootItem

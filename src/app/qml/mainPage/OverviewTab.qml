@@ -19,7 +19,7 @@ import QtQuick 2.4
 import TweakTool 1.0
 import Ubuntu.Components.ListItems 1.3 as ListItems
 
-import "../../components/ListItems" as ListItem
+import "../components/ListItems" as ListItem
 
 Column {
     anchors.fill: parent
