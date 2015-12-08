@@ -46,6 +46,7 @@ MainView {
 
     width: units.gu(100)
     height: units.gu(76)
+    theme.name: "TweakTool.OrangeTheme"
 
     Component.onCompleted: {
         // Push the main page on application start-up.
