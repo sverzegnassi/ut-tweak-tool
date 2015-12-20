@@ -23,7 +23,7 @@ import StorageManager 1.0
 import TweakTool 1.0
 
 import "../components/Functions.js" as Utils
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 import "../components/Dialogs"
 import "../components/Upstream"
 
@@ -71,34 +71,26 @@ Page {
         header: Column {
             width: parent.width
 
-            ListItem.Warning {
+            ListItems.Warning {
                 id: warning
                 iconName: "stock_application"
                 text: i18n.tr("Install a package from the storage.\nYou can target a single package or all the packages in a given directory and its subfolders.")
             }
 
-            ListItem.Button {
+            ListItems.Control {
                 id: addButton
                 title.text: i18n.tr("Add package")
-                button {
+
+                Button {
+                    color: UbuntuColors.orange
                     text: i18n.tr("Pick")
                     onClicked: {
-                        var picker = pageStack.push(fileDialog);
-                        picker.accepted.connect(function(pathsList) {
-                            for (var i=0; i<pathsList.length; i++) {
-                                pathModel.append(
-                                    {
-                                        "path": pathsList[i].toString()
-                                                            .replace("file://", "")
-                                    }
-                                )
-                            }
-                        })
+                        rootItem.pageStack.addPageToNextColumn(rootItem, fileDialog)
                     }
                 }
             }
 
-            ListItem.SectionDivider {
+            ListItems.SectionDivider {
                 id: section
                 text: i18n.tr("Packages from the following paths will be installed:")
                 visible: pathModel.count > 0
@@ -120,7 +112,7 @@ Page {
             }
         }
 
-        delegate: ListItem.Base {
+        delegate: ListItem {
             height: Math.max(units.gu(7), pathLabel.paintedHeight + units.gu(2))
 
             leadingActions: ListItemActions {
@@ -159,7 +151,7 @@ Page {
         }
 
         // Ugly trick to get the divider on the top of the item
-        ListItem.Base {
+        ListItem {
             id: installBase
             rotation: 180
 
@@ -189,6 +181,18 @@ Page {
             folder: "file://" + StorageManager.getXdgFolder(StorageManager.HomeLocation)
             nameFilters: ["*.click"]
             multipleSelection: true
+
+            onAccepted: {
+                console.log("File dialog accepted")
+                for (var i=0; i<pathsList.length; i++) {
+                    pathModel.append(
+                        {
+                            "path": pathsList[i].toString()
+                                                .replace("file://", "")
+                        }
+                    )
+                }
+            }
         }
     }
 

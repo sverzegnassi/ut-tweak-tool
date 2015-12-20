@@ -30,14 +30,15 @@ Page {
         contentWidth: width
         contentHeight: layout.height
 
+        clip: true
+
         Column {
             id: layout
 
             anchors {
-                top: header.bottom
                 left: parent.left
                 right: parent.right
-                margins: units.gu(2)
+                //margins: units.gu(2)
             }
         }
     }

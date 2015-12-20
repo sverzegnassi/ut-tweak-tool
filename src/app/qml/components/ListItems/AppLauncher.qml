@@ -19,32 +19,23 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import QtQuick.Layouts 1.1
 
-Base {
+ListItem {
     id: rootItem
     height: units.gu(8)
 
     property alias iconSource: icon.source
-    property alias title: title
-    property alias subtitle: subtitle
+    property alias title: layout.title
+    property alias subtitle: layout.subtitle
 
-    RowLayout {
+    ListItemLayout {
+        id: layout
         anchors.fill: parent
-        spacing: units.gu(2)
-
-        opacity: rootItem.enabled ? 1.0 : 0.3
 
         UbuntuShape {
-            implicitHeight: units.gu(7); implicitWidth: implicitHeight
+            SlotsLayout.position: SlotsLayout.Leading
+            height: units.gu(6); width: height
+
             image: Image { id: icon }
-        }
-
-        // WORKAROUND: Here we should use a Caption item from UITK 1.2,
-        // but it doesn't work in AudioEntry and freezes the whole app
-        Column {
-            Label { id: title }
-            Label { id: subtitle }
-
-            Layout.fillWidth: true
         }
     }
 }

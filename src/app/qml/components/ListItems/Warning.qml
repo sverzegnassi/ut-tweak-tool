@@ -19,48 +19,49 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import QtQuick.Layouts 1.1
 
-Base {
+ListItem {
     id: rootItem
 
-    property alias text: label.text
+    property string text: layout.title.text
     property alias iconName: icon.name
     property alias iconSource: icon.source
     property alias imageUrl: image.source
-    height: Math.max(units.gu(12), label.paintedHeight + units.gu(2))
+    height: Math.max(units.gu(12), layout.height)
 
-    RowLayout {
-        anchors.fill: parent
-        spacing: units.gu(2)
+    ListItemLayout {
+        id: layout
 
-        UbuntuShape {
-            id: shape
+        title {
+            text: rootItem.text
 
-            height: units.gu(10); width: height
-            source: Image { id: image }
-            visible: image.source != ""
-        }
-
-        Icon {
-            id: icon
-            height: units.gu(10); width: height
-            //name: "security-alert"
-            name: "dialog-warning-symbolic" // Need a warning icon with the style of security-alert
-            color: UbuntuColors.orange
-
-            visible: image.source == ""
-        }
-
-        Label {
-            id: label
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             textFormat: Text.RichText
             verticalAlignment: Text.AlignVCenter
 
             linkColor: UbuntuColors.orange
             onLinkActivated: Qt.openUrlExternally(link)
+        }
 
-            Layout.fillWidth: true
-            Layout.fillHeight: true
+
+        Item {
+            SlotsLayout.position: SlotsLayout.Leading
+            width: Math.min(rootItem.width * 0.2, units.gu(8))
+            height: width
+
+            UbuntuShape {
+                id: shape
+                anchors.fill: parent
+                source: Image { id: image }
+                visible: image.source != ""
+            }
+
+            Icon {
+                id: icon
+                anchors.fill: parent
+                name: "dialog-warning-symbolic" // Need a warning icon with the style of security-alert
+                color: UbuntuColors.orange
+                visible: image.source == ""
+            }
         }
     }
 }

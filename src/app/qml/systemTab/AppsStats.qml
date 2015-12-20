@@ -22,7 +22,7 @@ import TweakTool 1.0
 import TweakTool.Click 1.0
 
 import "../components"
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 
 TweakToolPage {
     id: rootItem
@@ -59,17 +59,17 @@ TweakToolPage {
     ListModel { id: appStatsModel }
     ApplicationsModel { id: appsModel }
 
-    ListItem.Warning {
+    ListItems.Warning {
         // TODO: Need a proper icon for this
         iconName: "like"
         text: i18n.tr("This is the list of the top used application.")
     }
 
-    ListItem.SectionDivider { text: i18n.tr("Time of usage") }
+    ListItems.SectionDivider { text: i18n.tr("Time of usage") }
 
     Repeater {
         model: appStatsModel
-        delegate: ListItem.Base {
+        delegate: ListItem {
             id: delegate
 
             property var appEntry: appsModel.get(model.appId)

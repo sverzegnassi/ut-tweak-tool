@@ -17,30 +17,39 @@
 
 import QtQuick 2.4
 
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 
-Column {
-    anchors {
-        fill: parent
-        topMargin: 0
-        margins: units.gu(2)
+Flickable {
+    anchors.fill: parent
+    interactive: true
+
+    contentWidth: parent.width
+    contentHeight: column.height
+
+    Column {
+        id: column
+        anchors {
+            left: parent.left
+            right: parent.right
+            //margins: units.gu(2)
+        }
+
+        // Unity 8 section
+        ListItems.SectionDivider {
+            iconName: "home"
+            text: i18n.tr("Unity 8")
+        }
+
+        ListItems.Page {
+            text: i18n.tr("Usage mode")
+            pageUrl: Qt.resolvedUrl("Unity8Mode.qml")
+        }
+
+        ListItems.Page {
+            text: i18n.tr("App scope favorites")
+            pageUrl: Qt.resolvedUrl("AppsScopeFavs.qml")
+        }
+
+        GestureTutorial { }
     }
-
-    // Unity 8 section
-    ListItem.SectionDivider {
-        iconName: "home"
-        text: i18n.tr("Unity 8")
-    }
-
-    ListItem.Page {
-        text: i18n.tr("Usage mode")
-        pageUrl: Qt.resolvedUrl("Unity8Mode.qml")
-    }
-
-    ListItem.Page {
-        text: i18n.tr("App scope favorites")
-        pageUrl: Qt.resolvedUrl("AppsScopeFavs.qml")
-    }
-
-    GestureTutorial { }
 }

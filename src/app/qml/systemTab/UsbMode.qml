@@ -22,7 +22,7 @@ import TweakTool 1.0
 import Ubuntu.Components.Popups 1.3
 
 import "../components"
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 
 TweakToolPage {
     id: rootItem
@@ -79,14 +79,14 @@ TweakToolPage {
         getAdbOnLockState()
     }
 
-    ListItem.Warning {
+    ListItems.Warning {
         iconName: "stock_usb"
         text: i18n.tr("Here you can switch your USB connection from MTP mode (data transfer) to the RNDIS mode, which allows you to share the internet connection of your PC when connected via USB.")
     }
 
-    ListItem.SectionDivider { text: i18n.tr("USB mode") }
+    ListItems.SectionDivider { text: i18n.tr("USB mode") }
 
-    ListItem.OptionSelector {
+    ListItems.OptionSelector {
         id: selector
         model: [
             i18n.tr("MTP - Media Transfer Protocol"),
@@ -97,23 +97,15 @@ TweakToolPage {
         onSelectedIndexChanged: setFromSelectedIndex(selectedIndex)
     }
 
-    ListItem.SectionDivider { text: i18n.tr("ADB settings") }
+    ListItems.SectionDivider { text: i18n.tr("ADB settings") }
 
-    ListItem.Base {
-        RowLayout {
-            anchors.fill: parent
-            spacing: units.gu(2)
+    ListItems.Control {
+        title.text: i18n.tr("Keep ADB active on screen locked")
 
-            Label {
-                text: i18n.tr("Keep ADB active on screen locked")
-                Layout.fillWidth: true
-            }
-
-            Switch {
-                id: adbSwitch
-                Component.onCompleted: getAdbOnLockState()
-                onClicked: toggleAdbOnLockState()
-            }
+        Switch {
+            id: adbSwitch
+            Component.onCompleted: getAdbOnLockState()
+            onClicked: toggleAdbOnLockState()
         }
     }
 

@@ -1,6 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Ubuntu.Components.ListItems 1.3 as ListItems
 
 Rectangle {
     property alias text: sectionLabel.text
@@ -18,7 +18,7 @@ Rectangle {
     Row {
         anchors {
             left: parent.left
-            leftMargin: units.gu(1)
+            leftMargin: units.gu(2)
             right: parent.right
             rightMargin: units.gu(2)
             bottom: divider.top
@@ -44,7 +44,7 @@ Rectangle {
         }
     }
 
-    ListItem.ThinDivider {
+    ListItems.ThinDivider {
         id: divider
         anchors {
             left: parent.left

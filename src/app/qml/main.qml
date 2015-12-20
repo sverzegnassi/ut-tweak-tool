@@ -48,33 +48,30 @@ MainView {
     height: units.gu(76)
     theme.name: "TweakTool.OrangeTheme"
 
-    Component.onCompleted: {
-        // Push the main page on application start-up.
-        pageStack.push(primaryPage)
-    }
+    AdaptivePageLayout {
+        id: pageStack
+        anchors.fill: parent
 
-    PageStack { id: pageStack }
+        function push(page, properties) {
+            // This function is called 'push' so we don't need to update
+            // all the code.
+            return pageStack.addPageToNextColumn(primaryPage, page, properties)
+        }
 
-    Component {
-        id: primaryPage
-
-        Page {
+        primaryPage: Page {
             id: mainPage
+
+            property alias currentSectionIndex: view.currentIndex
 
             title: i18n.tr("UT Tweak Tool")
 
             head.sections.model: [ i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System") ]
-            head.actions: [
-                Action {
-                    iconName: "search"
-                    text: i18n.tr("Search in this tab")
-                    enabled: false
-                }
-            ]
 
             ListView {
                 id: view
                 anchors.fill: parent
+
+                clip: true
 
                 orientation: ListView.Horizontal
                 interactive: false
@@ -83,6 +80,13 @@ MainView {
                 highlightMoveDuration: UbuntuAnimation.FastDuration
 
                 currentIndex: mainPage.head.sections.selectedIndex
+
+                onCurrentIndexChanged: {
+                    // Current section has changed, if there was an opened page
+                    // in the second column, it is not anymore related to the
+                    // new current section.
+                    mainPage.pageStack.removePages(mainPage)
+                }
 
                 delegate: Loader {
                     width: view.width

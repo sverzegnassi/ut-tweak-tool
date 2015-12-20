@@ -22,7 +22,7 @@ import TweakTool 1.0
 import QtQuick.Layouts 1.1
 
 import "../components"
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 
 TweakToolPage {
     id: rootItem
@@ -78,28 +78,20 @@ TweakToolPage {
         onFinished: reboot.launch()
     }
 
-    ListItem.Warning {
+    ListItems.Warning {
         iconName: "security-alert"
-        text: i18n.tr("This setting unlocks write permission in the whole system image. You will be able to use commands like 'apt-get' on your device.<br /><b>NB:</b> Your device won't be enable to receive OTA updates. Be carefull!")
+        text: i18n.tr("This setting unlocks write permission in the whole system image. You will be able to use commands like 'apt-get' on your device.<br /><br /><b>NB:</b> Your device won't be enable to receive OTA updates. Be carefull!")
     }
 
-    ListItem.SectionDivider { text: i18n.tr("System image") }
+    ListItems.SectionDivider { text: i18n.tr("System image") }
 
-    ListItem.Base {
-        RowLayout {
-            anchors.fill: parent
-            spacing: units.gu(2)
+    ListItems.Control {
+        title.text: i18n.tr("Write permissions")
 
-            Label {
-                text: i18n.tr("Write permissions")
-                Layout.fillWidth: true
-            }
-
-            Switch {
-                id: rwSwitch
-                Component.onCompleted: getRwState()
-                onClicked: PopupUtils.open(rebootDialog)
-            }
+        Switch {
+            id: rwSwitch
+            Component.onCompleted: getRwState()
+            onClicked: PopupUtils.open(rebootDialog)
         }
     }
 

@@ -29,9 +29,9 @@ ListItem {
         id: layout
         anchors.fill: parent
 
-        /* UITK 1.3 specs: Slot B */
-        Label {
+        Label {            
             id: valueLabel
+            SlotsLayout.position: SlotsLayout.Last
         }
     }
 }

@@ -20,7 +20,7 @@ import Ubuntu.Components 1.3
 import GSettings 1.0
 
 import "../components"
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 
 TweakToolPage {
     id: rootItem
@@ -41,14 +41,14 @@ TweakToolPage {
             settings.usageMode = "Windowed"
     }
 
-    ListItem.Warning {
+    ListItems.Warning {
         iconName: "computer-symbolic"
-        text: i18n.tr("This setting allows you to switch from the stage mode (default for mobile device) to the windowed mode (which will become the UI of the future Ubuntu desktops).")
+        text: i18n.tr("This setting allows you to switch from the stage mode (default for mobile device) to the windowed mode (a.k.a. desktop mode).")
     }
 
-    ListItem.SectionDivider { text: i18n.tr("Usage mode")}
+    ListItems.SectionDivider { text: i18n.tr("Usage mode")}
 
-    ListItem.OptionSelector {
+    ListItems.OptionSelector {
         model: [ i18n.tr("Staged"), i18n.tr("Windowed") ]
 
         Component.onCompleted: selectedIndex = getSelectedIndex()

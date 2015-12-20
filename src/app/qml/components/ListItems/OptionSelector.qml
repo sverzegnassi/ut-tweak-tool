@@ -19,8 +19,6 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import QtQuick.Layouts 1.1
 
-import "." as ListItem
-
 Column {
     id: rootItem
     anchors { left: parent.left; right: parent.right }
@@ -31,25 +29,19 @@ Column {
 
     Repeater {
         model: rootItem.model
-        delegate: ListItem.Base {
-            height: units.gu(8)
-            width: parent.width
-            color: "white"
-
+        delegate: ListItem {
             onClicked: rootItem.selectedIndex = model.index
 
-            RowLayout {
+            ListItemLayout {
                 anchors.fill: parent
-
-                Label {
-                    text: modelData
-                    Layout.fillWidth: true
-                }
+                title.text: modelData
 
                 Icon {
+                    SlotsLayout.position: SlotsLayout.Trailing
                     width: units.gu(2); height: width
 
                     name: "tick"
+                    color: UbuntuColors.green
                     visible: rootItem.selectedIndex == model.index
                 }
             }

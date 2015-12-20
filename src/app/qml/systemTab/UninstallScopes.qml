@@ -21,7 +21,7 @@ import QtQuick.Layouts 1.1
 import TweakTool 1.0
 import TweakTool.Click 1.0
 
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 import "../components/Upstream" as Upstream
 
 Page {
@@ -49,11 +49,11 @@ Page {
         ListView {
             anchors.fill: parent
 
-            header: ListItem.SectionDivider { text: i18n.tr("Installed scopes") }
+            header: ListItems.SectionDivider { text: i18n.tr("Installed scopes") }
 
             model: scopesModel
 
-            delegate: ListItem.Base {
+            delegate: ListItem {
                 id: delegate
 
                 height: units.gu(9)

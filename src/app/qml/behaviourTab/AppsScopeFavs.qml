@@ -23,7 +23,7 @@ import TweakTool.Click 1.0
 import QtQuick.Layouts 1.1
 
 import "../components"
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 import "../components/Upstream"
 
 Page {
@@ -32,13 +32,18 @@ Page {
     head.actions: Action {
         iconName: "add"
         text: i18n.tr("Add new favorite")
-        onTriggered: {
-            var page = pageStack.push(addPage)
-            page.itemToBeAdded.connect(function(appId) {
+        onTriggered: pageStack.addPageToNextColumn(rootItem, addAppsToScopePage)
+    }
+
+    Component {
+        id: addAppsToScopePage
+
+        AppsScopeFavsAddFromInstalled {
+            onItemToBeAdded: {
                 var a = settings.coreApps
                 a.push(appId)
                 settings.coreApps = a;
-            })
+            }
         }
     }
 
@@ -48,20 +53,24 @@ Page {
     */
     ListView {
         id: view
-        anchors.fill: parent
+        anchors {
+            fill: parent
+            //leftMargin: units.gu(2)
+            //rightMargin: units.gu(2)
+        }
 
         model: settings.coreApps
 
         header: Column {
             width: parent.width
 
-            ListItem.Warning {
+            ListItems.Warning {
                 id: warning
                 imageUrl: Qt.resolvedUrl("graphics/apps-scope.png")
-                text: i18n.tr("Set your favorite apps to be shown in the applications scope.<br><br>Swipe to right to delete an item.<br>Press and hold to enable the sorting mode.")
+                text: i18n.tr("Set your favorite apps to be shown in the applications scope.<br>Swipe to right to delete an item. Press and hold to enable the sorting mode.")
             }
 
-            ListItem.SectionDivider { id: section; text: i18n.tr("Favorite apps") }
+            ListItems.SectionDivider { id: section; text: i18n.tr("Favorite apps") }
 
             Item {
                 visible: view.count == 0
@@ -85,14 +94,15 @@ Page {
           draggable.
           It seems to be an upstream bug, in UITK.
         */
-        footer: ListItem.Button {
-            button {
+        footer: ListItems.Control {
+            Button {
                 text: i18n.tr("Reset")
                 onClicked: settings.schema.reset("coreApps")
+                color: UbuntuColors.orange
             }
         }
 
-        delegate: ListItem.AppLauncher {
+        delegate: ListItems.AppLauncher {
             property var appEntry: appsModel.get(modelData)
 
             title.text: appEntry.name
@@ -142,184 +152,4 @@ Page {
     }
 
     ApplicationsModel { id: appsModel }
-
-    Component {
-        id: addPage
-
-        Page {
-            id: addPageItem
-            title: i18n.tr("Add new favorite")
-
-            signal itemToBeAdded(string appId)
-
-            ListView {
-                anchors.fill: parent
-
-                model: SortFilterModel {
-                    model: appsModel
-
-                    sort.property: "name"
-                    sort.order: Qt.AscendingOrder
-                }
-
-                header: Column {
-                    width: parent.width
-
-                    ListItem.Page {
-                        text: i18n.tr("Add more used applications")
-                        pageComponent: Component {
-                            Page {
-                                id: rootItem
-
-                                head.backAction: Action {
-                                    iconName: "close"
-                                    text: i18n.tr("Back")
-                                    onTriggered: pageStack.pop()
-                                }
-
-                                head.actions: Action {
-                                    iconName: "ok"
-                                    text: i18n.tr("Add favorites to the list")
-                                    onTriggered: {
-                                        var apps = [];
-                                        for (var i=0; i<moreUsedAppsView.numberOfTopAppsToPick; i++) {
-                                            apps.push(appStatsModel.get(i).appId);
-                                        }
-
-                                        settings.coreApps = apps;
-                                        pageStack.pop();
-                                     }
-                                }
-
-                                function launchAppStatsProcess() {
-                                    var entries = Process.launch("ubuntu-app-usage").split("\n");
-
-                                    for (var i=0; i<entries.length; i++) {
-                                        // We are not interested in gathering unity8 data
-                                        if (entries[i].indexOf("unity8-dash") < 0
-                                                && entries[i] !== "") {
-                                            var parts = entries[i].split(/\s+/);
-
-                                            appStatsModel.append({ "appId": parts[0].split("_")[0], "usage": parts[1] });
-                                        }
-                                    }
-                                }
-
-                                function duration(i18n, time) {
-                                    if (time >= 60 * 60)
-                                        // TRANSLATORS: %1 is a time duration, expressed in hours
-                                        return i18n.tr("%1 hours").arg((time / (60 * 60)).toFixed(2));
-
-                                    if (time >= 60)
-                                        // TRANSLATORS: %1 is a time duration, expressed in minutes
-                                        return i18n.tr("%1 mins").arg((time / 60).toFixed(2));
-
-                                    // TRANSLATORS: %1 is a time duration, expressed in seconds
-                                    return i18n.tr("%1 secs").arg(time);
-                                }
-
-                                Component.onCompleted: launchAppStatsProcess()
-
-                                ListModel { id: appStatsModel }
-
-                                ListView {
-                                    id: moreUsedAppsView
-                                    anchors.fill: parent
-
-                                    property int numberOfTopAppsToPick: 0
-
-                                    header: Column {
-                                        width: parent.width
-
-                                        ListItem.Base {
-                                            height: topSliderLayout.height + units.gu(6)
-                                            Column {
-                                                id: topSliderLayout
-                                                anchors {
-                                                    verticalCenter: parent.verticalCenter
-                                                    left: parent.left
-                                                    right: parent.right
-                                                    margins: units.gu(2)
-                                                }
-
-                                                spacing: units.gu(0.5)
-
-                                                Label { text: i18n.tr("Number of top apps to select:") }
-
-                                                Slider {
-                                                    id: topSlider
-
-                                                    value: 3
-                                                    onValueChanged: moreUsedAppsView.numberOfTopAppsToPick = value.toFixed(0)
-
-                                                    minimumValue: 3
-                                                    maximumValue: 9
-
-                                                    function formatValue(v) { return v.toFixed(0) }
-                                                }
-
-                                                RowLayout {
-                                                    width: parent.width
-                                                    Label { text: topSlider.minimumValue; Layout.fillWidth: true }
-                                                    Label { text: topSlider.maximumValue }
-                                                }
-                                            }
-                                        }
-
-                                        ListItem.SectionDivider { text: i18n.tr("Most used apps") }
-                                    }
-
-                                    model: appStatsModel
-
-                                    delegate: ListItem.Base {
-                                        id: delegate
-
-                                        property var appEntry: appsModel.get(model.appId)
-                                        height: units.gu(9)
-
-                                        RowLayout {
-                                            anchors.fill: parent
-                                            spacing: units.gu(2)
-
-                                            UbuntuShape {
-                                                implicitHeight: units.gu(7); implicitWidth: implicitHeight
-                                                image: Image { source: appEntry.icon }
-                                            }
-
-                                            Label {
-                                                text: appEntry.name
-                                                Layout.fillWidth: true
-                                            }
-
-                                            Label { text: rootItem.duration(i18n, model.usage) }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    ListItem.SectionDivider { text: i18n.tr("Available apps") }
-                }
-
-                delegate: ListItem.AppLauncher {
-                    title.text: model.name
-                    subtitle.text: model.exec
-                    iconSource: model.icon
-
-                    enabled: settings.coreApps.indexOf(model.exec) == -1
-
-                    onClicked: {
-                        addPageItem.itemToBeAdded(model.exec)
-
-                        // Close most-used app page
-                        pageStack.pop()
-
-                        // Close add fav app page
-                        pageStack.pop()
-                    }
-                }
-            }
-        }
-    }
 }

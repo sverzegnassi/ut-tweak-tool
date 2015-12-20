@@ -20,15 +20,17 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import TweakTool 1.0
 
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 
-ListItem.Button {
+ListItems.Control {
     id: rootItem
 
     title.text: i18n.tr("Gesture tutorial")
-    button {
+
+    Button {
         text: i18n.tr("Show")
         onClicked: PopupUtils.open(rebootDialog)
+        color: UbuntuColors.orange
     }
 
     CommandLine {

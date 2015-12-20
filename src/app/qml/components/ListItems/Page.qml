@@ -19,7 +19,7 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import QtQuick.Layouts 1.1
 
-Base {
+ListItem {
     id: rootItem
 
     // WORKAROUND: pageUrl needs to be a 'string', otherwise PageWrapperUtils.js
@@ -28,16 +28,14 @@ Base {
     property Component pageComponent
     property string text
 
-    RowLayout {
+    ListItemLayout {
+        id: layout
         anchors.fill: parent
-        opacity: rootItem.enabled ? 1.0 : 0.3
 
-        Label {
-            text: rootItem.text
-            Layout.fillWidth: true
-        }
+        title.text: rootItem.text
 
         Icon {
+            SlotsLayout.position: SlotsLayout.Last
             width: units.gu(2); height: width
             name: "go-next"
         }

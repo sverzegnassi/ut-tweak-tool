@@ -17,42 +17,25 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import QtQuick.Layouts 1.1
 
 ListItem {
     id: rootItem
 
-   /* height: units.gu(7)
-    width: parent.width
-    color: "white"*/
+    property alias title: layout.title
+    property alias subtitle: layout.subtitle
+    default property alias control: controlContainer.data
 
-    signal singleClicked
-    signal doubleClicked
-
-    onClicked: {
-        if (!timer.running) {
-            timer.restart()
-        } else {
-            timer.stop()
-            rootItem.doubleClicked()
-        }
-    }
-
-    default property alias contents: container.data
-    Item {
-        id: container
+    ListItemLayout {
+        id: layout
         anchors.fill: parent
-        anchors.leftMargin: units.gu(2)
-        anchors.rightMargin: units.gu(2)
-    }
 
-    /*
-      ListItem from Ubuntu.Components 1.2 does not handle double-click.
-      Use a timer to simulate it.
-    */
-    Timer {
-        id: timer
-        interval: 200
-
-        onTriggered: rootItem.singleClicked()
+        Item {
+            id: controlContainer
+            SlotsLayout.position: SlotsLayout.Last
+            width: childrenRect.width
+            height: childrenRect.height
+            enabled: rootItem.enabled
+        }
     }
 }

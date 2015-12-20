@@ -16,64 +16,73 @@
 */
 
 import QtQuick 2.4
-import "../components/ListItems" as ListItem
+import "../components/ListItems" as ListItems
 
-Column {
-    anchors {
-        fill: parent
-        topMargin: 0
-        margins: units.gu(2)
-    }
+Flickable {
+    anchors.fill: parent
+    interactive: true
 
-    ListItem.SectionDivider {
-        iconName: "stock_application"
-        text: i18n.tr("Click packages")
-    }
+    contentWidth: parent.width
+    contentHeight: column.height
 
-    // TO BE FINISHED (FileChooserDialog refactioring + support for new component)
-    ListItem.Page {
-        text: i18n.tr("Install click packages from a local path")
-        pageUrl: Qt.resolvedUrl("InstallClickFromLocal.qml")
-    }
+    Column {
+        id: column
+        anchors {
+            left: parent.left
+            right: parent.right
+            //margins: units.gu(2)
+        }
 
-    // TODO: This should be implemented in the Applications tab.
-    ListItem.Page {
-        text: i18n.tr("Uninstall scopes")
-        pageUrl: Qt.resolvedUrl("UninstallScopes.qml")
-    }
+        ListItems.SectionDivider {
+            iconName: "stock_application"
+            text: i18n.tr("Click packages")
+        }
 
-    ListItem.SectionDivider {
-        iconName: "ubuntu-logo-symbolic"
-        text: i18n.tr("System")
-    }
+        // TO BE FINISHED (FileChooserDialog refactioring + support for new component)
+        ListItems.Page {
+            text: i18n.tr("Install click packages from a local path")
+            pageUrl: Qt.resolvedUrl("InstallClickFromLocal.qml")
+        }
 
-    ListItem.Page {
-        text: i18n.tr("Make image writable")
-        pageUrl: Qt.resolvedUrl("ImageWritable.qml")
-    }
+        // TODO: This should be implemented in the Applications tab.
+        ListItems.Page {
+            text: i18n.tr("Uninstall scopes")
+            pageUrl: Qt.resolvedUrl("UninstallScopes.qml")
+        }
 
-    ListItem.Page {
-        text: i18n.tr("System informations")
-        pageUrl: Qt.resolvedUrl("SystemInfo.qml")
-    }
+        ListItems.SectionDivider {
+            iconName: "ubuntu-logo-symbolic"
+            text: i18n.tr("System")
+        }
 
-    ListItem.SectionDivider {
-        iconName: "stock_usb"
-        text: i18n.tr("USB mode")
-    }
+        ListItems.Page {
+            text: i18n.tr("Make image writable")
+            pageUrl: Qt.resolvedUrl("ImageWritable.qml")
+        }
 
-    ListItem.Page {
-        text: i18n.tr("Set USB behavior when connected to a PC")
-        pageUrl: Qt.resolvedUrl("UsbMode.qml")
-    }
+        ListItems.Page {
+            text: i18n.tr("System informations")
+            pageUrl: Qt.resolvedUrl("SystemInfo.qml")
+        }
 
-    ListItem.SectionDivider {
-        iconName: "like"
-        text: i18n.tr("Stats")
-    }
+        ListItems.SectionDivider {
+            iconName: "stock_usb"
+            text: i18n.tr("USB mode")
+        }
 
-    ListItem.Page {
-        text: i18n.tr("Application usage")
-        pageUrl: Qt.resolvedUrl("AppsStats.qml")
+        ListItems.Page {
+            text: i18n.tr("Set USB behavior when connected to a PC")
+            pageUrl: Qt.resolvedUrl("UsbMode.qml")
+        }
+
+        ListItems.SectionDivider {
+            iconName: "like"
+            text: i18n.tr("Stats")
+        }
+
+        ListItems.Page {
+            text: i18n.tr("Application usage")
+            pageUrl: Qt.resolvedUrl("AppsStats.qml")
+        }
     }
 }

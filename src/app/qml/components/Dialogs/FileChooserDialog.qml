@@ -20,7 +20,7 @@ import Ubuntu.Components 1.3
 import Qt.labs.folderlistmodel 2.1
 import QtQuick.Layouts 1.1
 
-import "../ListItems" as ListItem
+import "../ListItems" as ListItems
 import "../Upstream"
 
 Page {
@@ -36,18 +36,40 @@ Page {
     signal rejected
     signal accepted(var pathsList)
 
+    function closeDialog() {
+        rootItem.pageStack.removePages(rootItem)
+    }
+
     title: " "
 
     head.backAction: Action {
         iconName: "close"
         text: i18n.tr("Cancel")
         onTriggered: {
-            rootItem.rejected();
-            pageStack.pop();
+            rootItem.rejected()
+            closeDialog()
         }
     }
 
     head.actions: [
+        Action {
+            text: i18n.tr("Pick")
+            enabled: view.selectedItems.count > 0
+            iconName: "ok"
+            onTriggered: {
+                if (!enabled)
+                    return
+
+                var pathsList = []
+                for (var i=0; i<view.selectedItems.count; i++) {
+                    pathsList.push(view.selectedItems.get(i).model.fileURL)
+                }
+
+                rootItem.accepted(pathsList)
+                closeDialog()
+            }
+        },
+
         Action {
             enabled: rootItem.multipleSelection
             visible: enabled
@@ -124,24 +146,6 @@ Page {
                     }
                 }
             }
-        },
-
-        Action {
-            text: i18n.tr("Pick")
-            enabled: view.selectedItems.count > 0
-            iconName: "ok"
-            onTriggered: {
-                if (!enabled)
-                    return;
-
-                var pathsList = [];
-                for (var i=0; i<view.selectedItems.count; i++) {
-                    pathsList.push(view.selectedItems.get(i).model.fileURL)
-                }
-
-                rootItem.accepted(pathsList);
-                pageStack.pop();
-            }
         }
     ]
 
@@ -158,8 +162,13 @@ Page {
 
     MultipleSelectionListView {
         id: view
-        anchors.fill: parent
+        anchors {
+            fill: parent
+            leftMargin: units.gu(2)
+            rightMargin: units.gu(2)
+        }
 
+        clip: true
         multipleSelection: false
         currentIndex: -1
         listModel: folderModel
@@ -167,11 +176,11 @@ Page {
         header: Column {
             width: parent.width
 
-            ListItem.SectionDivider {
+            ListItems.SectionDivider {
                 text: folderModel.folder.toString().replace("file://", "")
             }
 
-            ListItem.Base {
+            ListItem {
                 enabled: folderModel.folder != folderModel.rootFolder
                 visible: enabled
 
@@ -199,7 +208,7 @@ Page {
             }
         }
 
-        listDelegate: ListItem.Base {
+        listDelegate: ListItem {
             id: delegate
             property bool selected: view.isSelected(delegate)
 
