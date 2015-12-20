@@ -24,20 +24,26 @@ import "../components/ListItems" as ListItems
 
 TweakToolPage {
     id: rootItem
-       
+          
     function getSelectedIndex() {
+        if (settings.usageMode === "Automatic")
+            return 0
+
         if (settings.usageMode === "Staged")
-            return 0;
+            return 1
 
         if (settings.usageMode === "Windowed")
-            return 1;
+            return 2
     }
 
     function setFromSelectedIndex(selectedIndex) {
         if (selectedIndex == 0)
-            settings.usageMode = "Staged"
+            settings.usageMode = "Automatic"
 
         if (selectedIndex == 1)
+            settings.usageMode = "Staged"
+
+        if (selectedIndex == 2)
             settings.usageMode = "Windowed"
     }
 
@@ -46,10 +52,10 @@ TweakToolPage {
         text: i18n.tr("This setting allows you to switch from the stage mode (default for mobile device) to the windowed mode (a.k.a. desktop mode).")
     }
 
-    ListItems.SectionDivider { text: i18n.tr("Usage mode")}
+    ListItems.SectionDivider { text: i18n.tr("Usage mode") }
 
     ListItems.OptionSelector {
-        model: [ i18n.tr("Staged"), i18n.tr("Windowed") ]
+        model: [ i18n.tr("Automatic"), i18n.tr("Staged"), i18n.tr("Windowed") ]
 
         Component.onCompleted: selectedIndex = getSelectedIndex()
         onSelectedIndexChanged: setFromSelectedIndex(selectedIndex)

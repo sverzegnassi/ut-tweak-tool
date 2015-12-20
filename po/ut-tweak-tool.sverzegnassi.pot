@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 20:21+0100\n"
+"POT-Creation-Date: 2015-12-20 20:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "Unity 8"
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:44
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:49
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:55
 msgid "Usage mode"
 msgstr ""
 
@@ -102,17 +102,21 @@ msgstr ""
 msgid "Not now!"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:46
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:52
 msgid ""
 "This setting allows you to switch from the stage mode (default for mobile "
 "device) to the windowed mode (a.k.a. desktop mode)."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:52
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
+msgid "Automatic"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
 msgid "Staged"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:52
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
 msgid "Windowed"
 msgstr ""
 
