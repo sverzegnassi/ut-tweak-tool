@@ -1,7 +1,7 @@
 /*
   This file is part of ut-tweak-tool
   Copyright (C) 2015 Mutse Young
-  Copyright (C) 2015 Stefano Verzegnassi <verzegnassi.stefano@gmail.com>
+  Copyright (C) 2015, 2016 Stefano Verzegnassi <verzegnassi.stefano@gmail.com>
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License 3 as published by
@@ -17,12 +17,12 @@
 */
 
 import QtQuick 2.4
+import Ubuntu.Components 1.3
 import TweakTool 1.0
 
-import "../components"
 import "../components/ListItems" as ListItems
 
-TweakToolPage {
+Page {
 
     readonly property string catCmd:      "cat /etc/machine-info"
     readonly property string kerCmd:      "uname -pro"
@@ -61,53 +61,66 @@ TweakToolPage {
         return Math.floor(total.toString())
     }
 
-
-    // OS Informations
-    ListItems.SectionDivider {
-        iconName: "ubuntu-logo-symbolic"
-        text: i18n.tr("Ubuntu Touch Information")
+    header: PageHeader {
+        title: i18n.tr("System informations")
+        flickable: view.flickableItem
     }
 
-    ListItems.SingleValue {
-        title.text: i18n.tr("Kernel:")
-        value:parse_cmd(kerCmd, "")
-    }
+    ScrollView {
+        id: view
+        anchors.fill: parent
 
-    ListItems.SingleValue {
-        title.text: i18n.tr("System Platform:")
-        value: parse_cmd(platformCmd, "")
-    }
+        Column {
+            width: view.width
 
-    ListItems.SingleValue {
-        title.text: i18n.tr("Distro:")
-        value: parse_cmd(osCmd, "PRETTY_NAME=")
-    }
+            // OS Informations
+            ListItems.SectionDivider {
+                iconName: "ubuntu-logo-symbolic"
+                text: i18n.tr("Ubuntu Touch Information")
+            }
 
-    // FIXME: This should not be hard-coded.
-    ListItems.SingleValue {
-        title.text: i18n.tr("Desktop:")
-        value: "Unity 8"
-    }
+            ListItems.SingleValue {
+                title.text: i18n.tr("Kernel:")
+                value:parse_cmd(kerCmd, "")
+            }
+
+            ListItems.SingleValue {
+                title.text: i18n.tr("System Platform:")
+                value: parse_cmd(platformCmd, "")
+            }
+
+            ListItems.SingleValue {
+                title.text: i18n.tr("Distro:")
+                value: parse_cmd(osCmd, "PRETTY_NAME=")
+            }
+
+            // FIXME: This should not be hard-coded.
+            ListItems.SingleValue {
+                title.text: i18n.tr("Desktop:")
+                value: "Unity 8"
+            }
 
 
-    // System informations
-    ListItems.SectionDivider {
-        iconName: "system-settings-symbolic"
-        text: i18n.tr("Hardware Information")
-    }
+            // System informations
+            ListItems.SectionDivider {
+                iconName: "system-settings-symbolic"
+                text: i18n.tr("Hardware Information")
+            }
 
-    ListItems.SingleValue {
-        title.text: i18n.tr("Device:")
-        value: parse_cmd(catCmd, "PRETTY_HOSTNAME=").replace(/"([^"]*)"/g, "$1")
-    }
+            ListItems.SingleValue {
+                title.text: i18n.tr("Device:")
+                value: parse_cmd(catCmd, "PRETTY_HOSTNAME=").replace(/"([^"]*)"/g, "$1")
+            }
 
-    ListItems.SingleValue {
-        title.text: i18n.tr("CPU:")
-        value: str_trim(parse_cmd(cpuCmd, "Processor").replace(":", ""))
-    }
+            ListItems.SingleValue {
+                title.text: i18n.tr("CPU:")
+                value: str_trim(parse_cmd(cpuCmd, "Processor").replace(":", ""))
+            }
 
-    ListItems.SingleValue {
-        title.text: i18n.tr("Memory:")
-        value: calc_meminfo(memCmd) + (" MB")
+            ListItems.SingleValue {
+                title.text: i18n.tr("Memory:")
+                value: calc_meminfo(memCmd) + (" MB")
+            }
+        }
     }
 }

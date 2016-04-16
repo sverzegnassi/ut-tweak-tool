@@ -17,24 +17,120 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Ubuntu.Components.ListItems 1.3 as UbuntuListItems
+import TweakTool 1.0
 
-import "../components/Upstream" as Upstream
+import "../components"
 
 Item {
-    anchors {
-        fill: parent
-        topMargin: 0
-        margins: units.gu(2)
+    id: rootItem
+    anchors.fill: parent
+
+    PackagesModel { id: clickModel }
+
+    UbuntuListItems.ItemSelector {
+        id: filterSelector
+        model: [ i18n.tr("Show all"), i18n.tr("Contains an app"), i18n.tr("Contains a scope") ]
+        onSelectedIndexChanged: clickModel.showFilter = selectedIndex
     }
 
-    // TODO: Ideally we'd like to have the Tweak Geek application list here.
-
-    Upstream.EmptyState {
+    EmptyState {
         iconName: "ubuntu-store-symbolic"
-        title: i18n.tr("Work in progress")
-        subTitle: i18n.tr("Ideally we'd like to have the Tweak Geek application list here.")
+        title: i18n.tr("No installed package")
 
         anchors.centerIn: parent
         width: parent.width
+        visible: clickModel.count == 0 && clickModel.ready
+    }
+
+    ActivityIndicator {
+        id: activityIndicator
+        anchors.centerIn: parent
+        visible: running
+        running: true
+
+        // Show this indicator only on first initialization
+        Connections {
+            target: clickModel
+            onReadyChanged: if (clickModel.ready) { activityIndicator.running = false }
+        }
+    }
+
+    ScrollView {
+        anchors {
+            top: filterSelector.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+
+        ListView {
+            id: view
+            anchors.fill: parent
+
+            model: SortFilterModel {
+                model: clickModel
+
+                sort.property: "title"
+                sort.order: Qt.AscendingOrder
+                sortCaseSensitivity: Qt.CaseInsensitive
+            }
+
+            delegate: ListItem {
+                onClicked: pageStack.push(applicationPage, { pkg: clickModel.get(model.appId) } )
+
+                ListItemLayout {
+                    anchors.fill: parent
+
+                    title.text: model.title
+                    subtitle {
+                        text: model.description
+                        wrapMode: Text.WrapAnywhere
+                        elide: Text.ElideRight
+                    }
+
+                    UbuntuShape {
+                        SlotsLayout.position: SlotsLayout.Leading
+                        height: units.gu(5); width: height
+                        aspect: UbuntuShape.DropShadow
+
+                        image: Image {
+                            id: thumb
+                            source: model.iconPath
+                            asynchronous: true
+                            sourceSize { width: thumb.width; height: thumb.height }
+                        }
+                    }
+
+                    Icon {
+                        SlotsLayout.position: SlotsLayout.Last
+                        width: units.gu(2); height: width
+                        name: "go-next"
+                    }
+                }
+            }
+
+            Component.onCompleted: {
+                // FIXME: workaround for qtubuntu not returning values depending on the grid unit definition
+                // for Flickable.maximumFlickVelocity and Flickable.flickDeceleration
+                var scaleFactor = units.gridUnit / 8;
+                maximumFlickVelocity = maximumFlickVelocity * scaleFactor;
+                flickDeceleration = flickDeceleration * scaleFactor;
+            }
+
+            PullToRefresh {
+                enabled: true
+                refreshing: !clickModel.ready
+                onRefresh: clickModel.refresh()
+            }
+        }
+    }
+
+    Component {
+        id: applicationPage
+        ApplicationPage {
+            id: appPage
+            onUninstallRequested: clickModel.uninstallPackage(appPage.pkg)
+        }
     }
 }

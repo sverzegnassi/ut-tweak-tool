@@ -34,6 +34,7 @@ ListItem {
         UbuntuShape {
             SlotsLayout.position: SlotsLayout.Leading
             height: units.gu(6); width: height
+            aspect: UbuntuShape.DropShadow
 
             image: Image { id: icon }
         }

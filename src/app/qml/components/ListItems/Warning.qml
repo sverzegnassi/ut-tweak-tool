@@ -17,7 +17,6 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import QtQuick.Layouts 1.1
 
 ListItem {
     id: rootItem
@@ -38,7 +37,8 @@ ListItem {
             textFormat: Text.RichText
             verticalAlignment: Text.AlignVCenter
 
-            linkColor: UbuntuColors.orange
+            //linkColor: UbuntuColors.orange
+            linkColor: UbuntuColors.blue
             onLinkActivated: Qt.openUrlExternally(link)
         }
 
@@ -52,6 +52,7 @@ ListItem {
                 id: shape
                 anchors.fill: parent
                 source: Image { id: image }
+                aspect: UbuntuShape.DropShadow
                 visible: image.source != ""
             }
 
@@ -59,7 +60,8 @@ ListItem {
                 id: icon
                 anchors.fill: parent
                 name: "dialog-warning-symbolic" // Need a warning icon with the style of security-alert
-                color: UbuntuColors.orange
+                //color: UbuntuColors.orange
+                color: UbuntuColors.blue
                 visible: image.source == ""
             }
         }

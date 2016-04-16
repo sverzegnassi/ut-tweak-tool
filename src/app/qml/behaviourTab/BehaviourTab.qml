@@ -16,27 +16,39 @@
 */
 
 import QtQuick 2.4
-
+import Ubuntu.Components 1.3
 import "../components/ListItems" as ListItems
 
-Flickable {
+ScrollView {
+    id: rootItem
     anchors.fill: parent
-    interactive: true
-
-    contentWidth: parent.width
-    contentHeight: column.height
 
     Column {
-        id: column
-        anchors {
-            left: parent.left
-            right: parent.right
-            //margins: units.gu(2)
+        width: rootItem.width
+
+        ListItems.SectionDivider {
+            iconName: "ubuntu-store-symbolic"
+            text: i18n.tr("Application scope")
+        }
+
+        ListItems.Page {
+            text: i18n.tr("Favorite apps")
+            pageUrl: Qt.resolvedUrl("AppsScopeFavs.qml")
         }
 
         // Unity 8 section
         ListItems.SectionDivider {
-            iconName: "home"
+            iconName: "gps"
+            text: i18n.tr("Indicators")
+        }
+
+        ListItems.Page {
+            text: i18n.tr("Battery")
+            pageUrl: Qt.resolvedUrl("BatteryIndicator.qml")
+        }
+
+        ListItems.SectionDivider {
+            iconName: "computer-symbolic"
             text: i18n.tr("Unity 8")
         }
 
@@ -46,10 +58,13 @@ Flickable {
         }
 
         ListItems.Page {
-            text: i18n.tr("App scope favorites")
-            pageUrl: Qt.resolvedUrl("AppsScopeFavs.qml")
+            text: i18n.tr("Launcher")
+            pageUrl: Qt.resolvedUrl("Unity8Launcher.qml")
         }
 
-        GestureTutorial { }
+        ListItems.Page {
+            text: i18n.tr("Edge sensitivity")
+            pageUrl: Qt.resolvedUrl("Unity8EdgeSensitivity.qml")
+        }
     }
 }

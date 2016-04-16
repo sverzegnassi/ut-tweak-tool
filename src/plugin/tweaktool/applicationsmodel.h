@@ -1,6 +1,6 @@
 /*
   This file is part of ut-tweak-tool
-  Copyright (C) 2015 Stefano Verzegnassi
+  Copyright (C) 2015, 2016 Stefano Verzegnassi
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License 3 as published by
@@ -19,6 +19,7 @@
 #define APPLICATIONSMODEL_H
 
 #include <QAbstractListModel>
+#include <QSettings>
 
 struct AppEntry
 {
@@ -28,6 +29,8 @@ struct AppEntry
     QString icon;
     QString exec;
 };
+
+typedef QList<AppEntry> AppEntryList;
 
 class ApplicationsModel : public QAbstractListModel
 {
@@ -45,22 +48,28 @@ public:
     explicit ApplicationsModel(QAbstractListModel *parent = 0);
     virtual ~ApplicationsModel();
 
-    QHash<int, QByteArray> roleNames() const;
-
-    int rowCount(const QModelIndex & parent = QModelIndex()) const;
-    QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const;
+    QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
+    int rowCount(const QModelIndex & parent = QModelIndex()) const Q_DECL_OVERRIDE;
+    QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
 
     Q_INVOKABLE QVariantMap get(QString exec) const;
+    Q_INVOKABLE void refresh();
 
 Q_SIGNALS:
     void countChanged();
 
 private:
-    QList<AppEntry> m_entries;
-
-    void init();
     AppEntry processDesktopFile(QString path);
-    QStringList searchRecursively(QString path, QStringList filters);
+    QStringList searchDesktopFiles(const QString &path);
+    Q_INVOKABLE void finalizeRefresh(const AppEntryList &entriesList);
+
+    bool isDesktopFileVisible(const QSettings &ini);
+    QString getIconFromDesktopFile(const QSettings &ini) const;
+    QString getNameFromDesktopFile(const QSettings &ini) const;
+    QString getExecFromDesktopFile(const QSettings &ini) const;
+
+private:
+    AppEntryList m_entries;
 };
 
 #endif // APPLICATIONSMODEL_H

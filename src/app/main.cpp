@@ -24,6 +24,7 @@
 #include <QtQml>
 
 #include <QDebug>
+#include <QElapsedTimer>
 
 #include "config.h"
 
@@ -46,6 +47,9 @@ void loadTestability() {
 
 int main(int argc, char *argv[])
 {
+    QElapsedTimer initTimer;
+    initTimer.start();
+
     QGuiApplication app(argc, argv);
     QQuickView view;
 
@@ -66,6 +70,8 @@ int main(int argc, char *argv[])
         view.showFullScreen();
     else
         view.show();
+
+    qDebug() << "App required" << initTimer.elapsed() << "msec to be initialised.";
 
     return app.exec();
 }

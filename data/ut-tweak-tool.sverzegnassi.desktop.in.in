@@ -7,6 +7,6 @@ Icon=@ICON@
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
-
+X-Ubuntu-Splash-Color=#111111
 
 

@@ -24,75 +24,50 @@ import QtQuick.Layouts 1.1
 import "../components"
 import "../components/ListItems" as ListItems
 
-TweakToolPage {
+Page {
     id: rootItem
 
-    property string cmdTemplate: "/bin/bash %1 %2"
-    property string writableImageGetPath: Qt.resolvedUrl("../../../scripts/writable_image_get").replace("file://", "")
-    property string writableImageSetPath: Qt.resolvedUrl("../../../scripts/writable_image_set").replace("file://", "")
-    property string writableImageUnSetPath: Qt.resolvedUrl("../../../scripts/writable_image_unset").replace("file://", "")
+    header: PageHeader {
+        title: i18n.tr("Make image writable")
+        flickable: view.flickableItem
+    }
 
-    function getRwState() {
-        var output = Process.launch(cmdTemplate.arg(writableImageGetPath).arg(pam.password))
+    ScrollView {
+        id: view
+        anchors.fill: parent
 
-        console.log(output)
+        Column {
+            width: view.width
 
-        if ( output.indexOf("Not found") > -1 ) {
-            rwSwitch.checked = false
-        } else {
-            rwSwitch.checked = true
+            ListItems.Warning {
+                iconName: "security-alert"
+                text: i18n.tr("This setting unlocks write permission in the whole system image. You will be able to use commands like 'apt-get' on your device.<br /><br /><b>NB:</b> Your device won't be enable to receive OTA updates. Be carefull!")
+            }
+
+            ListItems.SectionDivider { text: i18n.tr("System image") }
+
+            ListItems.Control {
+                title.text: i18n.tr("Write permissions")
+
+                Switch {
+                    id: switcher
+                    checked: writable_image.exists
+                    onClicked: {
+                        if (writable_image.exists)
+                            writable_image.rm()
+                        else
+                            writable_image.touch()
+                    }
+                }
+            }
         }
     }
 
-    function toggleRwState() {
-        /*
-          WORKAROUND: Why the hell rwSwitch.checked returns false when it's checked?!?!
-          Use the Process.launch(writableImageGetPath) instead.
-        */
-
-        var state = Process.launch(cmdTemplate.arg(writableImageGetPath).arg(pam.password))
-
-        if (state.indexOf("Not found") > -1) {
-            setRwPerm.launch()
-        } else {
-            unSetRwPerm.launch()
-        }
-    }
-
-    CommandLine {
-        id: reboot
-        process: "dbus-send --system --print-reply --dest=org.freedesktop.login1 \
-                  /org/freedesktop/login1 org.freedesktop.login1.Manager.Reboot \
-                  boolean:true"
-    }
-
-    CommandLine {
-        id: setRwPerm
-        process: cmdTemplate.arg(writableImageSetPath).arg(pam.password)
-        onFinished: reboot.launch()
-    }
-
-    CommandLine {
-        id: unSetRwPerm
-        process: cmdTemplate.arg(writableImageUnSetPath).arg(pam.password)
-        onFinished: reboot.launch()
-    }
-
-    ListItems.Warning {
-        iconName: "security-alert"
-        text: i18n.tr("This setting unlocks write permission in the whole system image. You will be able to use commands like 'apt-get' on your device.<br /><br /><b>NB:</b> Your device won't be enable to receive OTA updates. Be carefull!")
-    }
-
-    ListItems.SectionDivider { text: i18n.tr("System image") }
-
-    ListItems.Control {
-        title.text: i18n.tr("Write permissions")
-
-        Switch {
-            id: rwSwitch
-            Component.onCompleted: getRwState()
-            onClicked: PopupUtils.open(rebootDialog)
-        }
+    SystemFile {
+        id: writable_image
+        filename: "/userdata/.writable_image"
+        onPasswordRequested: providePassword(pam.password)
+        onExistsChanged: PopupUtils.open(rebootDialog)
     }
 
     Component {
@@ -101,25 +76,31 @@ TweakToolPage {
         Dialog {
             id: rebootDialogue
 
-            title: !rwSwitch.checked ? i18n.tr("Disable RW permissions")
-                                     : i18n.tr("Enable RW permissions")
-            text: !rwSwitch.checked ? i18n.tr("In order to disable RW permissions, you need to reboot your device.")
-                                    : i18n.tr("In order to enable RW permissions, you need to reboot your device.")
+            title: i18n.tr("Reboot device")
+            text:  i18n.tr("In order to make the changes effective, you need to reboot your device.")
 
-            Button {
-                text: i18n.tr("Reboot")
-                color: UbuntuColors.orange
-                onClicked: {
-                    toggleRwState();
-                    PopupUtils.close(rebootDialogue);
+            RowLayout {
+                width: parent.width
+                spacing: units.gu(1)
+
+                Button {
+                    Layout.fillWidth: true
+                    text: i18n.tr("Cancel")
+                    onClicked: {
+                        PopupUtils.close(rebootDialogue);
+                        switcher.checked = writable_image.exists
+                    }
                 }
-            }
 
-            Button {
-                text: i18n.tr("Not now!")
-                onClicked: {
-                    PopupUtils.close(rebootDialogue);
-                    getRwState();
+                Button {
+                    Layout.fillWidth: true
+                    text: i18n.tr("Reboot")
+                    color: UbuntuColors.green
+                    onClicked: {
+                        Process.launch("dbus-send --system --print-reply --dest=org.freedesktop.login1 \
+                                        /org/freedesktop/login1 org.freedesktop.login1.Manager.Reboot \
+                                        boolean:true")
+                    }
                 }
             }
         }

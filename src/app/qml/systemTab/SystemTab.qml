@@ -16,45 +16,23 @@
 */
 
 import QtQuick 2.4
+import Ubuntu.Components 1.3
+
 import "../components/ListItems" as ListItems
 
-Flickable {
+ScrollView {
+    id: rootItem
     anchors.fill: parent
-    interactive: true
-
-    contentWidth: parent.width
-    contentHeight: column.height
 
     Column {
-        id: column
-        anchors {
-            left: parent.left
-            right: parent.right
-            //margins: units.gu(2)
-        }
-
-        ListItems.SectionDivider {
-            iconName: "stock_application"
-            text: i18n.tr("Click packages")
-        }
-
-        // TO BE FINISHED (FileChooserDialog refactioring + support for new component)
-        ListItems.Page {
-            text: i18n.tr("Install click packages from a local path")
-            pageUrl: Qt.resolvedUrl("InstallClickFromLocal.qml")
-        }
-
-        // TODO: This should be implemented in the Applications tab.
-        ListItems.Page {
-            text: i18n.tr("Uninstall scopes")
-            pageUrl: Qt.resolvedUrl("UninstallScopes.qml")
-        }
+        width: rootItem.width
 
         ListItems.SectionDivider {
             iconName: "ubuntu-logo-symbolic"
             text: i18n.tr("System")
         }
 
+        // FIXME
         ListItems.Page {
             text: i18n.tr("Make image writable")
             pageUrl: Qt.resolvedUrl("ImageWritable.qml")
@@ -65,24 +43,24 @@ Flickable {
             pageUrl: Qt.resolvedUrl("SystemInfo.qml")
         }
 
+        /*
+          TODO: QML BatteryInfo is not yet integrated with the platform.
+          See bug lp:1197542 - 2016/04/04
+
+        ListItems.Page {
+            text: i18n.tr("Battery informations")
+            pageUrl: Qt.resolvedUrl("BatteryInfo.qml")
+        }
+        */
+
         ListItems.SectionDivider {
             iconName: "stock_usb"
             text: i18n.tr("USB mode")
         }
 
         ListItems.Page {
-            text: i18n.tr("Set USB behavior when connected to a PC")
+            text: i18n.tr("ADB settings")
             pageUrl: Qt.resolvedUrl("UsbMode.qml")
-        }
-
-        ListItems.SectionDivider {
-            iconName: "like"
-            text: i18n.tr("Stats")
-        }
-
-        ListItems.Page {
-            text: i18n.tr("Application usage")
-            pageUrl: Qt.resolvedUrl("AppsStats.qml")
         }
     }
 }

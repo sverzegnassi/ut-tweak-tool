@@ -22,9 +22,14 @@ import GSettings 1.0
 import "../components"
 import "../components/ListItems" as ListItems
 
-TweakToolPage {
+Page {
     id: rootItem
           
+    header: PageHeader {
+        title: i18n.tr("Usage mode")
+        flickable: view.flickableItem
+    }
+
     function getSelectedIndex() {
         if (settings.usageMode === "Automatic")
             return 0
@@ -47,18 +52,27 @@ TweakToolPage {
             settings.usageMode = "Windowed"
     }
 
-    ListItems.Warning {
-        iconName: "computer-symbolic"
-        text: i18n.tr("This setting allows you to switch from the stage mode (default for mobile device) to the windowed mode (a.k.a. desktop mode).")
-    }
+    ScrollView {
+        id: view
+        anchors.fill: parent
 
-    ListItems.SectionDivider { text: i18n.tr("Usage mode") }
+        Column {
+            width: view.width
 
-    ListItems.OptionSelector {
-        model: [ i18n.tr("Automatic"), i18n.tr("Staged"), i18n.tr("Windowed") ]
+            ListItems.Warning {
+                iconName: "computer-symbolic"
+                text: i18n.tr("This setting allows you to switch from the stage mode (default for mobile device) to the windowed mode (a.k.a. desktop mode).")
+            }
 
-        Component.onCompleted: selectedIndex = getSelectedIndex()
-        onSelectedIndexChanged: setFromSelectedIndex(selectedIndex)
+            ListItems.SectionDivider { text: i18n.tr("Usage mode") }
+
+            ListItems.OptionSelector {
+                model: [ i18n.tr("Automatic"), i18n.tr("Staged"), i18n.tr("Windowed") ]
+
+                Component.onCompleted: selectedIndex = getSelectedIndex()
+                onSelectedIndexChanged: setFromSelectedIndex(selectedIndex)
+            }
+        }
     }
     
     GSettings {

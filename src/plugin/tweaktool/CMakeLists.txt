@@ -1,18 +1,30 @@
 set(PLUGIN_DIR TweakTool)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+
+#include(FindPkgConfig)
+pkg_check_modules(QGSETTINGS REQUIRED gsettings-qt)
+
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${QGSETTINGS_INCLUDE_DIRS}
+)
 
 #add the sources to compile
 set(tw_SRCS
-    cmdlauncher.cpp
+    systemfile.cpp
     singleprocess.cpp
-	backend.cpp
+    applicationsmodel.cpp
+    package.cpp
+    package_p.h
+    packagesmodel.cpp
+    backend.cpp
 )
 
 add_library(tweaktoolplugin MODULE
     ${tw_SRCS}
 )
 
-qt5_use_modules(tweaktoolplugin Gui Qml Quick)
+qt5_use_modules(tweaktoolplugin Qml Quick)
+target_link_libraries(tweaktoolplugin ${QGSETTINGS_LIBRARIES})
 
 # Copy the plugin, the qmldir file and other assets to the build dir for running in QtCreator
 if(NOT "${CMAKE_CURRENT_SOURCE_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")

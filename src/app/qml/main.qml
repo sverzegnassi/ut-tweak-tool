@@ -18,98 +18,94 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import com.ubuntu.PamAuthentication 0.1
-
-// For making scripts executable
-import StorageManager 1.0
-
-import "components"
-import "components/Models" as Models
+import QtQml.Models 2.1
 
 MainView {
     id: mainView
     objectName: "mainView"
     applicationName: "ut-tweak-tool.sverzegnassi"
 
-    function showNotification(args) {
-        var component = Qt.createComponent("Toast.qml")
-        var toast = component.createObject(mainView, args);
-
-        return toast;
-    }
-
-    function showNotificationWithAction(args) {
-        var component = Qt.createComponent("ToastWithAction.qml")
-        var toast = component.createObject(mainView, args);
-
-        return toast;
-    }
-
     width: units.gu(100)
     height: units.gu(76)
-    theme.name: "TweakTool.OrangeTheme"
+
+    Component.onCompleted: {
+        window.minimumWidth = units.gu(100)
+        window.minimumHeight = units.gu(60)
+    }
 
     AdaptivePageLayout {
         id: pageStack
         anchors.fill: parent
 
         function push(page, properties) {
-            // This function is called 'push' so we don't need to update
-            // all the code.
             return pageStack.addPageToNextColumn(primaryPage, page, properties)
         }
 
         primaryPage: Page {
             id: mainPage
-
-            property alias currentSectionIndex: view.currentIndex
-
-            title: i18n.tr("UT Tweak Tool")
-
-            head.sections.model: [ i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System") ]
+            header: PageHeader {
+                title: i18n.tr("Tweak Tool")
+                sections {
+                    model: [ i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System") ]
+                    onSelectedIndexChanged: {
+                        // Current section has changed, if there was an opened page
+                        // in the second column, it is not anymore related to the
+                        // new current section.
+                        mainPage.pageStack.removePages(mainPage)
+                    }
+                }
+            }
 
             ListView {
                 id: view
-                anchors.fill: parent
+                anchors {
+                    top: mainPage.header.bottom
+                    bottom: parent.bottom
+                    left: parent.left
+                    right: parent.right
+                }
 
                 clip: true
-
                 orientation: ListView.Horizontal
                 interactive: false
                 snapMode: ListView.SnapOneItem
-
                 highlightMoveDuration: UbuntuAnimation.FastDuration
+                currentIndex: mainPage.header.sections.selectedIndex
 
-                currentIndex: mainPage.head.sections.selectedIndex
-
-                onCurrentIndexChanged: {
-                    // Current section has changed, if there was an opened page
-                    // in the second column, it is not anymore related to the
-                    // new current section.
-                    mainPage.pageStack.removePages(mainPage)
+                model: ObjectModel {
+                    Loader {
+                        width: view.width
+                        height: view.height
+                        asynchronous: true
+                        source: Qt.resolvedUrl("behaviourTab/BehaviourTab.qml")
+                    }
+                    Loader {
+                        width: view.width
+                        height: view.height
+                        asynchronous: true
+                        source: Qt.resolvedUrl("applicationsTab/ApplicationsTab.qml")
+                    }
+                    Loader {
+                        width: view.width
+                        height: view.height
+                        asynchronous: true
+                        source: Qt.resolvedUrl("systemTab/SystemTab.qml")
+                    }
                 }
-
-                delegate: Loader {
-                    width: view.width
-                    height: view.height
-
-                    source: modelData
-                }
-
-                model: [
-                    Qt.resolvedUrl("behaviourTab/BehaviourTab.qml"),
-                    Qt.resolvedUrl("applicationsTab/ApplicationsTab.qml"),
-                    Qt.resolvedUrl("systemTab/SystemTab.qml")
-                ]
             }
         }
     }
 
-    Models.ClickModel { id: clickModel }
-
-    AuthenticationService {
-		id: pam
-        serviceName: "ut-tweak-tool"
-        onDenied: Qt.quit();
+    property alias pam: pamLoader.item
+    Loader {
+        id: pamLoader
+        // A bit nonsense, but we're not using pam for security
+        asynchronous: true
+        sourceComponent: AuthenticationService {
+            id: pam
+            serviceName: "ut-tweak-tool"
+            onDenied: Qt.quit();
+        }
     }
 }
 

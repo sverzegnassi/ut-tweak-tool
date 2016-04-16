@@ -21,14 +21,16 @@ import QtQuick.Layouts 1.1
 
 ListItem {
     id: rootItem
+    height: Math.max(implicitHeight, layout.height)
 
     property alias title: layout.title
     property alias subtitle: layout.subtitle
+    property alias summary: layout.summary
     default property alias control: controlContainer.data
 
     ListItemLayout {
         id: layout
-        anchors.fill: parent
+        anchors.centerIn: parent
 
         Item {
             id: controlContainer

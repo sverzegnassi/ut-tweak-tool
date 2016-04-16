@@ -19,7 +19,6 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import GSettings 1.0
 import TweakTool 1.0
-import TweakTool.Click 1.0
 import QtQuick.Layouts 1.1
 
 import "../components"
@@ -27,40 +26,52 @@ import "../components/ListItems" as ListItems
 
 Page {
     id: addPageItem
-    title: i18n.tr("Add new favorite")
 
+    property var applicationsModel
     signal itemToBeAdded(string appId)
 
-    ListView {
-        anchors {
-            fill: parent
-            //leftMargin: units.gu(2)
-            //rightMargin: units.gu(2)
-        }
+    header: PageHeader {
+        title: i18n.tr("Add new favorite")
+        flickable: view
+    }
 
-        clip: true
+    ScrollView {
+        anchors.fill: parent
 
-        model: SortFilterModel {
-            model: appsModel
+        ListView {
+            id: view
+            anchors.fill: parent
 
-            sort.property: "name"
-            sort.order: Qt.AscendingOrder
-        }
+            model: SortFilterModel {
+                model: applicationsModel
 
-        header: ListItems.SectionDivider { text: i18n.tr("Available apps") }
+                sort.property: "name"
+                sort.order: Qt.AscendingOrder
+            }
 
-        delegate: ListItems.AppLauncher {
-            title.text: model.name
-            subtitle.text: model.exec
-            iconSource: model.icon
+            header: ListItems.SectionDivider { text: i18n.tr("Available apps") }
 
-            enabled: settings.coreApps.indexOf(model.exec) == -1
+            delegate: ListItems.AppLauncher {
+                title.text: model.name
+                subtitle.text: model.exec
+                iconSource: model.icon
 
-            onClicked: {
-                addPageItem.itemToBeAdded(model.exec)
+                enabled: settings.coreApps.indexOf(model.exec) == -1
 
-                // Close most-used app page
-                pageStack.removePages(addPageItem)
+                onClicked: {
+                    addPageItem.itemToBeAdded(model.exec)
+
+                    // Close most-used app page
+                    pageStack.removePages(addPageItem)
+                }
+            }
+
+            Component.onCompleted: {
+                // FIXME: workaround for qtubuntu not returning values depending on the grid unit definition
+                // for Flickable.maximumFlickVelocity and Flickable.flickDeceleration
+                var scaleFactor = units.gridUnit / 8;
+                maximumFlickVelocity = maximumFlickVelocity * scaleFactor;
+                flickDeceleration = flickDeceleration * scaleFactor;
             }
         }
     }

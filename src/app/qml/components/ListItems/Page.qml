@@ -55,9 +55,9 @@ ListItem {
 
     onClicked: {
         if (pageComponent)
-            pageStack.push(pageComponent, { "title": d.pageTitle });
+            pageStack.push(pageComponent);
 
         if (pageUrl)
-            pageStack.push(pageUrl, { "title": d.pageTitle });
+            pageStack.push(pageUrl);
     }
 }

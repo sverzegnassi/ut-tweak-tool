@@ -8,437 +8,636 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 20:34+0100\n"
+"POT-Creation-Date: 2016-04-16 19:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:34
-msgid "Work in progress"
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
+msgid "Application Details"
 msgstr ""
 
-#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:35
-msgid "Ideally we'd like to have the Tweak Geek application list here."
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
+msgid "Overview"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:34
-#: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:30
-msgid "Add new favorite"
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
+msgid "Hooks"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:70
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:22
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:101
+msgid "Uninstall"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:87
+#, qt-format
+msgid "Uninstall %1"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:88
+msgid "Are you sure to continue?"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:95
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:215
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:162
+#: ../src/app/qml/systemTab/ImageWritable.qml:88
+#: ../src/app/qml/systemTab/UsbMode.qml:110
+#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:62
+msgid "Cancel"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:78
+#, qt-format
+msgid "Template: %1"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:78
+msgid "confined hook"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:79
+#, qt-format
+msgid "Policy version: %1"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:99
+msgid "Can use Online Accounts"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:102
+msgid "Can play audio"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:105
+msgid "Can access the calendar (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:108
+msgid "Can access the camera"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:111
+msgid "Can access network connectivity informations"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:114
+msgid "Can access contacts"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:117
+msgid "Can request/import data from other applications"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:120
+msgid "Can provide/export data to other applications"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:123
+msgid "Use special debugging tools (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:126
+msgid "Can access the history-service (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:129
+msgid "Can access pay service"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:132
+msgid "Can request keeping the screen on"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:135
+msgid "Can determ the current position."
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:138
+msgid "Can access the microphone"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:141
+msgid "Can access (read/write) to the user's music folders (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:144
+msgid "Can read files from the user's music folders (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:147
+msgid "Can access the network"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:150
+msgid "Can access (read/write) to the user's pictures folders (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:153
+msgid "Can read files from the user's pictures folders (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:156
+msgid "Can use push notifications"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:159
+msgid "Can access the device sensors"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:162
+msgid "Can show informations on the lock screen"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:165
+msgid "Can play video"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:168
+msgid "Can access (read/write) to the user's video folders (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:171
+msgid "Can read files from the user's video folders (reserved)"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:174
+msgid "Can use the Ubuntu webview"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:284
+msgid "Can read the following additional paths:"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:307
+msgid "Can write to the following additional paths:"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:101
+msgid "Description"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:115
+msgid "Prevent app suspension"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:137
+#, qt-format
+msgid "Disk usage — %1"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:143
+msgid "Application size"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:149
+msgid "Cache size"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:155
+msgid "Data size"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:161
+msgid "Config size"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:168
+msgid "Clear..."
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:173
+#, qt-format
+msgid "Clear %1 data"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:197
+msgid "Cache:"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:202
+msgid "Application data:"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:207
+msgid "Config:"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:220
+msgid "Clear"
+msgstr ""
+
+#. TRANSLATORS: %1 is the size of a file, expressed in GB
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:239
+#, qt-format
+msgid "%1 GB"
+msgstr ""
+
+#. TRANSLATORS: %1 is the size of a file, expressed in MB
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:244
+#, qt-format
+msgid "%1 MB"
+msgstr ""
+
+#. TRANSLATORS: %1 is the size of a file, expressed in kB
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:249
+#, qt-format
+msgid "%1 kB"
+msgstr ""
+
+#. TRANSLATORS: %1 is the size of a file, expressed in byte
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:252
+#, qt-format
+msgid "%1 byte"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
+msgid "Show all"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
+msgid "Contains an app"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
+msgid "Contains a scope"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:39
+msgid "No installed package"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:49
 msgid ""
 "Set your favorite apps to be shown in the applications scope.<br>Swipe to "
 "right to delete an item. Press and hold to enable the sorting mode."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:73
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:53
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:143
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:35
 msgid "Favorite apps"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:81
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:63
 msgid "No favorite specified"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:82
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:64
 msgid ""
 "Default applications will be shown in the 'App' scope.\n"
 "Tap the '+' in the header to add a favorite app."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:99
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:83
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:117
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:122
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:100
 msgid "Delete"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:50
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:148
+#: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:34
+msgid "Add new favorite"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:197
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:200
+msgid "Pick"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:52
 msgid "Available apps"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:40
+#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:29
+msgid "Battery indicator"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:42
+msgid ""
+"Here you can set the behavior for the battery indicator on the Unity8 panel."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:45
+msgid "Available settings"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:48
+msgid "Show percentage on panel"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:31
+msgid "Application scope"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:42
+msgid "Indicators"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:46
+msgid "Battery"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:52
 msgid "Unity 8"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:44
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:55
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:56
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:29
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:67
 msgid "Usage mode"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:49
-msgid "App scope favorites"
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:61
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:29
+msgid "Launcher"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/GestureTutorial.qml:28
-msgid "Gesture tutorial"
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:66
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:29
+msgid "Edge sensitivity"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/GestureTutorial.qml:31
-msgid "Show"
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:40
+msgid "Edge barrier sensitivity"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/GestureTutorial.qml:61
-msgid "Enable tutorial"
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
+#, qt-format
+msgid "Current value: %1"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/GestureTutorial.qml:62
-msgid "In order to show the tutorial, you need to reboot your device."
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:49
+msgid "Sensitivity of screen edge barriers for the mouse pointer."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/GestureTutorial.qml:65
-msgid "Enable tutorial and reboot"
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+msgid ""
+"Some UI actions like revealing the launcher or the applications spread are "
+"triggered by pushing the mouse pointer against a screen edge. This key "
+"defines how much you have to push in order to trigger the associated action."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/GestureTutorial.qml:74
-#: ../src/app/qml/systemTab/ImageWritable.qml:119
-msgid "Not now!"
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:92
+msgid "Edge barrier minimum push"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:52
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:101
+msgid "Minimum push needed to overcome edge barrier."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+msgid ""
+"How much you have to push (in grid units) the mouse against an edge barrier "
+"when sensibility is 100."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:144
+msgid "Edge barrier maximum push"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:153
+msgid "Maximum push needed to overcome edge barrier."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+msgid ""
+"How much you have to push (in grid units) the mouse against an edge barrier "
+"when sensibility is 1."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
+msgid "Autohide"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:43
+msgid "Autohide the launcher"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:44
+msgid ""
+"This will only be applied in windowed mode. In staged mode, the launcher "
+"will always hide."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:55
+msgid "Launcher width"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:64
+msgid "Width of the launcher in grid units."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:65
+msgid "Changes the width of the launcher in all usage modes."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:64
 msgid ""
 "This setting allows you to switch from the stage mode (default for mobile "
 "device) to the windowed mode (a.k.a. desktop mode)."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
 msgid "Automatic"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
 msgid "Staged"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
 msgid "Windowed"
 msgstr ""
 
-#: ../src/app/qml/components/Dialogs/FileChooserDialog.qml:47
-#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:62
-msgid "Cancel"
+#: ../src/app/qml/main.qml:47
+msgid "Tweak Tool"
 msgstr ""
 
-#: ../src/app/qml/components/Dialogs/FileChooserDialog.qml:56
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:86
-msgid "Pick"
-msgstr ""
-
-#: ../src/app/qml/components/Dialogs/FileChooserDialog.qml:79
-msgid "Select None"
-msgstr ""
-
-#: ../src/app/qml/components/Dialogs/FileChooserDialog.qml:81
-msgid "Select All"
-msgstr ""
-
-#: ../src/app/qml/components/Dialogs/FileChooserDialog.qml:203
-msgid "Back to parent folder"
-msgstr ""
-
-#: ../src/app/qml/components/ToastWithAction.qml:97
-msgid "Dismiss"
-msgstr ""
-
-#: ../src/app/qml/main.qml:66
-#: /tmp/build-temp-0.2-branch-Desktop-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
-msgid "UT Tweak Tool"
-msgstr ""
-
-#: ../src/app/qml/main.qml:68
+#: ../src/app/qml/main.qml:49
 msgid "Behavior"
 msgstr ""
 
-#: ../src/app/qml/main.qml:68
+#: ../src/app/qml/main.qml:49
 msgid "Apps & Scopes"
 msgstr ""
 
-#: ../src/app/qml/main.qml:68 ../src/app/qml/systemTab/SystemTab.qml:55
+#: ../src/app/qml/main.qml:49 ../src/app/qml/systemTab/SystemTab.qml:32
 msgid "System"
 msgstr ""
 
-#. TRANSLATORS: %1 is a time duration, expressed in hours
-#: ../src/app/qml/systemTab/AppsStats.qml:47
-#, qt-format
-msgid "%1 hours"
+#: ../src/app/qml/systemTab/BatteryInfo.qml:27
+msgid "Battery informations"
 msgstr ""
 
-#. TRANSLATORS: %1 is a time duration, expressed in minutes
-#: ../src/app/qml/systemTab/AppsStats.qml:51
-#, qt-format
-msgid "%1 mins"
+#: ../src/app/qml/systemTab/BatteryInfo.qml:43
+msgid "Level:"
 msgstr ""
 
-#. TRANSLATORS: %1 is a time duration, expressed in seconds
-#: ../src/app/qml/systemTab/AppsStats.qml:54
-#, qt-format
-msgid "%1 secs"
+#: ../src/app/qml/systemTab/BatteryInfo.qml:48
+msgid "Cycle count:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/AppsStats.qml:65
-msgid "This is the list of the top used application."
+#: ../src/app/qml/systemTab/BatteryInfo.qml:53
+msgid "Maximum capacity:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/AppsStats.qml:68
-msgid "Time of usage"
+#: ../src/app/qml/systemTab/BatteryInfo.qml:58
+msgid "Remaining capacity:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/ImageWritable.qml:83
+#: ../src/app/qml/systemTab/BatteryInfo.qml:63
+msgid "Capacity:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:68
+msgid "Health:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:72
+msgid "<i>Unknown</i>"
+msgstr ""
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:74
+#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:50
+#: ../src/plugin/pamauthentication/NotifyDialog.qml:25
+msgid "Ok"
+msgstr ""
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:76
+msgid "Bad"
+msgstr ""
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:82
+msgid "Temperature:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:31
+#: ../src/app/qml/systemTab/SystemTab.qml:37
+msgid "Make image writable"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:44
 msgid ""
 "This setting unlocks write permission in the whole system image. You will be "
 "able to use commands like 'apt-get' on your device.<br /><br /><b>NB:</b> "
 "Your device won't be enable to receive OTA updates. Be carefull!"
 msgstr ""
 
-#: ../src/app/qml/systemTab/ImageWritable.qml:86
+#: ../src/app/qml/systemTab/ImageWritable.qml:47
 msgid "System image"
 msgstr ""
 
-#: ../src/app/qml/systemTab/ImageWritable.qml:89
+#: ../src/app/qml/systemTab/ImageWritable.qml:50
 msgid "Write permissions"
 msgstr ""
 
-#: ../src/app/qml/systemTab/ImageWritable.qml:104
-msgid "Disable RW permissions"
+#: ../src/app/qml/systemTab/ImageWritable.qml:79
+msgid "Reboot device"
 msgstr ""
 
-#: ../src/app/qml/systemTab/ImageWritable.qml:105
-msgid "Enable RW permissions"
+#: ../src/app/qml/systemTab/ImageWritable.qml:80
+msgid "In order to make the changes effective, you need to reboot your device."
 msgstr ""
 
-#: ../src/app/qml/systemTab/ImageWritable.qml:106
-msgid "In order to disable RW permissions, you need to reboot your device."
-msgstr ""
-
-#: ../src/app/qml/systemTab/ImageWritable.qml:107
-msgid "In order to enable RW permissions, you need to reboot your device."
-msgstr ""
-
-#: ../src/app/qml/systemTab/ImageWritable.qml:110
+#: ../src/app/qml/systemTab/ImageWritable.qml:97
 msgid "Reboot"
 msgstr ""
 
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:77
-msgid ""
-"Install a package from the storage.\n"
-"You can target a single package or all the packages in a given directory and "
-"its subfolders."
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:82
-msgid "Add package"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:95
-msgid "Packages from the following paths will be installed:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:105
-msgid "No package added"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:106
-msgid "Tap the 'Add package' button to add a package in the list"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:163
-msgid "Install package..."
-msgid_plural "Install packages..."
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:180
-msgid "Choose a package"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:207
-msgid "Install package"
-msgid_plural "Install packages"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:208
-#, qt-format
-msgid ""
-"You are about to install %1 package. This operation will take some time to "
-"be completed and cannot be interrupted.\n"
-"Are you sure to continue?"
-msgid_plural ""
-"You are about to install %1 packages. This operation will take some time to "
-"be completed and cannot be interrupted.\n"
-"Are you sure to continue?"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:213
-msgid "Yes"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:222
-#: ../src/app/qml/systemTab/UsbMode.qml:136
-msgid "No"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:242
-msgid "Installing package"
-msgid_plural "Installing packages"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:243
-#, qt-format
-msgid "Package %1 of %2"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:277
-msgid "Install completed"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:278
-#, qt-format
-msgid "You can find the log of the installation in %1."
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:321
-msgid "Hide log"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:321
-msgid "Show log"
-msgstr ""
-
-#: ../src/app/qml/systemTab/InstallClickFromLocal.qml:364
-msgid "Close"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:68
-msgid "Ubuntu Touch Information"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:72
-msgid "Kernel:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:77
-msgid "System Platform:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:82
-msgid "Distro:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:88
-msgid "Desktop:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:96
-msgid "Hardware Information"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:100
-msgid "Device:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:105
-msgid "CPU:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemInfo.qml:110
-msgid "Memory:"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemTab.qml:38
-msgid "Click packages"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemTab.qml:43
-msgid "Install click packages from a local path"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemTab.qml:49
-msgid "Uninstall scopes"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemTab.qml:59
-msgid "Make image writable"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemTab.qml:64
+#: ../src/app/qml/systemTab/SystemInfo.qml:65
+#: ../src/app/qml/systemTab/SystemTab.qml:42
 msgid "System informations"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemTab.qml:70
-#: ../src/app/qml/systemTab/UsbMode.qml:87
+#: ../src/app/qml/systemTab/SystemInfo.qml:79
+msgid "Ubuntu Touch Information"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:83
+msgid "Kernel:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:88
+msgid "System Platform:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:93
+msgid "Distro:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:99
+msgid "Desktop:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:107
+msgid "Hardware Information"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:111
+msgid "Device:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:116
+msgid "CPU:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:121
+msgid "Memory:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/SystemTab.qml:58
+#: ../src/app/qml/systemTab/UsbMode.qml:47
 msgid "USB mode"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemTab.qml:74
-msgid "Set USB behavior when connected to a PC"
+#: ../src/app/qml/systemTab/SystemTab.qml:62
+#: ../src/app/qml/systemTab/UsbMode.qml:31
+#: ../src/app/qml/systemTab/UsbMode.qml:77
+msgid "ADB settings"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemTab.qml:80
-msgid "Stats"
-msgstr ""
-
-#: ../src/app/qml/systemTab/SystemTab.qml:84
-msgid "Application usage"
-msgstr ""
-
-#: ../src/app/qml/systemTab/UninstallScopes.qml:52
-msgid "Installed scopes"
-msgstr ""
-
-#: ../src/app/qml/systemTab/UninstallScopes.qml:102
-msgid "No installed scope"
-msgstr ""
-
-#: ../src/app/qml/systemTab/UninstallScopes.qml:103
-msgid "All the scopes installed from a click package will be listed here."
-msgstr ""
-
-#: ../src/app/qml/systemTab/UsbMode.qml:84
+#: ../src/app/qml/systemTab/UsbMode.qml:44
 msgid ""
 "Here you can switch your USB connection from MTP mode (data transfer) to the "
 "RNDIS mode, which allows you to share the internet connection of your PC "
 "when connected via USB."
 msgstr ""
 
-#: ../src/app/qml/systemTab/UsbMode.qml:92
+#: ../src/app/qml/systemTab/UsbMode.qml:52
 msgid "MTP - Media Transfer Protocol"
 msgstr ""
 
-#: ../src/app/qml/systemTab/UsbMode.qml:93
+#: ../src/app/qml/systemTab/UsbMode.qml:53
 msgid "RNDIS - Remote Network Driver Interface Specification"
 msgstr ""
 
-#: ../src/app/qml/systemTab/UsbMode.qml:100
-msgid "ADB settings"
+#: ../src/app/qml/systemTab/UsbMode.qml:82
+#: ../src/app/qml/systemTab/UsbMode.qml:101
+msgid "Revoke USB debugging authorizations"
 msgstr ""
 
-#: ../src/app/qml/systemTab/UsbMode.qml:103
-msgid "Keep ADB active on screen locked"
-msgstr ""
-
-#: ../src/app/qml/systemTab/UsbMode.qml:118
-msgid "Enable ADB on lock"
-msgstr ""
-
-#: ../src/app/qml/systemTab/UsbMode.qml:119
+#: ../src/app/qml/systemTab/UsbMode.qml:102
 msgid ""
-"Before you confirm this operation, please mind that if you lose your device, "
-"anyone will be able to access to all the data on your phone, without the "
-"need to unlock it first.\n"
-"Do you want to continue?"
+"Revoke access to USB debugging from all computers you've previously "
+"authorized?"
 msgstr ""
 
-#: ../src/app/qml/systemTab/UsbMode.qml:122
-msgid "Yes, I'm feeling brave!"
+#: ../src/app/qml/systemTab/UsbMode.qml:116
+msgid "OK"
 msgstr ""
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:25
@@ -446,26 +645,25 @@ msgid "Authentication required"
 msgstr ""
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:27
-msgid "Enter password:"
+msgid "Enter passcode or passphrase:"
 msgstr ""
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:40
-msgid "password"
-msgstr ""
-
-#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:50
-#: ../src/plugin/pamauthentication/NotifyDialog.qml:25
-msgid "Ok"
+msgid "passcode or passphrase"
 msgstr ""
 
 #: ../src/plugin/pamauthentication/AuthenticationService.qml:59
 msgid "Authentication failed"
 msgstr ""
 
-#: /tmp/build-temp-0.2-branch-Desktop-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /home/stefano/build-temp-0.2-branch-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+msgid "UT Tweak Tool"
+msgstr ""
+
+#: /home/stefano/build-temp-0.2-branch-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
 
-#: /tmp/build-temp-0.2-branch-Desktop-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /home/stefano/build-temp-0.2-branch-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr ""

@@ -17,127 +17,110 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Popups 1.3
 import QtQuick.Layouts 1.1
 import TweakTool 1.0
-import Ubuntu.Components.Popups 1.3
 
 import "../components"
 import "../components/ListItems" as ListItems
 
-TweakToolPage {
+Page {
     id: rootItem
 
-    property string cmdTemplate: "/bin/bash %1 %2"
-    property string adbOnLockGetPath: Qt.resolvedUrl("../../../scripts/adb_on_lock_get").replace("file://", "")
-    property string adbOnLockSetPath: Qt.resolvedUrl("../../../scripts/adb_on_lock_set").replace("file://", "")
-    property string adbOnLockUnSetPath: Qt.resolvedUrl("../../../scripts/adb_on_lock_unset").replace("file://", "")
-
-    function getSelectedIndex() {
-        if (Process.launch("android-gadget-service status mtp") === "Enabled")
-            return 0
-
-        if (Process.launch("android-gadget-service status rndis") === "Enabled")
-            return 1
-
-        return -1
+    header: PageHeader {
+        title: i18n.tr("ADB settings")
+        flickable: view.flickableItem
     }
 
-    function setFromSelectedIndex(selectedIndex) {
-        if (selectedIndex == 0)
-            Process.launch("android-gadget-service enable mtp")
+    ScrollView {
+        id: view
+        anchors.fill: parent
 
-        if (selectedIndex == 1)
-            Process.launch("android-gadget-service enable rndis")
-    }
+        Column {
+            width: view.width
 
-    function getAdbOnLockState() {
-        var output = Process.launch(cmdTemplate.arg(adbOnLockGetPath).arg(pam.password))
+            ListItems.Warning {
+                iconName: "stock_usb"
+                text: i18n.tr("Here you can switch your USB connection from MTP mode (data transfer) to the RNDIS mode, which allows you to share the internet connection of your PC when connected via USB.")
+            }
 
-        console.log(output)
+            ListItems.SectionDivider { text: i18n.tr("USB mode") }
 
-        if ( output.indexOf("Not found") > -1 ) {
-            adbSwitch.checked = false
-        } else {
-            adbSwitch.checked = true
-        }
-    }
+            ListItems.OptionSelector {
+                id: selector
+                model: [
+                    i18n.tr("MTP - Media Transfer Protocol"),
+                    i18n.tr("RNDIS - Remote Network Driver Interface Specification")
+                ]
 
-    function toggleAdbOnLockState() {
-        /*
-          WORKAROUND: Why the hell adbSwitch.checked returns false when it's checked?!?!
-          Use the Process.launch(adbOnLockGetPath) instead.
-        */
+                Component.onCompleted: {
+                    if (Process.launch("android-gadget-service status mtp").indexOf("mtp enabled") > -1) {
+                        selectedIndex = 0
+                        return
+                    }
 
-        var state = Process.launch(cmdTemplate.arg(adbOnLockGetPath).arg(pam.password))
+                    if (Process.launch("android-gadget-service status rndis").indexOf("rndis enabled") > -1) {
+                        selectedIndex = 1
+                    }
 
-        if (state.indexOf("Not found") > -1) {
-            PopupUtils.open(confirmAdbDialog);
-        } else {
-            console.log(Process.launch(cmdTemplate.arg(adbOnLockUnSetPath).arg(pam.password)))
-        }
+                    selectedIndex = -1
+                }
+                onSelectedIndexChanged:  {
+                    if (selectedIndex == 0)
+                        Process.launch("android-gadget-service enable mtp")
 
-        getAdbOnLockState()
-    }
-
-    ListItems.Warning {
-        iconName: "stock_usb"
-        text: i18n.tr("Here you can switch your USB connection from MTP mode (data transfer) to the RNDIS mode, which allows you to share the internet connection of your PC when connected via USB.")
-    }
-
-    ListItems.SectionDivider { text: i18n.tr("USB mode") }
-
-    ListItems.OptionSelector {
-        id: selector
-        model: [
-            i18n.tr("MTP - Media Transfer Protocol"),
-            i18n.tr("RNDIS - Remote Network Driver Interface Specification")
-        ]
-
-        Component.onCompleted: selectedIndex = getSelectedIndex()
-        onSelectedIndexChanged: setFromSelectedIndex(selectedIndex)
-    }
-
-    ListItems.SectionDivider { text: i18n.tr("ADB settings") }
-
-    ListItems.Control {
-        title.text: i18n.tr("Keep ADB active on screen locked")
-
-        Switch {
-            id: adbSwitch
-            Component.onCompleted: getAdbOnLockState()
-            onClicked: toggleAdbOnLockState()
-        }
-    }
-
-    Component {
-        id: confirmAdbDialog
-
-        Dialog {
-            id: confirmAdbDialogue
-
-            title: i18n.tr("Enable ADB on lock")
-            text: i18n.tr("Before you confirm this operation, please mind that if you lose your device, anyone will be able to access to all the data on your phone, without the need to unlock it first.\nDo you want to continue?")
-
-            Button {
-                text: i18n.tr("Yes, I'm feeling brave!")
-
-                /*
-                  Use UbuntuColors.red for the affirmative action, since there
-                  are strong security implications.
-                */
-                color: UbuntuColors.red
-                onClicked: {
-                    console.log(Process.launch(cmdTemplate.arg(adbOnLockSetPath).arg(pam.password)))
-                    PopupUtils.close(rebootDialogue);
+                    if (selectedIndex == 1)
+                        Process.launch("android-gadget-service enable rndis")
                 }
             }
 
-            Button {
-                text: i18n.tr("No")
-                color: UbuntuColors.green
-                onClicked: {
-                    PopupUtils.close(confirmAdbDialogue);
-                    getRwState();
+            ListItems.SectionDivider { text: i18n.tr("ADB settings") }
+
+            ListItem {
+                ListItemLayout {
+                    anchors.fill: parent
+                    title.text: i18n.tr("Revoke USB debugging authorizations")
+                }
+                onClicked: PopupUtils.open(revokeAdbDialog)
+            }
+        }
+    }
+
+    SystemFile {
+        id: adb_keys
+        filename: "/data/misc/adb/adb_keys"
+        onPasswordRequested: providePassword(pam.password)
+    }
+
+    Component {
+        id: revokeAdbDialog
+
+        Dialog {
+            id: revokeAdbDialogue
+
+            title: i18n.tr("Revoke USB debugging authorizations")
+            text: i18n.tr("Revoke access to USB debugging from all computers you've previously authorized?")
+
+            RowLayout {
+                width: parent.width
+                spacing: units.gu(1)
+
+                Button {
+                    Layout.fillWidth: true
+                    text: i18n.tr("Cancel")
+                    onClicked: PopupUtils.close(revokeAdbDialogue);
+                }
+
+                Button {
+                    Layout.fillWidth: true
+                    text: i18n.tr("OK")
+                    color: UbuntuColors.green
+                    onClicked: {
+                        if (adb_keys.exists)
+                            adb_keys.rm()
+
+                        PopupUtils.close(revokeAdbDialogue);
+                    }
                 }
             }
         }
