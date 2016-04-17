@@ -55,7 +55,7 @@ ScrollView {
 
         ListItems.SectionDivider {
             iconName: "stock_usb"
-            text: i18n.tr("USB mode")
+            text: i18n.tr("USB settings")
         }
 
         ListItems.Page {

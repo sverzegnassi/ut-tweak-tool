@@ -37,11 +37,6 @@ Page {
         Column {
             width: view.width
 
-            ListItems.Warning {
-                iconName: "battery-070"
-                text: i18n.tr("Here you can set the behavior for the battery indicator on the Unity8 panel.")
-            }
-
             ListItems.SectionDivider { text: i18n.tr("Available settings") }
 
             ListItems.Control {

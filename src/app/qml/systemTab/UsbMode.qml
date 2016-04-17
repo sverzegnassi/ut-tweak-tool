@@ -39,12 +39,10 @@ Page {
         Column {
             width: view.width
 
-            ListItems.Warning {
+            ListItems.SectionDivider {
                 iconName: "stock_usb"
-                text: i18n.tr("Here you can switch your USB connection from MTP mode (data transfer) to the RNDIS mode, which allows you to share the internet connection of your PC when connected via USB.")
+                text: i18n.tr("USB mode")
             }
-
-            ListItems.SectionDivider { text: i18n.tr("USB mode") }
 
             ListItems.OptionSelector {
                 id: selector
@@ -74,7 +72,10 @@ Page {
                 }
             }
 
-            ListItems.SectionDivider { text: i18n.tr("ADB settings") }
+            ListItems.SectionDivider {
+                iconName: "ubuntu-sdk-symbolic"
+                text: i18n.tr("Debugging")
+            }
 
             ListItem {
                 ListItemLayout {

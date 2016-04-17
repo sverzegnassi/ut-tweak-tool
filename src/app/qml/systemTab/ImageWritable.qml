@@ -41,10 +41,10 @@ Page {
 
             ListItems.Warning {
                 iconName: "security-alert"
-                text: i18n.tr("This setting unlocks write permission in the whole system image. You will be able to use commands like 'apt-get' on your device.<br /><br /><b>NB:</b> Your device won't be enable to receive OTA updates. Be carefull!")
+                text: i18n.tr("Your device won't be able to receive OTA updates.")
             }
 
-            ListItems.SectionDivider { text: i18n.tr("System image") }
+            ListItems.SectionDivider { text: i18n.tr("Available settings") }
 
             ListItems.Control {
                 title.text: i18n.tr("Write permissions")
@@ -77,7 +77,7 @@ Page {
             id: rebootDialogue
 
             title: i18n.tr("Reboot device")
-            text:  i18n.tr("In order to make the changes effective, you need to reboot your device.")
+            text:  i18n.tr("This change require a reboot to take effect. Do you want to reboot the device now?")
 
             RowLayout {
                 width: parent.width
@@ -94,7 +94,7 @@ Page {
 
                 Button {
                     Layout.fillWidth: true
-                    text: i18n.tr("Reboot")
+                    text: i18n.tr("OK")
                     color: UbuntuColors.green
                     onClicked: {
                         Process.launch("dbus-send --system --print-reply --dest=org.freedesktop.login1 \

@@ -44,7 +44,7 @@ MainView {
         primaryPage: Page {
             id: mainPage
             header: PageHeader {
-                title: i18n.tr("Tweak Tool")
+                title: "Tweak Tool"
                 sections {
                     model: [ i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System") ]
                     onSelectedIndexChanged: {

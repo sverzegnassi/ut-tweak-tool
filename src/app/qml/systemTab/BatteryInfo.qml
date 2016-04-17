@@ -24,7 +24,7 @@ import "../components/ListItems" as ListItems
 
 Page {
     header: PageHeader {
-        title: i18n.tr("Battery informations")
+        title: i18n.tr("Battery information")
         flickable: view.flickableItem
     }
 

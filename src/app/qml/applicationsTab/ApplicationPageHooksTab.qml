@@ -75,7 +75,9 @@ Flickable {
                         divider.visible: false
 
                         ListItemLayout {
-                            title.text: i18n.tr("Template: %1").arg(hookItem.hook.apparmor.template || i18n.tr("confined hook"))
+                            // TRANSLATORS: The template is defined in the AppArmor manifest of a package.
+                            // "<i>generic</i>" is used when no template has been defined in the manifest (i.e. it's a standard confined app).
+                            title.text: i18n.tr("Template: %1").arg(hookItem.hook.apparmor.template || i18n.tr("<i>generic</i>"))
                             subtitle.text: i18n.tr("Policy version: %1").arg(hookItem.hook.apparmor.policy_version)
                         }
                     }
@@ -96,7 +98,7 @@ Flickable {
                                 title.maximumLineCount: 20
                                 title.text: {
                                     if (modelData == "accounts")
-                                        return i18n.tr("Can use Online Accounts")
+                                        return i18n.tr("Can integrate with your online accounts")
 
                                     if (modelData == "audio")
                                         return i18n.tr("Can play audio")
@@ -123,34 +125,34 @@ Flickable {
                                         return i18n.tr("Use special debugging tools (reserved)")
 
                                     if (modelData == "history")
-                                        return i18n.tr("Can access the history-service (reserved)")
+                                        return i18n.tr("Can access message and call history (reserved)")
 
                                     if (modelData == "in-app-purchased")
-                                        return i18n.tr("Can access pay service")
+                                        return i18n.tr("In-app purchases")
 
                                     if (modelData == "keep-display-on")
                                         return i18n.tr("Can request keeping the screen on")
 
                                     if (modelData == "location")
-                                        return i18n.tr("Can determ the current position.")
+                                        return i18n.tr("Can access to your current location")
 
                                     if (modelData == "microphone")
                                         return i18n.tr("Can access the microphone")
 
                                     if (modelData == "music_files")
-                                        return i18n.tr("Can access (read/write) to the user's music folders (reserved)")
+                                        return i18n.tr("Can read and write to music files (reserved)")
 
                                     if (modelData == "music_files_read")
-                                        return i18n.tr("Can read files from the user's music folders (reserved)")
+                                        return i18n.tr("Can read all music files (reserved)")
 
                                     if (modelData == "networking")
                                         return i18n.tr("Can access the network")
 
                                     if (modelData == "picture_files")
-                                        return i18n.tr("Can access (read/write) to the user's pictures folders (reserved)")
+                                        return i18n.tr("Can read and write to pictures files (reserved)")
 
                                     if (modelData == "picture_files_read")
-                                        return i18n.tr("Can read files from the user's pictures folders (reserved)")
+                                        return i18n.tr("Can read all pictures files (reserved)")
 
                                     if (modelData == "push-notification-client")
                                         return i18n.tr("Can use push notifications")
@@ -165,13 +167,13 @@ Flickable {
                                         return i18n.tr("Can play video")
 
                                     if (modelData == "video_files")
-                                        return i18n.tr("Can access (read/write) to the user's video folders (reserved)")
+                                        return i18n.tr("Can read and write to video files (reserved)")
 
                                     if (modelData == "video_files_read")
-                                        return i18n.tr("Can read files from the user's video folders (reserved)")
+                                        return i18n.tr("Can read all video files (reserved)")
 
                                     if (modelData == "webview")
-                                        return i18n.tr("Can use the Ubuntu webview")
+                                        return i18n.tr("Can use the Ubuntu webview component")
                                 }
 
                                 Icon {
@@ -205,7 +207,7 @@ Flickable {
                                             return "share"
 
                                         if (modelData == "debug")
-                                            return "settings"
+                                            return "ubuntu-sdk-symbolic"
 
                                         if (modelData == "history")
                                             return "history"

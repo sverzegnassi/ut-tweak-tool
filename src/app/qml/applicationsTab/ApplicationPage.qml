@@ -11,11 +11,11 @@ Page {
     signal uninstallRequested()
 
     header: PageHeader {
-        title: i18n.tr("Application Details")
+        title: i18n.tr("Details")
 
         extension: Sections {
             id: pageSections
-            model: [ i18n.tr("Overview"), i18n.tr("Hooks") ]
+            model: [ i18n.tr("General"), i18n.tr("Hooks") ]
         }
 
         trailingActionBar.actions: Action {
@@ -84,8 +84,8 @@ Page {
             signal accepted()
 
             property string appTitle
-            title: i18n.tr("Uninstall %1").arg(appTitle)
-            text: i18n.tr("Are you sure to continue?")
+            title: appTitle
+            text: i18n.tr("Do you want to uninstall this package?")
 
             RowLayout {
                 width: parent.width
@@ -98,7 +98,7 @@ Page {
                 }
 
                 Button {
-                    text: i18n.tr("Uninstall")
+                    text: i18n.tr("OK")
                     color: UbuntuColors.green
                     Layout.fillWidth: true
                     onClicked:  {

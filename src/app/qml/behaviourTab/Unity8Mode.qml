@@ -61,7 +61,7 @@ Page {
 
             ListItems.Warning {
                 iconName: "computer-symbolic"
-                text: i18n.tr("This setting allows you to switch from the stage mode (default for mobile device) to the windowed mode (a.k.a. desktop mode).")
+                text: i18n.tr("This setting allows you to switch from the stage mode (default for mobile device) to the windowed mode.")
             }
 
             ListItems.SectionDivider { text: i18n.tr("Usage mode") }

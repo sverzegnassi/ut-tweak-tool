@@ -134,6 +134,7 @@ Flickable {
                 }
 
                 Label {
+                    // TRANSLATORS: "—" is a special char (please copy-paste it into your translation) . "%1" is a formatted string (e.g. 2.56 MB)
                     text: i18n.tr("Disk usage — %1").arg(printSize(i18n, pkg.installedSize + pkg.cacheSize + pkg.dataSize + pkg.configSize))
                     color: UbuntuColors.blue
                 }
@@ -170,6 +171,7 @@ Flickable {
 
                     onClicked: {
                         var popup = PopupUtils.open(clearDialog, applicationPage)
+                        // TRANSLATORS: %1 is the name of the application
                         popup.title = i18n.tr("Clear %1 data").arg(pkg.title)
 
                         popup.accepted.connect(function(clearCache, clearData, clearConfig) {
@@ -217,7 +219,7 @@ Flickable {
                         onClicked: PopupUtils.close(clearDialogue)
                     }
                     Button {
-                        text: i18n.tr("Clear")
+                        text: i18n.tr("OK")
                         color: UbuntuColors.green
                         Layout.fillWidth: true
                         onClicked:  {

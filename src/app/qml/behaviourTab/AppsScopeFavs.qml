@@ -46,7 +46,7 @@ Page {
                 ListItems.Warning {
                     id: warning
                     imageUrl: Qt.resolvedUrl("graphics/apps-scope.png")
-                    text: i18n.tr("Set your favorite apps to be shown in the applications scope.<br>Swipe to right to delete an item. Press and hold to enable the sorting mode.")
+                    text: i18n.tr("Set your favorite apps to be shown in the applications scope.<br>Swipe to right to delete an item. Press and hold will activate the sort mode.")
                     opacity: view.ViewItems.dragMode ? 0.25 : 1.0
                 }
 
@@ -194,13 +194,10 @@ Page {
                 Label {
                     anchors.verticalCenter: parent.verticalCenter
                     text: action.text
-                    font.weight: text === i18n.tr("Pick") ? Font.Normal : Font.Light
-                    color: {
-                        if (button.enabled)
-                            return text === i18n.tr("Pick") ? theme.palette.selected.backgroundText : theme.palette.normal.backgroundText
-
-                        return theme.palette.disabled.backgroundText
-                    }
+                    font.weight: Font.Light
+                    color: button.enabled
+                           ? theme.palette.normal.backgroundText
+                           : theme.palette.disabled.backgroundText
                 }
             }
         }

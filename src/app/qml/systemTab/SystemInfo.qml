@@ -62,7 +62,7 @@ Page {
     }
 
     header: PageHeader {
-        title: i18n.tr("System informations")
+        title: i18n.tr("System information")
         flickable: view.flickableItem
     }
 
@@ -76,7 +76,7 @@ Page {
             // OS Informations
             ListItems.SectionDivider {
                 iconName: "ubuntu-logo-symbolic"
-                text: i18n.tr("Ubuntu Touch Information")
+                text: i18n.tr("Ubuntu Touch information")
             }
 
             ListItems.SingleValue {
@@ -85,7 +85,7 @@ Page {
             }
 
             ListItems.SingleValue {
-                title.text: i18n.tr("System Platform:")
+                title.text: i18n.tr("System platform:")
                 value: parse_cmd(platformCmd, "")
             }
 
@@ -96,7 +96,7 @@ Page {
 
             // FIXME: This should not be hard-coded.
             ListItems.SingleValue {
-                title.text: i18n.tr("Desktop:")
+                title.text: i18n.tr("Desktop environment:")
                 value: "Unity 8"
             }
 
@@ -104,7 +104,7 @@ Page {
             // System informations
             ListItems.SectionDivider {
                 iconName: "system-settings-symbolic"
-                text: i18n.tr("Hardware Information")
+                text: i18n.tr("Hardware information")
             }
 
             ListItems.SingleValue {
