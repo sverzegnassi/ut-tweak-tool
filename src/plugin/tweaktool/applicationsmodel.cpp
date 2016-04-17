@@ -129,6 +129,8 @@ QVariantMap ApplicationsModel::get(QString exec) const
 AppEntry ApplicationsModel::processDesktopFile(QString path)
 {
     QSettings appInfo(path, QSettings::IniFormat);
+    appInfo.setIniCodec("UTF-8");
+
     AppEntry appEntry; 
 
     if (isDesktopFileVisible(appInfo)) {
