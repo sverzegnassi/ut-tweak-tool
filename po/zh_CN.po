@@ -1,7 +1,7 @@
-# Finnish translation for ubuntu-touch-tweak-tool
-# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# Chinese (Simplified) translation for ubuntu-touch-tweak-tool
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
 # This file is distributed under the same license as the ubuntu-touch-tweak-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-16 19:00+0200\n"
 "PO-Revision-Date: 2016-04-16 17:20+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
-"Language-Team: Finnish <fi@li.org>\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
 msgid "Overview"
-msgstr ""
+msgstr "概览"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
 msgid "Hooks"
@@ -50,7 +50,7 @@ msgstr ""
 #: ../src/app/qml/systemTab/UsbMode.qml:110
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:62
 msgid "Cancel"
-msgstr "Peru"
+msgstr "取消"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:78
 #, qt-format
@@ -282,17 +282,19 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:143
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:35
 msgid "Favorite apps"
-msgstr "Suosikkisovellukset"
+msgstr "喜欢的应用"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:63
 msgid "No favorite specified"
-msgstr ""
+msgstr "无喜好指定"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:64
 msgid ""
 "Default applications will be shown in the 'App' scope.\n"
 "Tap the '+' in the header to add a favorite app."
 msgstr ""
+"默认应用软件将显示在 “应用” scope 上。\n"
+"点击“+”标题添加最喜欢的应用程序。"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:83
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
@@ -300,25 +302,25 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
-msgstr ""
+msgstr "重置"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:100
 msgid "Delete"
-msgstr "Poista"
+msgstr "删除"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:148
 #: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:34
 msgid "Add new favorite"
-msgstr "Lisää uusi suosikki"
+msgstr "添加新收藏"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:197
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:200
 msgid "Pick"
-msgstr ""
+msgstr "选择"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:52
 msgid "Available apps"
-msgstr "Saatavilla olevat sovellukset"
+msgstr "可用的应用程序"
 
 #: ../src/app/qml/behaviourTab/BatteryIndicator.qml:29
 msgid "Battery indicator"
@@ -357,7 +359,7 @@ msgstr "Unity 8"
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:29
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:67
 msgid "Usage mode"
-msgstr ""
+msgstr "使用方式"
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:61
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:29
@@ -458,11 +460,11 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
 msgid "Staged"
-msgstr ""
+msgstr "移动平台"
 
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
 msgid "Windowed"
-msgstr "Ikkunoitu"
+msgstr "窗口模式"
 
 #: ../src/app/qml/main.qml:47
 msgid "Tweak Tool"
@@ -470,15 +472,15 @@ msgstr ""
 
 #: ../src/app/qml/main.qml:49
 msgid "Behavior"
-msgstr "Toiminta"
+msgstr "操作"
 
 #: ../src/app/qml/main.qml:49
 msgid "Apps & Scopes"
-msgstr "Sovellukset ja näkymät"
+msgstr "应用与 Scopes"
 
 #: ../src/app/qml/main.qml:49 ../src/app/qml/systemTab/SystemTab.qml:32
 msgid "System"
-msgstr "Järjestelmä"
+msgstr "系统设置"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:27
 msgid "Battery informations"
@@ -516,7 +518,7 @@ msgstr ""
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:50
 #: ../src/plugin/pamauthentication/NotifyDialog.qml:25
 msgid "Ok"
-msgstr "OK"
+msgstr "确认"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:76
 msgid "Bad"
@@ -529,7 +531,7 @@ msgstr ""
 #: ../src/app/qml/systemTab/ImageWritable.qml:31
 #: ../src/app/qml/systemTab/SystemTab.qml:37
 msgid "Make image writable"
-msgstr ""
+msgstr "设置映像文件可写"
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:44
 msgid ""
@@ -540,11 +542,11 @@ msgstr ""
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:47
 msgid "System image"
-msgstr ""
+msgstr "系统映像"
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:50
 msgid "Write permissions"
-msgstr "Kirjoitusoikeudet"
+msgstr "写权限"
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:79
 msgid "Reboot device"
@@ -557,7 +559,7 @@ msgstr ""
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:97
 msgid "Reboot"
-msgstr "Käynnistä uudelleen"
+msgstr "重启"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:65
 #: ../src/app/qml/systemTab/SystemTab.qml:42
@@ -566,7 +568,7 @@ msgstr ""
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:79
 msgid "Ubuntu Touch Information"
-msgstr ""
+msgstr "Ubuntu Touch 信息"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:83
 msgid "Kernel:"
@@ -586,7 +588,7 @@ msgstr ""
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:107
 msgid "Hardware Information"
-msgstr ""
+msgstr "硬件信息"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:111
 msgid "Device:"
@@ -603,28 +605,28 @@ msgstr ""
 #: ../src/app/qml/systemTab/SystemTab.qml:58
 #: ../src/app/qml/systemTab/UsbMode.qml:47
 msgid "USB mode"
-msgstr "USB-tila"
+msgstr "USB 模式"
 
 #: ../src/app/qml/systemTab/SystemTab.qml:62
 #: ../src/app/qml/systemTab/UsbMode.qml:31
 #: ../src/app/qml/systemTab/UsbMode.qml:77
 msgid "ADB settings"
-msgstr "ADB-asetukset"
+msgstr "ADB 设置"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:44
 msgid ""
 "Here you can switch your USB connection from MTP mode (data transfer) to the "
 "RNDIS mode, which allows you to share the internet connection of your PC "
 "when connected via USB."
-msgstr ""
+msgstr "这里您可以将 USB 连接从 MTP 模式切换到 RNDIS 模式，这样可以通过 USB 连接共享您的电脑网络连接。"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:52
 msgid "MTP - Media Transfer Protocol"
-msgstr ""
+msgstr "MTP - 媒体传输协议"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:53
 msgid "RNDIS - Remote Network Driver Interface Specification"
-msgstr ""
+msgstr "RNDIS - 远程网络驱动程序接口规范"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:82
 #: ../src/app/qml/systemTab/UsbMode.qml:101
@@ -643,7 +645,7 @@ msgstr ""
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:25
 msgid "Authentication required"
-msgstr "Tunnistautuminen vaaditaan"
+msgstr "需要身份验证"
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:27
 msgid "Enter passcode or passphrase:"
@@ -655,11 +657,11 @@ msgstr ""
 
 #: ../src/plugin/pamauthentication/AuthenticationService.qml:59
 msgid "Authentication failed"
-msgstr "Tunnistautuminen epäonnistui"
+msgstr "认证失败"
 
 #: /home/stefano/build-temp-0.2-branch-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
-msgstr ""
+msgstr "UT Tweak Tool"
 
 #: /home/stefano/build-temp-0.2-branch-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
