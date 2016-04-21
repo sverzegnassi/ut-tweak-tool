@@ -16,6 +16,7 @@ set(tw_SRCS
     package.cpp
     package_p.h
     packagesmodel.cpp
+    scopehelper.cpp
     backend.cpp
 )
 
@@ -23,7 +24,7 @@ add_library(tweaktoolplugin MODULE
     ${tw_SRCS}
 )
 
-qt5_use_modules(tweaktoolplugin Qml Quick)
+qt5_use_modules(tweaktoolplugin Qml Quick DBus)
 target_link_libraries(tweaktoolplugin ${QGSETTINGS_LIBRARIES})
 
 # Copy the plugin, the qmldir file and other assets to the build dir for running in QtCreator

@@ -134,7 +134,8 @@ Page {
 
     GSettings {
         id: settings
-        schema.id: "com.canonical.Unity.ClickScope"
+        schema.id: "com.canonical.Unity.ClickScope"        
+        onChanged: if (key == "coreApps") { ScopeHelper.invalidateScope("clickscope") }
     }
 
     ApplicationsModel { id: appsModel }

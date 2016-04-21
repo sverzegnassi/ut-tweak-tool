@@ -130,7 +130,10 @@ Item {
         id: applicationPage
         ApplicationPage {
             id: appPage
-            onUninstallRequested: clickModel.uninstallPackage(appPage.pkg)
+            onUninstallRequested: {
+                clickModel.uninstallPackage(appPage.pkg)
+                ScopeHelper.invalidateScope("clickscope")
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2015 Stefano Verzegnassi
+  Copyright (C) 2015, 2016 Stefano Verzegnassi
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License 3 as published by
@@ -22,14 +22,24 @@
 #include "applicationsmodel.h"
 #include "packagesmodel.h"
 #include "package_p.h"
+#include "scopehelper.h"
 
 static QObject *registerSingletonProcess (QQmlEngine *engine, QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
 
-    SingleProcess *process = new SingleProcess();
+    auto process = new SingleProcess();
     return process;
+}
+
+static QObject *registerSingletonScopeHelper (QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    auto scopeHelper = new ScopeHelper();
+    return scopeHelper;
 }
 
 void BackendPlugin::registerTypes(const char *uri)
@@ -37,6 +47,7 @@ void BackendPlugin::registerTypes(const char *uri)
     Q_ASSERT(uri == QLatin1String("TweakTool"));
 
     qmlRegisterSingletonType<SingleProcess>(uri, 1, 0, "Process", registerSingletonProcess);
+    qmlRegisterSingletonType<ScopeHelper>(uri, 1, 0, "ScopeHelper", registerSingletonScopeHelper);
     qmlRegisterType<SystemFile>(uri, 1, 0, "SystemFile");
     qmlRegisterType<ApplicationsModel>(uri, 1, 0, "ApplicationsModel");
     qmlRegisterType<PackagesModel>(uri, 1, 0, "PackagesModel");
