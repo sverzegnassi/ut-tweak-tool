@@ -26,6 +26,7 @@ ListItem {
     property alias iconSource: icon.source
     property alias title: layout.title
     property alias subtitle: layout.subtitle
+    property alias summary: layout.summary
 
     ListItemLayout {
         id: layout

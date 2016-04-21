@@ -88,8 +88,10 @@ Page {
             delegate: ListItems.AppLauncher {
                 property var appEntry: appsModel.get(modelData)
 
-                title.text: appEntry.name
+                title.text: appEntry.name || modelData
                 subtitle.text: appEntry.exec
+                summary.text: appEntry.name ? "" : i18n.tr("<i>This app is currently uninstalled.</i>")
+
                 iconSource: appEntry.icon
 
                 onPressAndHold: ListView.view.ViewItems.dragMode = !ListView.view.ViewItems.dragMode

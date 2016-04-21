@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-17 18:20+0200\n"
+"POT-Creation-Date: 2016-04-22 00:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:95
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:217
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:162
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:164
 #: ../src/app/qml/systemTab/ImageWritable.qml:88
 #: ../src/app/qml/systemTab/UsbMode.qml:111
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:62
@@ -280,7 +280,7 @@ msgid ""
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:53
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:143
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:145
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:35
 msgid "Favorite apps"
 msgstr ""
@@ -303,11 +303,15 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:100
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:93
+msgid "<i>This app is currently uninstalled.</i>"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:102
 msgid "Delete"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:148
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:150
 #: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:34
 msgid "Add new favorite"
 msgstr ""
