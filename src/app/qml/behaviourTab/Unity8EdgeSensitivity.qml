@@ -192,6 +192,58 @@ Page {
                 }
             }
 
+            /*
+            ListItems.SectionDivider { text: i18n.tr("Edge drag areas width") }
+
+            ListItem {
+                height: Math.max(implicitHeight, dragWidthlayout.height)
+
+                ListItemLayout {
+                    id: dragWidthlayout
+                    anchors.centerIn: parent
+                    title.text: i18n.tr("Current value: %1").arg(dragWidthSlider.value.toFixed(0))
+                    subtitle.text: i18n.tr("The width of the edge drag areas")
+                    summary.text: i18n.tr("How big (in grid units) the edge-drag sensitive area should be.")
+                }
+            }
+
+            ListItem {
+                height: units.gu(12)
+                Button {
+                    id: dragWidthResetButton
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left
+                    anchors.margins: units.gu(2)
+                    color: UbuntuColors.orange
+
+                    action: Action {
+                        text: i18n.tr("Reset")
+                        onTriggered: {
+                            settings.schema.reset("edgeDragWidth")
+                            dragWidthSlider.value = settings.edgeDragWidth
+                        }
+                    }
+                }
+
+                Slider {
+                    id: dragWidthSlider
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: dragWidthResetButton.right
+                    anchors.right: parent.right
+                    anchors.margins: units.gu(2)
+
+                    minimumValue: 1
+                    maximumValue: 6
+
+                    Component.onCompleted: {
+                        value = settings.edgeDragWidth
+                    }
+                    onValueChanged: {
+                        settings.edgeDragWidth = value.toFixed(0)
+                    }
+                }
+            }
+            */
         }
     }
     

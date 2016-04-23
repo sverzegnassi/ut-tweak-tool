@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-23 18:55+0200\n"
+"POT-Creation-Date: 2016-04-23 19:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,6 +299,7 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:219
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr ""
@@ -372,6 +373,7 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:203
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
@@ -414,6 +416,18 @@ msgstr ""
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 1."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
+msgid "Edge drag areas wdidth"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
+msgid "The width of the edge drag areas"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
+msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
