@@ -41,7 +41,7 @@ Page {
 
             ListItems.Warning {
                 iconName: "security-alert"
-                text: i18n.tr("Your device won't be able to receive OTA updates.")
+                text: i18n.tr("Be very careful when editing the filesystem image. There is a high risk of breaking OTA updates.")
             }
 
             ListItems.SectionDivider { text: i18n.tr("Available settings") }
