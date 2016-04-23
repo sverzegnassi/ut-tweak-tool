@@ -31,24 +31,18 @@ Page {
     }
 
     function getSelectedIndex() {
-        if (settings.usageMode === "Automatic")
+        if (settings.usageMode === "Staged")
             return 0
 
-        if (settings.usageMode === "Staged")
-            return 1
-
         if (settings.usageMode === "Windowed")
-            return 2
+            return 1
     }
 
     function setFromSelectedIndex(selectedIndex) {
         if (selectedIndex == 0)
-            settings.usageMode = "Automatic"
-
-        if (selectedIndex == 1)
             settings.usageMode = "Staged"
 
-        if (selectedIndex == 2)
+        if (selectedIndex == 1)
             settings.usageMode = "Windowed"
     }
 
@@ -67,7 +61,7 @@ Page {
             ListItems.SectionDivider { text: i18n.tr("Usage mode") }
 
             ListItems.OptionSelector {
-                model: [ i18n.tr("Automatic"), i18n.tr("Staged"), i18n.tr("Windowed") ]
+                model: [ i18n.tr("Staged"), i18n.tr("Windowed") ]
 
                 Component.onCompleted: selectedIndex = getSelectedIndex()
                 onSelectedIndexChanged: setFromSelectedIndex(selectedIndex)
