@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-22 00:42+0200\n"
-"PO-Revision-Date: 2016-04-18 17:01+0000\n"
+"POT-Creation-Date: 2016-04-23 19:01+0200\n"
+"PO-Revision-Date: 2016-04-23 17:11+0000\n"
 "Last-Translator: Stefano Verzegnassi <stefano92.100@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-22 05:51+0000\n"
+"X-Launchpad-Export-Date: 2016-04-24 06:14+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
@@ -39,7 +39,7 @@ msgstr "Disinstallare questo pacchetto?"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:95
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:217
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:164
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:165
 #: ../src/app/qml/systemTab/ImageWritable.qml:88
 #: ../src/app/qml/systemTab/UsbMode.qml:111
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:62
@@ -163,15 +163,15 @@ msgstr "Può riprodurre video"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:170
 msgid "Can read and write to video files (reserved)"
-msgstr ""
+msgstr "Può leggere e scrivere file video (riservato)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:173
 msgid "Can read all video files (reserved)"
-msgstr ""
+msgstr "Può leggere tutti i file video (riservato)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:176
 msgid "Can use the Ubuntu webview component"
-msgstr ""
+msgstr "Può utilizzare il componente Webview di Ubuntu"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:286
 msgid "Can read the following additional paths:"
@@ -280,7 +280,7 @@ msgid ""
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:53
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:145
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:146
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:35
 msgid "Favorite apps"
 msgstr "Applicazioni preferite"
@@ -301,19 +301,20 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:219
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr "Azzera"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:93
 msgid "<i>This app is currently uninstalled.</i>"
-msgstr ""
+msgstr "<i>Questa app non è attualmente installata.</i>"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:102
 msgid "Delete"
 msgstr "Elimina"
 
-#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:150
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:151
 #: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:34
 msgid "Add new favorite"
 msgstr "Aggiungi nuovo preferito"
@@ -353,7 +354,7 @@ msgstr "Unity 8"
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:56
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:29
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:67
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:61
 msgid "Usage mode"
 msgstr "Modalità di utilizzo"
 
@@ -374,6 +375,7 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:203
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
@@ -422,6 +424,18 @@ msgid ""
 "when sensibility is 1."
 msgstr ""
 
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
+msgid "Edge drag areas wdidth"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
+msgid "The width of the edge drag areas"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
+msgid "How big (in grid units) the edge-drag sensitive area should be."
+msgstr ""
+
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
 msgid "Autohide"
 msgstr "Nascondi automaticamente"
@@ -450,21 +464,17 @@ msgstr "Larghezza del launcher in \"grid units\"."
 msgid "Changes the width of the launcher in all usage modes."
 msgstr "Modifica la larghezza del launcher in tutte le modalità d'uso."
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:64
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
 msgid ""
 "This setting allows you to switch from the stage mode (default for mobile "
 "device) to the windowed mode."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
-msgid "Automatic"
-msgstr "Automatico"
-
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:64
 msgid "Staged"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Mode.qml:70
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:64
 msgid "Windowed"
 msgstr "A finestra"
 
@@ -532,10 +542,12 @@ msgid "Make image writable"
 msgstr ""
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:44
-msgid "Your device won't be able to receive OTA updates."
+msgid ""
+"Be very careful when editing the filesystem image. There is a high risk of "
+"breaking OTA updates."
 msgstr ""
-"Il tuo dispositivo non sarà in grado di ricevere aggiornamenti OTA (On The "
-"Air)."
+"Si prega di fare attenzione quando si modifica l'immagine di sistema. Vi è "
+"un alto rischio che gli aggiornamenti OTA possano fallire."
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:50
 msgid "Write permissions"
@@ -637,31 +649,32 @@ msgstr ""
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:25
 msgid "Authentication required"
-msgstr ""
+msgstr "Richiesta autenticazione"
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:27
 msgid "Enter passcode or passphrase:"
-msgstr ""
+msgstr "Scrivi la Passcode o la Passphrase:"
 
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:40
 msgid "passcode or passphrase"
-msgstr ""
+msgstr "Passcode o la Passphrase:"
 
 #: ../src/plugin/pamauthentication/AuthenticationService.qml:59
 msgid "Authentication failed"
-msgstr ""
+msgstr "Autenticazione non riuscita"
 
 #: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
-msgstr ""
+msgstr "UT Tweak Tool"
 
 #: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
+"tweak;tool;settings;impostazioni;impostazione;strumento;personalizzazione"
 
 #: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
-msgstr ""
+msgstr "Impostazioni avanzate per il tuo dispositivo Ubuntu"
 
 #~ msgid "Pick"
 #~ msgstr "Scegli"
