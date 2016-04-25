@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-23 19:01+0200\n"
-"PO-Revision-Date: 2016-04-16 17:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-04-25 04:58+0000\n"
+"Last-Translator: Cheng Lu <chenglu1990@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-24 06:14+0000\n"
+"X-Launchpad-Export-Date: 2016-04-25 05:39+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
 msgid "Details"
-msgstr ""
+msgstr "详情"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
 msgid "General"
@@ -31,11 +31,11 @@ msgstr ""
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:22
 msgid "Uninstall"
-msgstr ""
+msgstr "卸载"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:88
 msgid "Do you want to uninstall this package?"
-msgstr ""
+msgstr "你想要卸载这个包吗？"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:95
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:217
@@ -51,223 +51,223 @@ msgstr "取消"
 #: ../src/app/qml/systemTab/ImageWritable.qml:97
 #: ../src/app/qml/systemTab/UsbMode.qml:117
 msgid "OK"
-msgstr ""
+msgstr "确定"
 
 #. TRANSLATORS: The template is defined in the AppArmor manifest of a package.
 #. "<i>generic</i>" is used when no template has been defined in the manifest (i.e. it's a standard confined app).
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:80
 #, qt-format
 msgid "Template: %1"
-msgstr ""
+msgstr "模板：%1"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:80
 msgid "<i>generic</i>"
-msgstr ""
+msgstr "<i>通用</i>"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:81
 #, qt-format
 msgid "Policy version: %1"
-msgstr ""
+msgstr "策略版本：%1"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:101
 msgid "Can integrate with your online accounts"
-msgstr ""
+msgstr "可以集成你的在线用户"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:104
 msgid "Can play audio"
-msgstr ""
+msgstr "可以播放音频"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:107
 msgid "Can access the calendar (reserved)"
-msgstr ""
+msgstr "可以访问日历(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:110
 msgid "Can access the camera"
-msgstr ""
+msgstr "可以访问相机"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:113
 msgid "Can access network connectivity informations"
-msgstr ""
+msgstr "可以访问网络连接信息"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:116
 msgid "Can access contacts"
-msgstr ""
+msgstr "可以访问联系人"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:119
 msgid "Can request/import data from other applications"
-msgstr ""
+msgstr "可以从其他应用请求或导入数据"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:122
 msgid "Can provide/export data to other applications"
-msgstr ""
+msgstr "可以向其他应用提供或导出数据"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:125
 msgid "Use special debugging tools (reserved)"
-msgstr ""
+msgstr "使用专用的调试工具(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:128
 msgid "Can access message and call history (reserved)"
-msgstr ""
+msgstr "可以访问信息和通话历史(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:131
 msgid "In-app purchases"
-msgstr ""
+msgstr "应用内购买"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:134
 msgid "Can request keeping the screen on"
-msgstr ""
+msgstr "可以请求保持屏幕常亮"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:137
 msgid "Can access to your current location"
-msgstr ""
+msgstr "可以访问你的当前位置"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:140
 msgid "Can access the microphone"
-msgstr ""
+msgstr "可以访问话筒"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:143
 msgid "Can read and write to music files (reserved)"
-msgstr ""
+msgstr "可以读写音乐文件(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:146
 msgid "Can read all music files (reserved)"
-msgstr ""
+msgstr "可以读取所有音乐文件(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:149
 msgid "Can access the network"
-msgstr ""
+msgstr "可以访问网络"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:152
 msgid "Can read and write to pictures files (reserved)"
-msgstr ""
+msgstr "可以读写照片文件(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:155
 msgid "Can read all pictures files (reserved)"
-msgstr ""
+msgstr "可以读取所有照片文件(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:158
 msgid "Can use push notifications"
-msgstr ""
+msgstr "可以使用推送消息"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:161
 msgid "Can access the device sensors"
-msgstr ""
+msgstr "可以访问设备传感器"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:164
 msgid "Can show informations on the lock screen"
-msgstr ""
+msgstr "可以在锁屏上展示信息"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:167
 msgid "Can play video"
-msgstr ""
+msgstr "可以播放视频"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:170
 msgid "Can read and write to video files (reserved)"
-msgstr ""
+msgstr "可以读写视频文件(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:173
 msgid "Can read all video files (reserved)"
-msgstr ""
+msgstr "可以读取所有视频文件(保留)"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:176
 msgid "Can use the Ubuntu webview component"
-msgstr ""
+msgstr "可以使用 Ubuntu webview 组建"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:286
 msgid "Can read the following additional paths:"
-msgstr ""
+msgstr "可以读下列额外的路径："
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:309
 msgid "Can write to the following additional paths:"
-msgstr ""
+msgstr "可以写下列额外路径："
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:101
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:115
 msgid "Prevent app suspension"
-msgstr ""
+msgstr "防止应用挂起"
 
 #. TRANSLATORS: "—" is a special char (please copy-paste it into your translation) . "%1" is a formatted string (e.g. 2.56 MB)
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:138
 #, qt-format
 msgid "Disk usage — %1"
-msgstr ""
+msgstr "磁盘使用 — %1"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:144
 msgid "Application size"
-msgstr ""
+msgstr "应用大小"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:150
 msgid "Cache size"
-msgstr ""
+msgstr "缓存大小"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:156
 msgid "Data size"
-msgstr ""
+msgstr "数据大小"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:162
 msgid "Config size"
-msgstr ""
+msgstr "配置大小"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:169
 msgid "Clear..."
-msgstr ""
+msgstr "清理..."
 
 #. TRANSLATORS: %1 is the name of the application
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:175
 #, qt-format
 msgid "Clear %1 data"
-msgstr ""
+msgstr "清理 %1 数据"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:199
 msgid "Cache:"
-msgstr ""
+msgstr "缓存："
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:204
 msgid "Application data:"
-msgstr ""
+msgstr "应用数据："
 
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:209
 msgid "Config:"
-msgstr ""
+msgstr "配置："
 
 #. TRANSLATORS: %1 is the size of a file, expressed in GB
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:241
 #, qt-format
 msgid "%1 GB"
-msgstr ""
+msgstr "%1 GB"
 
 #. TRANSLATORS: %1 is the size of a file, expressed in MB
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:246
 #, qt-format
 msgid "%1 MB"
-msgstr ""
+msgstr "%1 MB"
 
 #. TRANSLATORS: %1 is the size of a file, expressed in kB
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:251
 #, qt-format
 msgid "%1 kB"
-msgstr ""
+msgstr "%1 kB"
 
 #. TRANSLATORS: %1 is the size of a file, expressed in byte
 #: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:254
 #, qt-format
 msgid "%1 byte"
-msgstr ""
+msgstr "%1 byte"
 
 #: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
 msgid "Show all"
-msgstr ""
+msgstr "全部显示"
 
 #: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
 msgid "Contains an app"
-msgstr ""
+msgstr "包含应用"
 
 #: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
 msgid "Contains a scope"
-msgstr ""
+msgstr "包含scope"
 
 #: ../src/app/qml/applicationsTab/ApplicationsTab.qml:39
 msgid "No installed package"
@@ -277,7 +277,7 @@ msgstr ""
 msgid ""
 "Set your favorite apps to be shown in the applications scope.<br>Swipe to "
 "right to delete an item. Press and hold will activate the sort mode."
-msgstr ""
+msgstr "设置你喜爱的应用展示在应用 scope 里。<br>右滑删除一条。按住触发排序模式。"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:53
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:146
@@ -308,7 +308,7 @@ msgstr "重置"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:93
 msgid "<i>This app is currently uninstalled.</i>"
-msgstr ""
+msgstr "<i>这个应用当前已卸载。</i>"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:102
 msgid "Delete"
@@ -325,12 +325,12 @@ msgstr "可用的应用程序"
 
 #: ../src/app/qml/behaviourTab/BatteryIndicator.qml:29
 msgid "Battery indicator"
-msgstr ""
+msgstr "电量指示器"
 
 #: ../src/app/qml/behaviourTab/BatteryIndicator.qml:40
 #: ../src/app/qml/systemTab/ImageWritable.qml:47
 msgid "Available settings"
-msgstr ""
+msgstr "可用的设置"
 
 #: ../src/app/qml/behaviourTab/BatteryIndicator.qml:43
 msgid "Show percentage on panel"
