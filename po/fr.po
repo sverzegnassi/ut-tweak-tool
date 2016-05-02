@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-23 19:01+0200\n"
-"PO-Revision-Date: 2016-04-20 20:53+0000\n"
-"Last-Translator: Anne <anneonyme017@gmail.com>\n"
+"PO-Revision-Date: 2016-05-01 17:33+0000\n"
+"Last-Translator: Pascal Maugendre <pmaugendre@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-24 06:14+0000\n"
+"X-Launchpad-Export-Date: 2016-05-02 05:52+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
@@ -313,7 +313,7 @@ msgstr "Réinitialiser"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:93
 msgid "<i>This app is currently uninstalled.</i>"
-msgstr ""
+msgstr "<i>Cette application est actuellement désinstallée.</i>"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:102
 msgid "Delete"
@@ -339,7 +339,7 @@ msgstr "Paramètres disponibles"
 
 #: ../src/app/qml/behaviourTab/BatteryIndicator.qml:43
 msgid "Show percentage on panel"
-msgstr ""
+msgstr "Afficher le pourcentage sur le panneau"
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:31
 msgid "Application scope"
@@ -417,7 +417,7 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:144
 msgid "Edge barrier maximum push"
-msgstr ""
+msgstr "Poussée maximale sur le seuil de bord"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:153
 msgid "Maximum push needed to overcome edge barrier."
@@ -551,6 +551,8 @@ msgid ""
 "Be very careful when editing the filesystem image. There is a high risk of "
 "breaking OTA updates."
 msgstr ""
+"Soyez prudent en éditant l'image du système de fichiers. Il y a un risque "
+"élevé de rompre les mises à jour OTA."
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:50
 msgid "Write permissions"
@@ -640,7 +642,7 @@ msgstr "Débogage"
 #: ../src/app/qml/systemTab/UsbMode.qml:83
 #: ../src/app/qml/systemTab/UsbMode.qml:102
 msgid "Revoke USB debugging authorizations"
-msgstr "Révoquer les autorisation de débogage USB"
+msgstr "Révoquer les autorisations de débogage USB"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:103
 msgid ""
@@ -683,3 +685,12 @@ msgstr "Paramètres avancés pour votre appareil sous Ubuntu"
 
 #~ msgid "Overview"
 #~ msgstr "Aperçu"
+
+#~ msgid "Hardware Information"
+#~ msgstr "Informations sur le matériel"
+
+#~ msgid "System image"
+#~ msgstr "Image du système"
+
+#~ msgid "Reboot"
+#~ msgstr "Redémarrer"
