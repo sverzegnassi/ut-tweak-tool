@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-23 19:01+0200\n"
-"PO-Revision-Date: 2016-04-28 03:33+0000\n"
+"PO-Revision-Date: 2016-05-06 03:21+0000\n"
 "Last-Translator: Cheng Lu <chenglu1990@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-29 07:05+0000\n"
+"X-Launchpad-Export-Date: 2016-05-06 05:03+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
@@ -271,7 +271,7 @@ msgstr "包含scope"
 
 #: ../src/app/qml/applicationsTab/ApplicationsTab.qml:39
 msgid "No installed package"
-msgstr ""
+msgstr "未安装的包"
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:49
 msgid ""
@@ -370,7 +370,7 @@ msgstr "边缘敏感度"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:40
 msgid "Edge barrier sensitivity"
-msgstr ""
+msgstr "边缘灵敏度"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
@@ -379,11 +379,11 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
-msgstr ""
+msgstr "当前值：%1"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:49
 msgid "Sensitivity of screen edge barriers for the mouse pointer."
-msgstr ""
+msgstr "鼠标指针的边缘灵敏度"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
 msgid ""
@@ -434,11 +434,11 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
 msgid "Autohide"
-msgstr ""
+msgstr "自动隐藏"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:43
 msgid "Autohide the launcher"
-msgstr ""
+msgstr "自动隐藏启动器"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:44
 msgid ""
@@ -448,15 +448,15 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:55
 msgid "Launcher width"
-msgstr ""
+msgstr "启动器宽度"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:64
 msgid "Width of the launcher in grid units."
-msgstr ""
+msgstr "启动器栅格单位宽度。"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:65
 msgid "Changes the width of the launcher in all usage modes."
-msgstr ""
+msgstr "在所有使用模式下改变启动器宽度。"
 
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
 msgid ""
@@ -486,35 +486,35 @@ msgstr "系统设置"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:27
 msgid "Battery information"
-msgstr ""
+msgstr "电池信息"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:43
 msgid "Level:"
-msgstr ""
+msgstr "电量："
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:48
 msgid "Cycle count:"
-msgstr ""
+msgstr "循环计数："
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:53
 msgid "Maximum capacity:"
-msgstr ""
+msgstr "最大容量："
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:58
 msgid "Remaining capacity:"
-msgstr ""
+msgstr "剩余容量："
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:63
 msgid "Capacity:"
-msgstr ""
+msgstr "容量："
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:68
 msgid "Health:"
-msgstr ""
+msgstr "健康："
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:72
 msgid "<i>Unknown</i>"
-msgstr ""
+msgstr "<i>未知</i>"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:74
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:50
@@ -524,11 +524,11 @@ msgstr "确认"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:76
 msgid "Bad"
-msgstr ""
+msgstr "差"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:82
 msgid "Temperature:"
-msgstr ""
+msgstr "温度："
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:31
 #: ../src/app/qml/systemTab/SystemTab.qml:37
@@ -547,7 +547,7 @@ msgstr "写权限"
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:79
 msgid "Reboot device"
-msgstr ""
+msgstr "重启设备"
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:80
 msgid ""
@@ -557,51 +557,51 @@ msgstr ""
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:65
 msgid "System information"
-msgstr ""
+msgstr "系统信息"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:79
 msgid "Ubuntu Touch information"
-msgstr ""
+msgstr "Ubuntu Touch 信息"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:83
 msgid "Kernel:"
-msgstr ""
+msgstr "内核："
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:88
 msgid "System platform:"
-msgstr ""
+msgstr "系统平台："
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:93
 msgid "Distro:"
-msgstr ""
+msgstr "发行版："
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:99
 msgid "Desktop environment:"
-msgstr ""
+msgstr "桌面环境："
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:107
 msgid "Hardware information"
-msgstr ""
+msgstr "硬件信息"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:111
 msgid "Device:"
-msgstr ""
+msgstr "设备："
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:116
 msgid "CPU:"
-msgstr ""
+msgstr "CPU："
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:121
 msgid "Memory:"
-msgstr ""
+msgstr "内存："
 
 #: ../src/app/qml/systemTab/SystemTab.qml:42
 msgid "System informations"
-msgstr ""
+msgstr "系统信息"
 
 #: ../src/app/qml/systemTab/SystemTab.qml:58
 msgid "USB settings"
-msgstr ""
+msgstr "USB 设置"
 
 #: ../src/app/qml/systemTab/SystemTab.qml:62
 #: ../src/app/qml/systemTab/UsbMode.qml:31
@@ -622,12 +622,12 @@ msgstr "RNDIS - 远程网络驱动程序接口规范"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:77
 msgid "Debugging"
-msgstr ""
+msgstr "调试"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:83
 #: ../src/app/qml/systemTab/UsbMode.qml:102
 msgid "Revoke USB debugging authorizations"
-msgstr ""
+msgstr "撤销 USB 调试授权"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:103
 msgid ""
