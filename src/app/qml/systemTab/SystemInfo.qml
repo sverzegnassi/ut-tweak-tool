@@ -18,47 +18,22 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import TweakTool 1.0
+import TweakTool 1.0 as TweakTool
 
 import "../components/ListItems" as ListItems
 
 Page {
 
-    readonly property string catCmd:      "cat /etc/machine-info"
-    readonly property string kerCmd:      "uname -pro"
-    readonly property string osCmd:       "cat /etc/os-release | grep \"VERSION=\""
-    readonly property string platformCmd: "uname -p"
-    readonly property string cpuCmd:      "cat /proc/cpuinfo | grep Processor"
-    readonly property string memCmd:      "cat /proc/meminfo | grep MemTotal"
+    function convertKbToMb(kb) {
+        if (kb === -1)
+            return i18n.tr("<i>Unknown</i>")
 
-    function parse_lines(response, splitstr) {
-        var line;
-        var lines = response.split('\n');
-        for(var i in lines) {
-            line = lines[i];
-            if (line.indexOf(splitstr ) != -1) {
-                if (splitstr.length != 0) {
-                    line = line.replace(splitstr,  "");
-                    line = line.replace(/"([^"]*)"/g, "$1");
-                }
-                return line;
-            }
-        }
+        var total = parseInt(kb)/1024;
+        return Math.floor(total) + " MB"
     }
 
-    function parse_cmd(cmd, s) {
-        var s1  = Process.launch(cmd);
-        return parse_lines(s1, s) || "<i>Unknown</i>";
-    }
-
-    function str_trim(s) {
-        return s.replace(/^\s+|\s+$/g,"");
-    }
-
-    function calc_meminfo(cmd) {
-        var s = str_trim(parse_cmd(cmd, "MemTotal:").replace("kB", ""))
-        var total = parseInt(s)/1024;
-        return Math.floor(total.toString())
+    TweakTool.SystemInfo {
+        id: systemInfo
     }
 
     header: PageHeader {
@@ -81,25 +56,23 @@ Page {
 
             ListItems.SingleValue {
                 title.text: i18n.tr("Kernel:")
-                value:parse_cmd(kerCmd, "")
+                value: systemInfo.kernelVersion
             }
 
             ListItems.SingleValue {
                 title.text: i18n.tr("System platform:")
-                value: parse_cmd(platformCmd, "")
+                value: systemInfo.buildCpuArchitecture
             }
 
             ListItems.SingleValue {
                 title.text: i18n.tr("Distro:")
-                value: parse_cmd(osCmd, "PRETTY_NAME=")
+                value: systemInfo.productName
             }
 
-            // FIXME: This should not be hard-coded.
             ListItems.SingleValue {
                 title.text: i18n.tr("Desktop environment:")
-                value: "Unity 8"
+                value: systemInfo.currentDesktop
             }
-
 
             // System informations
             ListItems.SectionDivider {
@@ -109,17 +82,17 @@ Page {
 
             ListItems.SingleValue {
                 title.text: i18n.tr("Device:")
-                value: parse_cmd(catCmd, "PRETTY_HOSTNAME=").replace(/"([^"]*)"/g, "$1")
+                value: systemInfo.deviceName
             }
 
             ListItems.SingleValue {
                 title.text: i18n.tr("CPU:")
-                value: str_trim(parse_cmd(cpuCmd, "Processor").replace(":", ""))
+                value: systemInfo.currentCpuArchitecture
             }
 
             ListItems.SingleValue {
                 title.text: i18n.tr("Memory:")
-                value: calc_meminfo(memCmd) + (" MB")
+                value: convertKbToMb(systemInfo.memoryTotal)
             }
         }
     }

@@ -17,6 +17,7 @@ set(tw_SRCS
     package_p.h
     packagesmodel.cpp
     scopehelper.cpp
+    systeminfo.cpp
     backend.cpp
 )
 

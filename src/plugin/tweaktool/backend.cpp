@@ -23,6 +23,7 @@
 #include "packagesmodel.h"
 #include "package_p.h"
 #include "scopehelper.h"
+#include "systeminfo.h"
 
 static QObject *registerSingletonProcess (QQmlEngine *engine, QJSEngine *scriptEngine)
 {
@@ -50,6 +51,7 @@ void BackendPlugin::registerTypes(const char *uri)
     qmlRegisterSingletonType<ScopeHelper>(uri, 1, 0, "ScopeHelper", registerSingletonScopeHelper);
     qmlRegisterType<SystemFile>(uri, 1, 0, "SystemFile");
     qmlRegisterType<ApplicationsModel>(uri, 1, 0, "ApplicationsModel");
+    qmlRegisterType<SystemInfo>(uri, 1, 0, "SystemInfo");
     qmlRegisterType<PackagesModel>(uri, 1, 0, "PackagesModel");
     qmlRegisterUncreatableType<Package>(uri, 1, 0, "Package", "Package can only be created by PackagesModel, through the get(index) method.");
 }
