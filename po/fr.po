@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-23 19:01+0200\n"
-"PO-Revision-Date: 2016-05-15 19:00+0000\n"
+"PO-Revision-Date: 2016-05-16 08:44+0000\n"
 "Last-Translator: Anne <anneonyme017@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-16 06:28+0000\n"
+"X-Launchpad-Export-Date: 2016-05-17 06:08+0000\n"
 "X-Generator: Launchpad (build 18025)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
@@ -27,7 +27,7 @@ msgstr "Général"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
 msgid "Hooks"
-msgstr ""
+msgstr "Attaches"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:22
 msgid "Uninstall"
@@ -67,7 +67,7 @@ msgstr "<i>générique</i>"
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:81
 #, qt-format
 msgid "Policy version: %1"
-msgstr ""
+msgstr "Version de la politique : %1"
 
 #: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:101
 msgid "Can integrate with your online accounts"
@@ -436,15 +436,17 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
 msgid "Edge drag areas wdidth"
-msgstr ""
+msgstr "Largeur des zones d'action sur les bords"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
 msgid "The width of the edge drag areas"
-msgstr ""
+msgstr "La largeur des zones d'action sur les bords"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
 msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr ""
+"De quelle taille (en unités de grille) doit être la zone sensible d'action "
+"près du bord."
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
 msgid "Autohide"
@@ -459,6 +461,8 @@ msgid ""
 "This will only be applied in windowed mode. In staged mode, the launcher "
 "will always hide."
 msgstr ""
+"Cela s'appliquera uniquement en mode fenêtré. En mode scène, le lanceur sera "
+"toujours masqué."
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:55
 msgid "Launcher width"
@@ -466,7 +470,7 @@ msgstr "Largeur du lanceur"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:64
 msgid "Width of the launcher in grid units."
-msgstr ""
+msgstr "Largeur du lanceur en unités de grille."
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:65
 msgid "Changes the width of the launcher in all usage modes."
@@ -639,6 +643,8 @@ msgstr "MTP - Media Transfer Protocol (Protocole de Transfert des Médias)"
 #: ../src/app/qml/systemTab/UsbMode.qml:51
 msgid "RNDIS - Remote Network Driver Interface Specification"
 msgstr ""
+"RNDIS - Remote Network Driver Interface Specification (Norme d'Interface de "
+"Pilote de Réseau à Distance)"
 
 #: ../src/app/qml/systemTab/UsbMode.qml:77
 msgid "Debugging"
