@@ -43,10 +43,36 @@ MainView {
 
         primaryPage: Page {
             id: mainPage
+            clip: pageStack.columns > 1
+
             header: PageHeader {
-                title: "Tweak Tool"
+                // WORKAROUND: As long as UI Toolkit does not allow to scroll sections,
+                // we need to truncate section labels, so that they're all visible on
+                // small phone screens (e.g. Aquaris E4.5).
+                function truncateString(str) {
+                    return str.length > 10
+                            ? str.substring(0, 9) + "."
+                            : str
+                }
+
+                title: "UT Tweak Tool"
                 sections {
-                    model: [ i18n.tr("Behavior"), i18n.tr("Apps & Scopes"), i18n.tr("System") ]
+                    model: [
+                        // TRANSLATORS: This is a string shown in the header sections.
+                        // Please keep this string as short as possible, because the
+                        // UI toolkit does not allow to scroll sections.
+                        truncateString(i18n.tr("Behavior")),
+
+                        // TRANSLATORS: This is a string shown in the header sections.
+                        // Please keep this string as short as possible, because the
+                        // UI toolkit does not allow to scroll sections.
+                        truncateString(i18n.tr("Apps & Scopes")),
+
+                        // TRANSLATORS: This is a string shown in the header sections.
+                        // Please keep this string as short as possible, because the
+                        // UI toolkit does not allow to scroll sections.
+                        truncateString(i18n.tr("System"))
+                    ]
                     onSelectedIndexChanged: {
                         // Current section has changed, if there was an opened page
                         // in the second column, it is not anymore related to the
