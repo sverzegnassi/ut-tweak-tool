@@ -192,7 +192,6 @@ Page {
                 }
             }
 
-            /*
             ListItems.SectionDivider { text: i18n.tr("Edge drag areas width") }
 
             ListItem {
@@ -243,7 +242,6 @@ Page {
                     }
                 }
             }
-            */
         }
     }
     
