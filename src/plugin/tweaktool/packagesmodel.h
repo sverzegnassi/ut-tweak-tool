@@ -81,6 +81,7 @@ Q_SIGNALS:
 private:
     Package* processPackage(const QJsonObject &pkg);
     Q_INVOKABLE void finalizeRefresh();
+    void appendSystemApps();
 
 private:
     QProcess* m_clickProcess;

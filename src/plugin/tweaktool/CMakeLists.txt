@@ -18,6 +18,7 @@ set(tw_SRCS
     packagesmodel.cpp
     scopehelper.cpp
     backend.cpp
+    desktopfileutils.cpp
 )
 
 add_library(tweaktoolplugin MODULE

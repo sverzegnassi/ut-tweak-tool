@@ -63,11 +63,6 @@ private:
     QStringList searchDesktopFiles(const QString &path);
     Q_INVOKABLE void finalizeRefresh(const AppEntryList &entriesList);
 
-    bool isDesktopFileVisible(const QSettings &ini);
-    QString getIconFromDesktopFile(const QSettings &ini) const;
-    QString getNameFromDesktopFile(const QSettings &ini) const;
-    QString getExecFromDesktopFile(const QSettings &ini) const;
-
 private:
     AppEntryList m_entries;
 };

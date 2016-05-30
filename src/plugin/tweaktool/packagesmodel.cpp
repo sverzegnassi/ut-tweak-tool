@@ -17,6 +17,7 @@
 
 #include "packagesmodel.h"
 #include "package_p.h"
+#include "desktopfileutils.h"
 
 #include <QDebug>
 
@@ -126,15 +127,6 @@ void PackagesModel::refresh()
 
 void PackagesModel::finalizeRefresh()
 {
-/*    QFile file("/home/stefano/fakeclick.json");
-    if (!file.open(QIODevice::ReadOnly))
-        return;
-
-    QTextStream in(&file);
-    const QString &jsonManifest = in.readAll();
-    file.close();
-    */
-
     const QString &jsonManifest = m_clickProcess->readAll();
     const QJsonArray &mArray = QJsonDocument::fromJson(jsonManifest.toUtf8()).array();
 
@@ -148,7 +140,50 @@ void PackagesModel::finalizeRefresh()
         }
     }
 
+    appendSystemApps();
+
     MODEL_END_REFRESH();
+}
+
+void PackagesModel::appendSystemApps()
+{
+    QStringList systemApps;
+
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/address-book-app.desktop";
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/ciborium.desktop";
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/dialer-app.desktop";
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/mediaplayer-app.desktop";
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/messaging-app.desktop";
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/ubuntu-system-settings.desktop";
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/webbrowser-app.desktop";
+
+    Q_FOREACH(const QString &path, systemApps) {
+        if (QFileInfo::exists(path)) {
+            qDebug() << "Desktop file found:" << path;
+
+            QSettings appInfo(path, QSettings::IniFormat);
+
+            Hook appHook;
+            appHook.type = Hook::App;
+
+            auto pkg = new Package (
+                        DesktopFileUtils::getAppIdFromDesktopFile(appInfo),     // App ID
+                        "",                                                     // Directory
+                        false,                                                  // Is removable?
+                        "Unknown",                                              // Architecture
+                        DesktopFileUtils::getCommentFromDesktopFile(appInfo),   // Description
+                        "Unknown",                                              // Framework
+                        QList<Hook>() << appHook,                               // Hooks
+                        DesktopFileUtils::getIconFromDesktopFile(appInfo),      // Icon path
+                        "Ubuntu System Apps",                                   // Maintainer
+                        DesktopFileUtils::getNameFromDesktopFile(appInfo),      // Title
+                        "");                                                    // Version
+
+            beginInsertRows(QModelIndex(), rowCount(), rowCount());
+            m_packagesList << pkg;
+            endInsertRows();
+        }
+    }
 }
 
 Package* PackagesModel::get(int index) const
