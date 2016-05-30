@@ -23,6 +23,7 @@
 #include "packagesmodel.h"
 #include "package_p.h"
 #include "scopehelper.h"
+#include "devicecapabilities.h"
 
 static QObject *registerSingletonProcess (QQmlEngine *engine, QJSEngine *scriptEngine)
 {
@@ -42,12 +43,22 @@ static QObject *registerSingletonScopeHelper (QQmlEngine *engine, QJSEngine *scr
     return scopeHelper;
 }
 
+static QObject *registerSingletonDeviceCapabilities (QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    auto deviceCapabilities = new DeviceCapabilities();
+    return deviceCapabilities;
+}
+
 void BackendPlugin::registerTypes(const char *uri)
 {
     Q_ASSERT(uri == QLatin1String("TweakTool"));
 
     qmlRegisterSingletonType<SingleProcess>(uri, 1, 0, "Process", registerSingletonProcess);
     qmlRegisterSingletonType<ScopeHelper>(uri, 1, 0, "ScopeHelper", registerSingletonScopeHelper);
+    qmlRegisterSingletonType<DeviceCapabilities>(uri, 1, 0, "DeviceCapabilities", registerSingletonDeviceCapabilities);
     qmlRegisterType<SystemFile>(uri, 1, 0, "SystemFile");
     qmlRegisterType<ApplicationsModel>(uri, 1, 0, "ApplicationsModel");
     qmlRegisterType<PackagesModel>(uri, 1, 0, "PackagesModel");
