@@ -45,41 +45,46 @@ MainView {
             id: mainPage
             clip: pageStack.columns > 1
 
+            // TODO: Revert to PageHeader.sections as soon as Ubuntu UITK component allows to scroll its labels.
             header: PageHeader {
-                // WORKAROUND: As long as UI Toolkit does not allow to scroll sections,
-                // we need to truncate section labels, so that they're all visible on
-                // small phone screens (e.g. Aquaris E4.5).
-                function truncateString(str) {
-                    return str.length > 10
-                            ? str.substring(0, 9) + "."
-                            : str
+                id: mainPageHeader
+                property int selectedTabIndex: 0
+
+                onSelectedTabIndexChanged: {
+                    // Current section has changed, if there was an opened page
+                    // in the second column, it is not anymore related to the
+                    // new current section.
+                    mainPage.pageStack.removePages(mainPage)
+                }
+
+                leadingActionBar.actions: [
+                    Action {
+                        text: i18n.tr("Behavior")
+                        onTriggered: mainPage.header.selectedTabIndex = 0
+                        iconName: mainPage.header.selectedTabIndex == 0 ? "tick" : ""
+                    },
+
+                    Action {
+                        text: i18n.tr("Apps and Scopes")
+                        onTriggered: mainPage.header.selectedTabIndex = 1
+                        iconName: mainPage.header.selectedTabIndex == 1 ? "tick" : ""
+                    },
+
+                    Action {
+                        text: i18n.tr("System")
+                        onTriggered: mainPage.header.selectedTabIndex = 2
+                        iconName: mainPage.header.selectedTabIndex == 2 ? "tick" : ""
+                    }
+                ]
+
+                contents: ListItemLayout {
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset: units.gu(0.25)
+                    title.text: "UT Tweak Tool"
+                    subtitle.text: mainPageHeader.leadingActionBar.actions[mainPageHeader.selectedTabIndex].text
                 }
 
                 title: "UT Tweak Tool"
-                sections {
-                    model: [
-                        // TRANSLATORS: This is a string shown in the header sections.
-                        // Please keep this string as short as possible, because the
-                        // UI toolkit does not allow to scroll sections.
-                        truncateString(i18n.tr("Behavior")),
-
-                        // TRANSLATORS: This is a string shown in the header sections.
-                        // Please keep this string as short as possible, because the
-                        // UI toolkit does not allow to scroll sections.
-                        truncateString(i18n.tr("Apps & Scopes")),
-
-                        // TRANSLATORS: This is a string shown in the header sections.
-                        // Please keep this string as short as possible, because the
-                        // UI toolkit does not allow to scroll sections.
-                        truncateString(i18n.tr("System"))
-                    ]
-                    onSelectedIndexChanged: {
-                        // Current section has changed, if there was an opened page
-                        // in the second column, it is not anymore related to the
-                        // new current section.
-                        mainPage.pageStack.removePages(mainPage)
-                    }
-                }
             }
 
             ListView {
@@ -95,8 +100,8 @@ MainView {
                 orientation: ListView.Horizontal
                 interactive: false
                 snapMode: ListView.SnapOneItem
-                highlightMoveDuration: UbuntuAnimation.FastDuration
-                currentIndex: mainPage.header.sections.selectedIndex
+                highlightMoveDuration: 0
+                currentIndex: mainPage.header.selectedTabIndex
 
                 model: ObjectModel {
                     Loader {
