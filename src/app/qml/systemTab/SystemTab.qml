@@ -17,6 +17,7 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import TweakTool 1.0
 
 import "../components/ListItems" as ListItems
 
@@ -36,6 +37,7 @@ ScrollView {
         ListItems.Page {
             text: i18n.tr("Make image writable")
             pageUrl: Qt.resolvedUrl("ImageWritable.qml")
+            visible: DeviceCapabilities.isAndroidDevice
         }
 
         ListItems.Page {
@@ -50,17 +52,20 @@ ScrollView {
         ListItems.Page {
             text: i18n.tr("Battery informations")
             pageUrl: Qt.resolvedUrl("BatteryInfo.qml")
+            visible: DeviceCapabilities.hasBattery
         }
         */
 
         ListItems.SectionDivider {
             iconName: "stock_usb"
             text: i18n.tr("USB settings")
+            visible: DeviceCapabilities.isAndroidDevice
         }
 
         ListItems.Page {
             text: i18n.tr("ADB settings")
             pageUrl: Qt.resolvedUrl("UsbMode.qml")
+            visible: DeviceCapabilities.isAndroidDevice
         }
     }
 }
