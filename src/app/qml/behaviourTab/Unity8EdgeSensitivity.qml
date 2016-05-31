@@ -24,6 +24,8 @@ import "../components/ListItems" as ListItems
 
 Page {
     id: rootItem
+
+    property bool showEdgeDragWidth: false
           
     header: PageHeader {
         title: i18n.tr("Edge sensitivity")
@@ -192,11 +194,14 @@ Page {
                 }
             }
 
-            /*
-            ListItems.SectionDivider { text: i18n.tr("Edge drag areas width") }
+            ListItems.SectionDivider {
+                text: i18n.tr("Edge drag areas width")
+                visible: rootItem.showEdgeDragWidth
+            }
 
             ListItem {
                 height: Math.max(implicitHeight, dragWidthlayout.height)
+                visible: rootItem.showEdgeDragWidth
 
                 ListItemLayout {
                     id: dragWidthlayout
@@ -209,6 +214,8 @@ Page {
 
             ListItem {
                 height: units.gu(12)
+                visible: rootItem.showEdgeDragWidth
+
                 Button {
                     id: dragWidthResetButton
                     anchors.verticalCenter: parent.verticalCenter
@@ -243,12 +250,14 @@ Page {
                     }
                 }
             }
-            */
         }
     }
     
     GSettings {
         id: settings
         schema.id: "com.canonical.Unity8"
+        Component.onCompleted: {
+            rootItem.showEdgeDragWidth = settings.keys().indexOf("edgeDragWidth") > -1
+        }
     }
 }

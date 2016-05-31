@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-31 19:15+0200\n"
+"POT-Creation-Date: 2016-05-31 19:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,9 +296,10 @@ msgid ""
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:83
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:67
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:118
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:170
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:227
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr ""
@@ -361,59 +362,72 @@ msgid "Launcher"
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:66
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:29
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:31
 msgid "Edge sensitivity"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:40
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:42
 msgid "Edge barrier sensitivity"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:209
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:49
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:51
 msgid "Sensitivity of screen edge barriers for the mouse pointer."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:52
 msgid ""
 "Some UI actions like revealing the launcher or the applications spread are "
 "triggered by pushing the mouse pointer against a screen edge. This key "
 "defines how much you have to push in order to trigger the associated action."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:92
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:94
 msgid "Edge barrier minimum push"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:101
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:103
 msgid "Minimum push needed to overcome edge barrier."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:104
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 100."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:144
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:146
 msgid "Edge barrier maximum push"
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:153
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:155
 msgid "Maximum push needed to overcome edge barrier."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:156
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 1."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:198
+msgid "Edge drag areas width"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:210
+msgid "The width of the edge drag areas"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:211
+msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
