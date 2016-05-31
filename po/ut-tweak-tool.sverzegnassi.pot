@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-23 19:01+0200\n"
+"POT-Creation-Date: 2016-05-31 19:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,7 +299,6 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:219
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr ""
@@ -373,7 +372,6 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:203
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
@@ -418,18 +416,6 @@ msgid ""
 "when sensibility is 1."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
-msgid "Edge drag areas wdidth"
-msgstr ""
-
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
-msgid "The width of the edge drag areas"
-msgstr ""
-
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
-msgid "How big (in grid units) the edge-drag sensitive area should be."
-msgstr ""
-
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
 msgid "Autohide"
 msgstr ""
@@ -470,15 +456,15 @@ msgstr ""
 msgid "Windowed"
 msgstr ""
 
-#: ../src/app/qml/main.qml:49
+#: ../src/app/qml/main.qml:62
 msgid "Behavior"
 msgstr ""
 
-#: ../src/app/qml/main.qml:49
+#: ../src/app/qml/main.qml:68
 msgid "Apps & Scopes"
 msgstr ""
 
-#: ../src/app/qml/main.qml:49 ../src/app/qml/systemTab/SystemTab.qml:32
+#: ../src/app/qml/main.qml:74 ../src/app/qml/systemTab/SystemTab.qml:32
 msgid "System"
 msgstr ""
 
@@ -649,14 +635,14 @@ msgstr ""
 msgid "Authentication failed"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr ""
