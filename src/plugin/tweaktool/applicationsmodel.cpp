@@ -174,7 +174,7 @@ bool ApplicationsModel::isDesktopFileVisible(const QSettings &ini)
     if (shouldNotDisplayOnUnity || shouldNotBeDisplay)
         return false;
 
-    return isUbuntuTouchApp || shouldDisplayOnUnity;
+    return isUbuntuTouchApp && shouldDisplayOnUnity;
 }
 
 QString ApplicationsModel::getIconFromDesktopFile(const QSettings &ini) const
