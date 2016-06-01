@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-23 19:01+0200\n"
+"POT-Creation-Date: 2016-05-31 19:19+0200\n"
 "PO-Revision-Date: 2016-05-16 08:44+0000\n"
 "Last-Translator: Anne <anneonyme017@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-17 06:08+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-06-01 06:04+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
 msgid "Details"
@@ -303,10 +303,10 @@ msgstr ""
 "favoris."
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:83
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:219
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:67
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:118
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:170
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:227
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr "Réinitialiser"
@@ -369,29 +369,29 @@ msgid "Launcher"
 msgstr "Lanceur"
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:66
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:29
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:31
 msgid "Edge sensitivity"
 msgstr "Sensibilité des bords"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:40
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:42
 msgid "Edge barrier sensitivity"
 msgstr "Seuil de sensibilité des bords"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:203
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:209
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
 msgstr "Valeur actuelle : %1"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:49
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:51
 msgid "Sensitivity of screen edge barriers for the mouse pointer."
 msgstr ""
 "Seuil de sensibilité des bords de l'écran pour le pointeur de la souris."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:52
 msgid ""
 "Some UI actions like revealing the launcher or the applications spread are "
 "triggered by pushing the mouse pointer against a screen edge. This key "
@@ -402,15 +402,15 @@ msgstr ""
 "de la souris contre un des bords de l'écran. Cette clé définit de combien "
 "vous devez déplacer la souris pour déclencher les actions associées."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:92
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:94
 msgid "Edge barrier minimum push"
 msgstr "Déplacement minimal de seuil de bord"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:101
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:103
 msgid "Minimum push needed to overcome edge barrier."
 msgstr "Déplacement minimal pour dépasser le seuil de bord."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:104
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 100."
@@ -418,15 +418,15 @@ msgstr ""
 "De combien vous devez déplacer (en unités de grille) la souris à proximité "
 "d'un seuil de bord lorsque la sensibilité est réglée à 100."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:144
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:146
 msgid "Edge barrier maximum push"
 msgstr "Poussée maximale sur le seuil de bord"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:153
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:155
 msgid "Maximum push needed to overcome edge barrier."
 msgstr "Déplacement maximal pour dépasser le seuil de bord."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:156
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 1."
@@ -434,15 +434,15 @@ msgstr ""
 "De combien vous devez déplacer (en unités de grille) la souris à proximité "
 "d'un seuil de bord lorsque la sensibilité est réglée à 1."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
-msgid "Edge drag areas wdidth"
-msgstr "Largeur des zones d'action sur les bords"
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:198
+msgid "Edge drag areas width"
+msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:210
 msgid "The width of the edge drag areas"
 msgstr "La largeur des zones d'action sur les bords"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:211
 msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr ""
 "De quelle taille (en unités de grille) doit être la zone sensible d'action "
@@ -492,15 +492,15 @@ msgstr "En scène"
 msgid "Windowed"
 msgstr "Fenêtré"
 
-#: ../src/app/qml/main.qml:49
+#: ../src/app/qml/main.qml:62
 msgid "Behavior"
 msgstr "Comportement"
 
-#: ../src/app/qml/main.qml:49
+#: ../src/app/qml/main.qml:68
 msgid "Apps & Scopes"
 msgstr "Applications & Moteurs de recherche"
 
-#: ../src/app/qml/main.qml:49 ../src/app/qml/systemTab/SystemTab.qml:32
+#: ../src/app/qml/main.qml:74 ../src/app/qml/systemTab/SystemTab.qml:32
 msgid "System"
 msgstr "Système"
 
@@ -679,15 +679,15 @@ msgstr "code ou mot de passe"
 msgid "Authentication failed"
 msgstr "Échec de l'authentification"
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr "Outil de personnalisation d'UT"
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr "tweak;personnalisation;tool;outil;paramètres;"
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr "Paramètres avancés pour votre appareil sous Ubuntu"
 

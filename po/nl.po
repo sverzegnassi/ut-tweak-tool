@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-23 19:01+0200\n"
+"POT-Creation-Date: 2016-05-31 19:19+0200\n"
 "PO-Revision-Date: 2016-05-08 14:20+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-09 05:35+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-06-01 06:04+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
 msgid "Details"
@@ -301,10 +301,10 @@ msgstr ""
 "Raak de '+'-knop in de kop aan om een app toe te voegen als favoriet."
 
 #: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:83
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:219
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:67
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:118
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:170
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:227
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr "Terugzetten naar standaardwaarden"
@@ -367,28 +367,28 @@ msgid "Launcher"
 msgstr "Starter"
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:66
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:29
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:31
 msgid "Edge sensitivity"
 msgstr "Randgevoeligheid"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:40
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:42
 msgid "Edge barrier sensitivity"
 msgstr "Randscheidingsgevoeligheid"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:203
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:209
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
 msgstr "Huidige waarde: %1"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:49
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:51
 msgid "Sensitivity of screen edge barriers for the mouse pointer."
 msgstr "Gevoeligheid van schermrandscheidingen voor de muiscursor."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:52
 msgid ""
 "Some UI actions like revealing the launcher or the applications spread are "
 "triggered by pushing the mouse pointer against a screen edge. This key "
@@ -399,15 +399,15 @@ msgstr ""
 "drukken. Deze sleutel bepaalt hoeveel u moet drukken om de geassocieerde "
 "actie te triggeren."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:92
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:94
 msgid "Edge barrier minimum push"
 msgstr "Minimale druk op randscheiding"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:101
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:103
 msgid "Minimum push needed to overcome edge barrier."
 msgstr "Minimale benodigde druk om de randscheiding te overwinnen."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:104
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 100."
@@ -415,15 +415,15 @@ msgstr ""
 "Hoeveel u moet drukken (in eenheden) met de muis tegen een randscheiding als "
 "de gevoeligheid op 100 staat."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:144
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:146
 msgid "Edge barrier maximum push"
 msgstr "Maximale druk op randscheiding"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:153
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:155
 msgid "Maximum push needed to overcome edge barrier."
 msgstr "Maximale benodigde druk om de randscheiding te overwinnen."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:156
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 1."
@@ -431,15 +431,15 @@ msgstr ""
 "Hoeveel u moet drukken (in eenheden) met de muis tegen een randscheiding als "
 "de gevoeligheid op 1 staat."
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
-msgid "Edge drag areas wdidth"
-msgstr "Randsleepgebieden-breedte"
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:198
+msgid "Edge drag areas width"
+msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:210
 msgid "The width of the edge drag areas"
 msgstr "De breedte van de randsleepgebieden"
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:211
 msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr "Hoe groot (in eenheden) de gevoeligheid van de randsleep moet zijn."
 
@@ -487,15 +487,15 @@ msgstr "Stagemodus"
 msgid "Windowed"
 msgstr "Venstermodus"
 
-#: ../src/app/qml/main.qml:49
+#: ../src/app/qml/main.qml:62
 msgid "Behavior"
 msgstr "Gedrag"
 
-#: ../src/app/qml/main.qml:49
+#: ../src/app/qml/main.qml:68
 msgid "Apps & Scopes"
 msgstr "Apps & Scopes"
 
-#: ../src/app/qml/main.qml:49 ../src/app/qml/systemTab/SystemTab.qml:32
+#: ../src/app/qml/main.qml:74 ../src/app/qml/systemTab/SystemTab.qml:32
 msgid "System"
 msgstr "Systeem"
 
@@ -671,14 +671,14 @@ msgstr "toegangscode of wachtwoord"
 msgid "Authentication failed"
 msgstr "Authenticatie mislukt"
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr "UT Tweak Tool"
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr "tweak;tool;instellingen;"
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr "Geavanceerde instellingen voor uw Ubuntu-apparaat"
