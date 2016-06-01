@@ -23,6 +23,17 @@
 #include "packagesmodel.h"
 #include "package_p.h"
 #include "scopehelper.h"
+#include "clickinstaller.h"
+#include "storagemanager.h"
+
+static QObject *registerStorageManager(QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    StorageManager *storage = new StorageManager();
+    return storage;
+}
 
 static QObject *registerSingletonProcess (QQmlEngine *engine, QJSEngine *scriptEngine)
 {
@@ -48,9 +59,11 @@ void BackendPlugin::registerTypes(const char *uri)
 
     qmlRegisterSingletonType<SingleProcess>(uri, 1, 0, "Process", registerSingletonProcess);
     qmlRegisterSingletonType<ScopeHelper>(uri, 1, 0, "ScopeHelper", registerSingletonScopeHelper);
+    qmlRegisterSingletonType<StorageManager>(uri, 1, 0, "StorageManager", registerStorageManager);
     qmlRegisterType<SystemFile>(uri, 1, 0, "SystemFile");
     qmlRegisterType<ApplicationsModel>(uri, 1, 0, "ApplicationsModel");
     qmlRegisterType<PackagesModel>(uri, 1, 0, "PackagesModel");
+    qmlRegisterType<ClickInstaller>(uri, 1, 0, "ClickInstaller");
     qmlRegisterUncreatableType<Package>(uri, 1, 0, "Package", "Package can only be created by PackagesModel, through the get(index) method.");
 }
 

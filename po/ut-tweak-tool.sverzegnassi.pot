@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-23 19:01+0200\n"
+"POT-Creation-Date: 2016-06-01 15:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,7 +299,6 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:219
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr ""
@@ -373,7 +372,6 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:203
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
@@ -418,18 +416,6 @@ msgid ""
 "when sensibility is 1."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
-msgid "Edge drag areas wdidth"
-msgstr ""
-
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
-msgid "The width of the edge drag areas"
-msgstr ""
-
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
-msgid "How big (in grid units) the edge-drag sensitive area should be."
-msgstr ""
-
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
 msgid "Autohide"
 msgstr ""
@@ -468,6 +454,10 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:64
 msgid "Windowed"
+msgstr ""
+
+#: ../src/app/qml/components/FilePickerPage.qml:30
+msgid "Pick a file"
 msgstr ""
 
 #: ../src/app/qml/main.qml:49
@@ -528,8 +518,51 @@ msgstr ""
 msgid "Temperature:"
 msgstr ""
 
+#: ../src/app/qml/systemTab/ClickInstall.qml:32
+#: ../src/app/qml/systemTab/ClickInstall.qml:141
+#: ../src/app/qml/systemTab/SystemTab.qml:38
+msgid "Install click package"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:53
+msgid "Selected package"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:54
+msgid "<i>None</i>"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:58
+msgid "Pick..."
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:69
+msgid "Install"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:83
+msgid "Output:"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:110
+msgid "Choose a package"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:126
+msgid "Error"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:130
+#: ../src/app/qml/systemTab/ClickInstall.qml:145
+msgid "Close"
+msgstr ""
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:142
+msgid "The package has been successfully installed."
+msgstr ""
+
 #: ../src/app/qml/systemTab/ImageWritable.qml:31
-#: ../src/app/qml/systemTab/SystemTab.qml:37
+#: ../src/app/qml/systemTab/SystemTab.qml:43
 msgid "Make image writable"
 msgstr ""
 
@@ -593,15 +626,15 @@ msgstr ""
 msgid "Memory:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemTab.qml:42
+#: ../src/app/qml/systemTab/SystemTab.qml:48
 msgid "System informations"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemTab.qml:58
+#: ../src/app/qml/systemTab/SystemTab.qml:64
 msgid "USB settings"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemTab.qml:62
+#: ../src/app/qml/systemTab/SystemTab.qml:68
 #: ../src/app/qml/systemTab/UsbMode.qml:31
 msgid "ADB settings"
 msgstr ""
@@ -649,14 +682,38 @@ msgstr ""
 msgid "Authentication failed"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: ../src/plugin/tweaktool/clickinstaller.cpp:67
+msgid "Failed with miscellaneous internal error."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:70
+msgid "Failed with syntax error, or failed to parse command."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:73
+msgid "Failed as a file or directory was not found."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:76
+msgid "Nothing useful was done."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:79
+msgid "The initial setup failed, e.g. setting the network proxy."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:82
+msgid "The transaction failed, see the detailed error for more information."
+msgstr ""
+
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr ""

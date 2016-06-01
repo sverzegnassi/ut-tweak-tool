@@ -32,7 +32,13 @@ ScrollView {
             text: i18n.tr("System")
         }
 
-        // FIXME
+        // TODO: For now we put this here. We should move it to the
+        // "Apps & Scopes" section, or put it somewhere else.
+        ListItems.Page {
+            text: i18n.tr("Install click package")
+            pageUrl: Qt.resolvedUrl("ClickInstall.qml")
+        }
+
         ListItems.Page {
             text: i18n.tr("Make image writable")
             pageUrl: Qt.resolvedUrl("ImageWritable.qml")

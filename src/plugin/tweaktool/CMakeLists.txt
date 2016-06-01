@@ -17,6 +17,8 @@ set(tw_SRCS
     package_p.h
     packagesmodel.cpp
     scopehelper.cpp
+    clickinstaller.cpp
+    storagemanager.cpp
     backend.cpp
 )
 
