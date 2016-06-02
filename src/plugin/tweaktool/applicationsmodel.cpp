@@ -15,6 +15,7 @@
 */
 
 #include "applicationsmodel.h"
+#include "desktopfileutils.h"
 
 #include <QDir>
 #include <QDirIterator>
@@ -22,21 +23,6 @@
 #include <QFileInfo>
 
 #include <QDebug>
-
-#define DESKTOP_FILES_FOLDER_USER       QDir::homePath() + "/.local/share/applications"
-#define DESKTOP_FILES_FOLDER_SYSTEM     "/usr/share/applications"
-
-#define DESKTOP_FILE_KEY_NAME           "Desktop Entry/Name"
-#define DESKTOP_FILE_KEY_ICON           "Desktop Entry/Icon"
-#define DESKTOP_FILE_KEY_NO_DISPLAY     "Desktop Entry/NoDisplay"
-#define DESKTOP_FILE_KEY_APP_ID         "Desktop Entry/X-Ubuntu-Application-ID"
-#define DESKTOP_FILE_KEY_UBUNTU_TOUCH   "Desktop Entry/X-Ubuntu-Touch"
-#define DESKTOP_FILE_KEY_ONLY_SHOW_IN   "Desktop Entry/OnlyShowIn"
-#define DESKTOP_FILE_KEY_NOT_SHOW_IN    "Desktop Entry/NotShowIn"
-
-static QString KeyWithLocale(const QString &key, const QString &locale) {
-    return key + QString("[%1]").arg(locale);
-}
 
 ApplicationsModel::ApplicationsModel(QAbstractListModel *parent)
     : QAbstractListModel(parent)
@@ -133,10 +119,10 @@ AppEntry ApplicationsModel::processDesktopFile(QString path)
 
     AppEntry appEntry; 
 
-    if (isDesktopFileVisible(appInfo)) {
-        appEntry.name = getNameFromDesktopFile(appInfo);
-        appEntry.icon = getIconFromDesktopFile(appInfo);
-        appEntry.exec = getExecFromDesktopFile(appInfo);
+    if (DesktopFileUtils::isDesktopFileVisible(appInfo)) {
+        appEntry.name = DesktopFileUtils::getNameFromDesktopFile(appInfo);
+        appEntry.icon = DesktopFileUtils::getIconFromDesktopFile(appInfo);
+        appEntry.exec = DesktopFileUtils::getExecFromDesktopFile(appInfo);
         appEntry.valid = true;
     }
 
@@ -162,93 +148,4 @@ QStringList ApplicationsModel::searchDesktopFiles(const QString &path)
     }
 
     return results;
-}
-
-bool ApplicationsModel::isDesktopFileVisible(const QSettings &ini)
-{
-    bool isUbuntuTouchApp = ini.value(DESKTOP_FILE_KEY_UBUNTU_TOUCH, bool(false)).toBool();
-    bool shouldNotBeDisplay = ini.value(DESKTOP_FILE_KEY_NO_DISPLAY, bool(false)).toBool();
-    bool shouldDisplayOnUnity = ini.value(DESKTOP_FILE_KEY_ONLY_SHOW_IN, QString("Unity")).toString() == QString("Unity");
-    bool shouldNotDisplayOnUnity = ini.value(DESKTOP_FILE_KEY_ONLY_SHOW_IN).toString() == QString("Unity");
-
-    if (shouldNotDisplayOnUnity || shouldNotBeDisplay)
-        return false;
-
-    return isUbuntuTouchApp && shouldDisplayOnUnity;
-}
-
-QString ApplicationsModel::getIconFromDesktopFile(const QSettings &ini) const
-{
-    QString iconName = ini.value(DESKTOP_FILE_KEY_ICON).toString();
-
-    if (iconName.isEmpty())
-        return QString();
-
-    if (QFileInfo(iconName).isAbsolute())
-        return iconName;
-
-    else
-        // Use Ubuntu UITK's UnityThemeIconProvider
-        return QString("image://theme/%1").arg(iconName);
-}
-
-QString ApplicationsModel::getNameFromDesktopFile(const QSettings &ini) const
-{
-    // https://specifications.freedesktop.org/desktop-entry-spec/latest/ar01s04.html
-    // http://comments.gmane.org/gmane.comp.window-managers.sawfish/6112
-
-    QString locale = qgetenv("LANG");
-
-    if (locale.isEmpty())
-        locale = qgetenv("LANGUAGE");
-
-    if (locale.isEmpty())
-        locale = qgetenv("LC_MESSAGE");
-
-    if (locale.isEmpty())
-        locale = qgetenv("LC_ALL");
-
-    QString name;
-
-    name = ini.value(KeyWithLocale(DESKTOP_FILE_KEY_NAME, locale)).toString();
-
-    if (name.isEmpty()) {
-        int n = locale.indexOf("@");
-        if (n > -1)
-            locale.truncate(n);
-
-        name = ini.value(KeyWithLocale(DESKTOP_FILE_KEY_NAME, locale)).toString();
-    }
-
-    if (name.isEmpty()) {
-        int n = locale.indexOf(".");
-        if (n > -1)
-            locale.truncate(n);
-
-        name = ini.value(KeyWithLocale(DESKTOP_FILE_KEY_NAME, locale)).toString();
-    }
-
-    if (name.isEmpty()) {
-        int n = locale.indexOf("_");
-        if (n > -1)
-            locale.truncate(n);
-
-        name = ini.value(KeyWithLocale(DESKTOP_FILE_KEY_NAME, locale)).toString();
-    }
-
-    if (name.isEmpty())
-        name = ini.value(DESKTOP_FILE_KEY_NAME).toString();
-
-    return name;
-}
-
-QString ApplicationsModel::getExecFromDesktopFile(const QSettings &ini) const
-{
-    if (ini.contains(DESKTOP_FILE_KEY_APP_ID))
-        return ini.value(DESKTOP_FILE_KEY_APP_ID).toString().split("_").at(0);
-
-    else {
-        QFileInfo fi(ini.fileName());
-        return fi.completeBaseName();
-    }
 }

@@ -21,6 +21,7 @@ set(tw_SRCS
     clickinstaller.cpp
     storagemanager.cpp
     backend.cpp
+    desktopfileutils.cpp
 )
 
 add_library(tweaktoolplugin MODULE
