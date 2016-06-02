@@ -16,13 +16,12 @@
 */
 
 #include "systeminfo.h"
+#include "singleprocess.h"
 
 #include <QSysInfo>
 #include <QHostInfo>
 
 #include <QFile>
-
-#include <QDebug>
 
 QString SystemInfo::kernelVersion() const
 {
@@ -31,7 +30,7 @@ QString SystemInfo::kernelVersion() const
 
 QString SystemInfo::buildCpuArchitecture() const
 {
-    return QSysInfo::buildCpuArchitecture();
+    return SingleProcess::launch("uname -p");
 }
 
 QString SystemInfo::currentCpuArchitecture() const
@@ -51,13 +50,41 @@ QString SystemInfo::currentDesktop() const
 
 QString SystemInfo::deviceName() const
 {
-    // TODO: Use QSysInfo::machineHostName() as we'll have Qt 5.6
+    if (QFile::exists("/android/system/build.prop")) {
+        // It's an Ubuntu Touch device.
+
+        QString machineInfo = SingleProcess::launch("cat /etc/machine-info");
+
+        Q_FOREACH( const QString &line, machineInfo.split("\n"))
+            if (line.contains("PRETTY_HOSTNAME="))
+                machineInfo = line;
+
+        machineInfo.replace("PRETTY_HOSTNAME=\"", "");
+        machineInfo.remove(machineInfo.count() - 1, 1); // Remove last quote
+        return machineInfo;
+    }
+
     return QHostInfo::localHostName();
 }
 
 QString SystemInfo::cpuName() const
 {
-    return QString();
+    QString cpuInfo = SingleProcess::launch("cat /proc/cpuinfo | grep 'model name' | uniq");
+    QString cpuName;
+
+    Q_FOREACH (const QString &line, cpuInfo.split("\n"))
+        if (line.contains("model name"))
+            cpuName = line;
+
+    if (cpuName.isEmpty())
+        Q_FOREACH (const QString &line, cpuInfo.split("\n"))
+            if (line.contains("Hardware"))
+                cpuName = line;
+
+    cpuName.replace("model name", "");
+    cpuName.replace("Hardware", "");
+
+    return cpuName.trimmed().replace(":", "");
 }
 
 int SystemInfo::memoryTotal() const

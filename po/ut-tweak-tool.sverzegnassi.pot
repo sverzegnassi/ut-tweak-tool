@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-23 19:01+0200\n"
+"POT-Creation-Date: 2016-06-02 15:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,7 +299,6 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:65
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:116
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:168
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:219
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
 msgid "Reset"
 msgstr ""
@@ -373,7 +372,6 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:48
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:100
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:152
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:203
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
 #, qt-format
 msgid "Current value: %1"
@@ -416,18 +414,6 @@ msgstr ""
 msgid ""
 "How much you have to push (in grid units) the mouse against an edge barrier "
 "when sensibility is 1."
-msgstr ""
-
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:195
-msgid "Edge drag areas wdidth"
-msgstr ""
-
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:204
-msgid "The width of the edge drag areas"
-msgstr ""
-
-#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:205
-msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
@@ -511,6 +497,7 @@ msgid "Health:"
 msgstr ""
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:72
+#: ../src/app/qml/systemTab/SystemInfo.qml:29
 msgid "<i>Unknown</i>"
 msgstr ""
 
@@ -553,43 +540,43 @@ msgid ""
 "device now?"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:65
+#: ../src/app/qml/systemTab/SystemInfo.qml:40
 msgid "System information"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:79
+#: ../src/app/qml/systemTab/SystemInfo.qml:54
 msgid "Ubuntu Touch information"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:83
+#: ../src/app/qml/systemTab/SystemInfo.qml:58
 msgid "Kernel:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:88
+#: ../src/app/qml/systemTab/SystemInfo.qml:63
 msgid "System platform:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:93
+#: ../src/app/qml/systemTab/SystemInfo.qml:68
 msgid "Distro:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:99
+#: ../src/app/qml/systemTab/SystemInfo.qml:73
 msgid "Desktop environment:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:107
+#: ../src/app/qml/systemTab/SystemInfo.qml:80
 msgid "Hardware information"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:111
-msgid "Device:"
+#: ../src/app/qml/systemTab/SystemInfo.qml:84
+msgid "Device name:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:116
+#: ../src/app/qml/systemTab/SystemInfo.qml:89
 msgid "CPU:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:121
+#: ../src/app/qml/systemTab/SystemInfo.qml:94
 msgid "Memory:"
 msgstr ""
 
@@ -649,14 +636,14 @@ msgstr ""
 msgid "Authentication failed"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: /tmp/build-cpp-systeminfo-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /tmp/build-cpp-systeminfo-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
 
-#: /tmp/build-ubuntu-touch-tweak-tool-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /tmp/build-cpp-systeminfo-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid_8e2ec5-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr ""

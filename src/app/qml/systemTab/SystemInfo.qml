@@ -81,13 +81,13 @@ Page {
             }
 
             ListItems.SingleValue {
-                title.text: i18n.tr("Device:")
+                title.text: i18n.tr("Device name:")
                 value: systemInfo.deviceName
             }
 
             ListItems.SingleValue {
                 title.text: i18n.tr("CPU:")
-                value: systemInfo.currentCpuArchitecture
+                value: systemInfo.cpuName
             }
 
             ListItems.SingleValue {
