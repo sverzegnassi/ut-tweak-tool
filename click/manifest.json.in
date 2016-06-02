@@ -11,6 +11,6 @@
             "desktop": "@DESKTOP_FILE@"
         }
     },
-    "version": "0.2.@BZR_REVNO@",
+    "version": "0.3.@BZR_REVNO@",
     "maintainer": "Stefano Verzegnassi <verzegnassi.stefano@gmail.com>"
 }
