@@ -13,6 +13,7 @@ set(tw_SRCS
     systemfile.cpp
     singleprocess.cpp
     applicationsmodel.cpp
+    desktopfileutils.cpp
     package.cpp
     package_p.h
     packagesmodel.cpp
@@ -20,8 +21,8 @@ set(tw_SRCS
     devicecapabilities.cpp
     clickinstaller.cpp
     storagemanager.cpp
+    systeminfo.cpp
     backend.cpp
-    desktopfileutils.cpp
 )
 
 add_library(tweaktoolplugin MODULE

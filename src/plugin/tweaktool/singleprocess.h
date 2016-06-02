@@ -26,7 +26,7 @@ class SingleProcess : public QObject
     Q_OBJECT
 
 public:
-    Q_INVOKABLE QString launch(QString command);
+    Q_INVOKABLE static QString launch(QString command);
 };
 
 #endif // SINGLELAUNCHER_H

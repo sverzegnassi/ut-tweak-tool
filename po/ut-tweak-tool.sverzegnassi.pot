@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-02 14:05+0200\n"
+"POT-Creation-Date: 2016-06-02 15:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -515,6 +515,7 @@ msgid "Health:"
 msgstr ""
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:72
+#: ../src/app/qml/systemTab/SystemInfo.qml:29
 msgid "<i>Unknown</i>"
 msgstr ""
 
@@ -600,43 +601,43 @@ msgid ""
 "device now?"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:65
+#: ../src/app/qml/systemTab/SystemInfo.qml:40
 msgid "System information"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:79
+#: ../src/app/qml/systemTab/SystemInfo.qml:54
 msgid "Ubuntu Touch information"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:83
+#: ../src/app/qml/systemTab/SystemInfo.qml:58
 msgid "Kernel:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:88
+#: ../src/app/qml/systemTab/SystemInfo.qml:63
 msgid "System platform:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:93
+#: ../src/app/qml/systemTab/SystemInfo.qml:68
 msgid "Distro:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:99
+#: ../src/app/qml/systemTab/SystemInfo.qml:73
 msgid "Desktop environment:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:107
+#: ../src/app/qml/systemTab/SystemInfo.qml:80
 msgid "Hardware information"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:111
-msgid "Device:"
+#: ../src/app/qml/systemTab/SystemInfo.qml:84
+msgid "Device name:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:116
+#: ../src/app/qml/systemTab/SystemInfo.qml:89
 msgid "CPU:"
 msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:121
+#: ../src/app/qml/systemTab/SystemInfo.qml:94
 msgid "Memory:"
 msgstr ""
 
