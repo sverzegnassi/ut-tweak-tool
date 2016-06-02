@@ -18,6 +18,8 @@ set(tw_SRCS
     packagesmodel.cpp
     scopehelper.cpp
     devicecapabilities.cpp
+    clickinstaller.cpp
+    storagemanager.cpp
     backend.cpp
 )
 
