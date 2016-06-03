@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-05-31 19:19+0200\n"
-"PO-Revision-Date: 2016-04-23 17:11+0000\n"
+"POT-Creation-Date: 2016-06-02 15:42+0200\n"
+"PO-Revision-Date: 2016-06-02 15:14+0000\n"
 "Last-Translator: Stefano Verzegnassi <stefano92.100@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-01 06:04+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
+"X-Launchpad-Export-Date: 2016-06-03 06:27+0000\n"
+"X-Generator: Launchpad (build 18086)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
 msgid "Details"
@@ -478,6 +478,10 @@ msgstr ""
 msgid "Windowed"
 msgstr "A finestra"
 
+#: ../src/app/qml/components/FilePickerPage.qml:30
+msgid "Pick a file"
+msgstr "Scegli un file"
+
 #: ../src/app/qml/main.qml:62
 msgid "Behavior"
 msgstr "Comportamento"
@@ -486,7 +490,7 @@ msgstr "Comportamento"
 msgid "Apps & Scopes"
 msgstr "Applicazioni & Scope"
 
-#: ../src/app/qml/main.qml:74 ../src/app/qml/systemTab/SystemTab.qml:32
+#: ../src/app/qml/main.qml:74 ../src/app/qml/systemTab/SystemTab.qml:33
 msgid "System"
 msgstr "Sistema"
 
@@ -519,6 +523,7 @@ msgid "Health:"
 msgstr "Salute:"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:72
+#: ../src/app/qml/systemTab/SystemInfo.qml:29
 msgid "<i>Unknown</i>"
 msgstr "<i>Sconosciuto</i>"
 
@@ -536,8 +541,51 @@ msgstr "Cattiva"
 msgid "Temperature:"
 msgstr "Temperatura:"
 
+#: ../src/app/qml/systemTab/ClickInstall.qml:32
+#: ../src/app/qml/systemTab/ClickInstall.qml:141
+#: ../src/app/qml/systemTab/SystemTab.qml:39
+msgid "Install click package"
+msgstr "Installa un pacchetto click"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:53
+msgid "Selected package"
+msgstr "Pacchetto selezionato"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:54
+msgid "<i>None</i>"
+msgstr "<i>Nessuno</i>"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:58
+msgid "Pick..."
+msgstr "Scegli..."
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:69
+msgid "Install"
+msgstr "Installa"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:83
+msgid "Output:"
+msgstr "Output:"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:110
+msgid "Choose a package"
+msgstr "Scegli un pacchetto"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:126
+msgid "Error"
+msgstr "Errore"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:130
+#: ../src/app/qml/systemTab/ClickInstall.qml:145
+msgid "Close"
+msgstr "Chiudi"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:142
+msgid "The package has been successfully installed."
+msgstr "Il pacchetto è stato installato con successo."
+
 #: ../src/app/qml/systemTab/ImageWritable.qml:31
-#: ../src/app/qml/systemTab/SystemTab.qml:37
+#: ../src/app/qml/systemTab/SystemTab.qml:44
 msgid "Make image writable"
 msgstr ""
 
@@ -565,55 +613,55 @@ msgstr ""
 "Questo cambiamento richiede un riavvio per diventare effettivo. Riavviare il "
 "dispositivo ora?"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:65
+#: ../src/app/qml/systemTab/SystemInfo.qml:40
 msgid "System information"
 msgstr "Informazioni di sistema"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:79
+#: ../src/app/qml/systemTab/SystemInfo.qml:54
 msgid "Ubuntu Touch information"
 msgstr "Informazioni su Ubuntu Touch"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:83
+#: ../src/app/qml/systemTab/SystemInfo.qml:58
 msgid "Kernel:"
 msgstr "Kernel:"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:88
+#: ../src/app/qml/systemTab/SystemInfo.qml:63
 msgid "System platform:"
 msgstr "Piattaforma di sistema:"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:93
+#: ../src/app/qml/systemTab/SystemInfo.qml:68
 msgid "Distro:"
 msgstr "Distribuzione:"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:99
+#: ../src/app/qml/systemTab/SystemInfo.qml:73
 msgid "Desktop environment:"
 msgstr "Ambiente grafico:"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:107
+#: ../src/app/qml/systemTab/SystemInfo.qml:80
 msgid "Hardware information"
 msgstr "Informazioni hardware"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:111
-msgid "Device:"
-msgstr "Dispositivo:"
+#: ../src/app/qml/systemTab/SystemInfo.qml:84
+msgid "Device name:"
+msgstr ""
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:116
+#: ../src/app/qml/systemTab/SystemInfo.qml:89
 msgid "CPU:"
 msgstr "CPU:"
 
-#: ../src/app/qml/systemTab/SystemInfo.qml:121
+#: ../src/app/qml/systemTab/SystemInfo.qml:94
 msgid "Memory:"
 msgstr "Memoria:"
 
-#: ../src/app/qml/systemTab/SystemTab.qml:42
+#: ../src/app/qml/systemTab/SystemTab.qml:50
 msgid "System informations"
 msgstr "Informazioni di sistema"
 
-#: ../src/app/qml/systemTab/SystemTab.qml:58
+#: ../src/app/qml/systemTab/SystemTab.qml:67
 msgid "USB settings"
 msgstr "Impostazioni USB"
 
-#: ../src/app/qml/systemTab/SystemTab.qml:62
+#: ../src/app/qml/systemTab/SystemTab.qml:72
 #: ../src/app/qml/systemTab/UsbMode.qml:31
 msgid "ADB settings"
 msgstr "Impostazioni di ADB"
@@ -662,6 +710,30 @@ msgstr "Passcode o la Passphrase:"
 #: ../src/plugin/pamauthentication/AuthenticationService.qml:59
 msgid "Authentication failed"
 msgstr "Autenticazione non riuscita"
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:67
+msgid "Failed with miscellaneous internal error."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:70
+msgid "Failed with syntax error, or failed to parse command."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:73
+msgid "Failed as a file or directory was not found."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:76
+msgid "Nothing useful was done."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:79
+msgid "The initial setup failed, e.g. setting the network proxy."
+msgstr ""
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:82
+msgid "The transaction failed, see the detailed error for more information."
+msgstr ""
 
 #: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
