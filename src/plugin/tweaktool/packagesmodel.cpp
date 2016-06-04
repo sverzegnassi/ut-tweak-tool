@@ -162,6 +162,7 @@ void PackagesModel::appendSystemApps()
             qDebug() << "Desktop file found:" << path;
 
             QSettings appInfo(path, QSettings::IniFormat);
+            appInfo.setIniCodec("UTF-8");
 
             Hook appHook;
             appHook.type = Hook::App;
