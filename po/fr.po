@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-02 15:42+0200\n"
-"PO-Revision-Date: 2016-05-16 08:44+0000\n"
-"Last-Translator: Anne <anneonyme017@gmail.com>\n"
+"PO-Revision-Date: 2016-06-04 08:45+0000\n"
+"Last-Translator: alexisme <alexanderc.spa@openmailbox.org>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-03 06:27+0000\n"
+"X-Launchpad-Export-Date: 2016-06-05 05:57+0000\n"
 "X-Generator: Launchpad (build 18086)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:198
 msgid "Edge drag areas width"
-msgstr ""
+msgstr "Largeur des zones activées par glissement sur les bords"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:210
 msgid "The width of the edge drag areas"
@@ -494,7 +494,7 @@ msgstr "Fenêtré"
 
 #: ../src/app/qml/components/FilePickerPage.qml:30
 msgid "Pick a file"
-msgstr ""
+msgstr "Choisir un fichier"
 
 #: ../src/app/qml/main.qml:62
 msgid "Behavior"
@@ -545,7 +545,7 @@ msgstr "<i>Inconnue</i>"
 #: ../src/plugin/pamauthentication/AuthenticationDialog.qml:50
 #: ../src/plugin/pamauthentication/NotifyDialog.qml:25
 msgid "Ok"
-msgstr "Bonne"
+msgstr "Valider"
 
 #: ../src/app/qml/systemTab/BatteryInfo.qml:76
 msgid "Bad"
@@ -559,27 +559,27 @@ msgstr "Température :"
 #: ../src/app/qml/systemTab/ClickInstall.qml:141
 #: ../src/app/qml/systemTab/SystemTab.qml:39
 msgid "Install click package"
-msgstr ""
+msgstr "Installer un paquet Click"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:53
 msgid "Selected package"
-msgstr ""
+msgstr "Paquet sélectionné"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:54
 msgid "<i>None</i>"
-msgstr ""
+msgstr "<i>Aucun</i>"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:58
 msgid "Pick..."
-msgstr ""
+msgstr "Choisir..."
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:69
 msgid "Install"
-msgstr ""
+msgstr "Installer"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:83
 msgid "Output:"
-msgstr ""
+msgstr "Sortie :"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:110
 msgid "Choose a package"
@@ -587,7 +587,7 @@ msgstr "Choisir un paquet"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:126
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:130
 #: ../src/app/qml/systemTab/ClickInstall.qml:145
@@ -596,7 +596,7 @@ msgstr "Fermer"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:142
 msgid "The package has been successfully installed."
-msgstr ""
+msgstr "Le paquet a été installé avec succès."
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:31
 #: ../src/app/qml/systemTab/SystemTab.qml:44
@@ -657,7 +657,7 @@ msgstr "Informations sur le matériel"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:84
 msgid "Device name:"
-msgstr ""
+msgstr "Nom du périphérique :"
 
 #: ../src/app/qml/systemTab/SystemInfo.qml:89
 msgid "CPU:"
@@ -729,27 +729,32 @@ msgstr "Échec de l'authentification"
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:67
 msgid "Failed with miscellaneous internal error."
-msgstr ""
+msgstr "Échec lié à des erreurs internes diverses."
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:70
 msgid "Failed with syntax error, or failed to parse command."
 msgstr ""
+"Échec lié à une erreur de syntaxe ou échec de l'analyse de la commande."
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:73
 msgid "Failed as a file or directory was not found."
-msgstr ""
+msgstr "Échec de la recherche d'un fichier ou d'un répertoire."
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:76
 msgid "Nothing useful was done."
-msgstr ""
+msgstr "Rien d'utile n'a été fait."
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:79
 msgid "The initial setup failed, e.g. setting the network proxy."
 msgstr ""
+"La configuration initiale a échoué, par exemple le paramétrage du proxy "
+"réseau."
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:82
 msgid "The transaction failed, see the detailed error for more information."
 msgstr ""
+"La transaction a échoué, voir le rapport d'erreur détaillé pour plus "
+"d'informations."
 
 #: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
