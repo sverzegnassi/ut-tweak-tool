@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-02 15:42+0200\n"
-"PO-Revision-Date: 2016-05-06 03:21+0000\n"
+"PO-Revision-Date: 2016-06-07 07:24+0000\n"
 "Last-Translator: Cheng Lu <chenglu1990@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-03 06:27+0000\n"
-"X-Generator: Launchpad (build 18086)\n"
+"X-Launchpad-Export-Date: 2016-06-08 06:45+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
 msgid "Details"
@@ -27,7 +27,7 @@ msgstr "常规"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
 msgid "Hooks"
-msgstr ""
+msgstr "钩子"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:22
 msgid "Uninstall"
@@ -422,11 +422,11 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:198
 msgid "Edge drag areas width"
-msgstr ""
+msgstr "边缘拖动区域宽度"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:210
 msgid "The width of the edge drag areas"
-msgstr ""
+msgstr "边缘拖动区域的宽度"
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:211
 msgid "How big (in grid units) the edge-drag sensitive area should be."
@@ -474,7 +474,7 @@ msgstr "窗口模式"
 
 #: ../src/app/qml/components/FilePickerPage.qml:30
 msgid "Pick a file"
-msgstr ""
+msgstr "选择文件"
 
 #: ../src/app/qml/main.qml:62
 msgid "Behavior"
@@ -539,27 +539,27 @@ msgstr "温度："
 #: ../src/app/qml/systemTab/ClickInstall.qml:141
 #: ../src/app/qml/systemTab/SystemTab.qml:39
 msgid "Install click package"
-msgstr ""
+msgstr "安装 click 包"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:53
 msgid "Selected package"
-msgstr ""
+msgstr "已选包"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:54
 msgid "<i>None</i>"
-msgstr ""
+msgstr "<i>无</i>"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:58
 msgid "Pick..."
-msgstr ""
+msgstr "选择..."
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:69
 msgid "Install"
-msgstr ""
+msgstr "安装"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:83
 msgid "Output:"
-msgstr ""
+msgstr "输出："
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:110
 msgid "Choose a package"
@@ -567,7 +567,7 @@ msgstr "选择安装包"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:126
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:130
 #: ../src/app/qml/systemTab/ClickInstall.qml:145
@@ -576,7 +576,7 @@ msgstr "关闭"
 
 #: ../src/app/qml/systemTab/ClickInstall.qml:142
 msgid "The package has been successfully installed."
-msgstr ""
+msgstr "安装包已经成功安装。"
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:31
 #: ../src/app/qml/systemTab/SystemTab.qml:44
@@ -709,7 +709,7 @@ msgstr ""
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:73
 msgid "Failed as a file or directory was not found."
-msgstr ""
+msgstr "失败，没有找到文件或目录"
 
 #: ../src/plugin/tweaktool/clickinstaller.cpp:76
 msgid "Nothing useful was done."
@@ -733,7 +733,7 @@ msgstr ""
 
 #: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
-msgstr ""
+msgstr "你 Ubuntu 设备的高级设置"
 
 #~ msgid "Ubuntu Touch Information"
 #~ msgstr "Ubuntu Touch 信息"
