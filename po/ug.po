@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-02 15:42+0200\n"
-"PO-Revision-Date: 2016-04-16 17:20+0000\n"
+"PO-Revision-Date: 2016-07-03 13:26+0000\n"
 "Last-Translator: Eltikin <eltikinuyghur@hotmail.com>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-03 06:27+0000\n"
-"X-Generator: Launchpad (build 18086)\n"
+"X-Launchpad-Export-Date: 2016-07-04 06:17+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
 msgid "Details"
-msgstr ""
+msgstr "تەپسىلاتلار"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
 msgid "General"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:22
 msgid "Uninstall"
-msgstr ""
+msgstr "ئۆچۈر"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:88
 msgid "Do you want to uninstall this package?"
@@ -51,7 +51,7 @@ msgstr "بولدىلا"
 #: ../src/app/qml/systemTab/ImageWritable.qml:97
 #: ../src/app/qml/systemTab/UsbMode.qml:117
 msgid "OK"
-msgstr ""
+msgstr "تامام"
 
 #. TRANSLATORS: The template is defined in the AppArmor manifest of a package.
 #. "<i>generic</i>" is used when no template has been defined in the manifest (i.e. it's a standard confined app).
