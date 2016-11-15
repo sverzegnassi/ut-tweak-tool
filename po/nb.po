@@ -1,0 +1,755 @@
+# Norwegian Bokmal translation for ubuntu-touch-tweak-tool
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the ubuntu-touch-tweak-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-touch-tweak-tool\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-06-02 15:42+0200\n"
+"PO-Revision-Date: 2016-11-14 19:55+0000\n"
+"Last-Translator: Dag Bakken <dag@ybeweb.com>\n"
+"Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-11-15 06:48+0000\n"
+"X-Generator: Launchpad (build 18261)\n"
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
+msgid "General"
+msgstr "Generelt"
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
+msgid "Hooks"
+msgstr "Koblinger"
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:22
+msgid "Uninstall"
+msgstr "Avinstaller"
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:88
+msgid "Do you want to uninstall this package?"
+msgstr "Vil du avinstallere pakken?"
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:95
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:217
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:165
+#: ../src/app/qml/systemTab/ImageWritable.qml:88
+#: ../src/app/qml/systemTab/UsbMode.qml:111
+#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:62
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../src/app/qml/applicationsTab/ApplicationPage.qml:101
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:222
+#: ../src/app/qml/systemTab/ImageWritable.qml:97
+#: ../src/app/qml/systemTab/UsbMode.qml:117
+msgid "OK"
+msgstr "OK"
+
+#. TRANSLATORS: The template is defined in the AppArmor manifest of a package.
+#. "<i>generic</i>" is used when no template has been defined in the manifest (i.e. it's a standard confined app).
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:80
+#, qt-format
+msgid "Template: %1"
+msgstr "Mal: %1"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:80
+msgid "<i>generic</i>"
+msgstr "<i>generisk</i>"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:81
+#, qt-format
+msgid "Policy version: %1"
+msgstr ""
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:101
+msgid "Can integrate with your online accounts"
+msgstr "Kan integrere med din online konto"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:104
+msgid "Can play audio"
+msgstr "Kan avspille lyd"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:107
+msgid "Can access the calendar (reserved)"
+msgstr "Tilgang til kalenderen"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:110
+msgid "Can access the camera"
+msgstr "Tilgang til kameraet"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:113
+msgid "Can access network connectivity informations"
+msgstr "Tilgang til nettverksforbindelse informasjon"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:116
+msgid "Can access contacts"
+msgstr "Til til kontakter"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:119
+msgid "Can request/import data from other applications"
+msgstr "Vil kunne be om/importere data fra andre applikasjoner"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:122
+msgid "Can provide/export data to other applications"
+msgstr "Vil kunne gi/eksportere data til andre applikasjoner"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:125
+msgid "Use special debugging tools (reserved)"
+msgstr "Bruk eksplisitte debugverktøy (reservert)"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:128
+msgid "Can access message and call history (reserved)"
+msgstr "Vil ha tilgang til beskjeder og ringehistorie (reservert)"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:131
+msgid "In-app purchases"
+msgstr "Kjøp i app"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:134
+msgid "Can request keeping the screen on"
+msgstr "Can tvinge skjermen til å være på"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:137
+msgid "Can access to your current location"
+msgstr "Vil ha tilgang til din posisjon"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:140
+msgid "Can access the microphone"
+msgstr "Vil ha tilgang til mikrofonen"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:143
+msgid "Can read and write to music files (reserved)"
+msgstr "Kan lese og skrive lydfiler"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:146
+msgid "Can read all music files (reserved)"
+msgstr "Kan lese alle typer lydfiler (reservert)"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:149
+msgid "Can access the network"
+msgstr "Har tilgang til nettverket"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:152
+msgid "Can read and write to pictures files (reserved)"
+msgstr "Kan lese og skrive bildefiler (reservert)"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:155
+msgid "Can read all pictures files (reserved)"
+msgstr "Kan lese alle bildefiler (reservert)"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:158
+msgid "Can use push notifications"
+msgstr "Kan bruke push"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:161
+msgid "Can access the device sensors"
+msgstr "Har tilgang til enhetens sensorer"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:164
+msgid "Can show informations on the lock screen"
+msgstr "Kan vise informasjon på låseskjermen"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:167
+msgid "Can play video"
+msgstr "Kan spille video"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:170
+msgid "Can read and write to video files (reserved)"
+msgstr "Kan lese og skrive videofiler (reservert)"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:173
+msgid "Can read all video files (reserved)"
+msgstr "Kan lese alle videofiler (reservert)"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:176
+msgid "Can use the Ubuntu webview component"
+msgstr "Kan bruke Ubuntu webview komponenten"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:286
+msgid "Can read the following additional paths:"
+msgstr "Kan lese følgende stier:"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageHooksTab.qml:309
+msgid "Can write to the following additional paths:"
+msgstr "Kan skrive til følgende stier:"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:101
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:115
+msgid "Prevent app suspension"
+msgstr "Motvirk app avbrudd"
+
+#. TRANSLATORS: "—" is a special char (please copy-paste it into your translation) . "%1" is a formatted string (e.g. 2.56 MB)
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:138
+#, qt-format
+msgid "Disk usage — %1"
+msgstr "Diskbruk — %1"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:144
+msgid "Application size"
+msgstr "Applikasjonsstørrelse"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:150
+msgid "Cache size"
+msgstr "Mellomlagerstørrelse"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:156
+msgid "Data size"
+msgstr "Datastørrelse"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:162
+msgid "Config size"
+msgstr "Konfigurasjonsstørrelse"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:169
+msgid "Clear..."
+msgstr "Slett..."
+
+#. TRANSLATORS: %1 is the name of the application
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:175
+#, qt-format
+msgid "Clear %1 data"
+msgstr "Slett data for %1..."
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:199
+msgid "Cache:"
+msgstr "Mellomlager:"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:204
+msgid "Application data:"
+msgstr "Applikasjonsdata:"
+
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:209
+msgid "Config:"
+msgstr "Konfigurasjon:"
+
+#. TRANSLATORS: %1 is the size of a file, expressed in GB
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:241
+#, qt-format
+msgid "%1 GB"
+msgstr "%1 GB"
+
+#. TRANSLATORS: %1 is the size of a file, expressed in MB
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:246
+#, qt-format
+msgid "%1 MB"
+msgstr "%1 MB"
+
+#. TRANSLATORS: %1 is the size of a file, expressed in kB
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:251
+#, qt-format
+msgid "%1 kB"
+msgstr "%1 kB"
+
+#. TRANSLATORS: %1 is the size of a file, expressed in byte
+#: ../src/app/qml/applicationsTab/ApplicationPageOverviewTab.qml:254
+#, qt-format
+msgid "%1 byte"
+msgstr "%1 byte"
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
+msgid "Show all"
+msgstr "Vis alle"
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
+msgid "Contains an app"
+msgstr "Inneholder en app"
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:33
+msgid "Contains a scope"
+msgstr "Inneholder et omfang"
+
+#: ../src/app/qml/applicationsTab/ApplicationsTab.qml:39
+msgid "No installed package"
+msgstr "Ingen installert pakke"
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:49
+msgid ""
+"Set your favorite apps to be shown in the applications scope.<br>Swipe to "
+"right to delete an item. Press and hold will activate the sort mode."
+msgstr ""
+"Set din favorittapp til å vises i applikasjonsomfanget.<br>Sveip mot høyre "
+"for å slette en enhet. 'Trykk og hold' vil aktivere sorteringsmodus."
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:53
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:146
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:35
+msgid "Favorite apps"
+msgstr "Favorittapper"
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:63
+msgid "No favorite specified"
+msgstr "Ingen favoritter spesifisert"
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:64
+msgid ""
+"Default applications will be shown in the 'App' scope.\n"
+"Tap the '+' in the header to add a favorite app."
+msgstr ""
+"De vanlige applikasjonene vil vises i 'app' området.\n"
+"Trykk '+' øverst for å legge til en favorittapp."
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:83
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:67
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:118
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:170
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:227
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
+msgid "Reset"
+msgstr "Tilbakestill"
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:93
+msgid "<i>This app is currently uninstalled.</i>"
+msgstr "<i>Denne appen avsinstalleres nå.</i>"
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:102
+msgid "Delete"
+msgstr "Slett"
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavs.qml:151
+#: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:34
+msgid "Add new favorite"
+msgstr "Legg til ny favoritt"
+
+#: ../src/app/qml/behaviourTab/AppsScopeFavsAddFromInstalled.qml:52
+msgid "Available apps"
+msgstr "Tilgjengelige apper"
+
+#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:29
+msgid "Battery indicator"
+msgstr "Batteri-indikator"
+
+#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:40
+#: ../src/app/qml/systemTab/ImageWritable.qml:47
+msgid "Available settings"
+msgstr "Tilgjengelig oppsett"
+
+#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:43
+msgid "Show percentage on panel"
+msgstr "Vis prosenter på panelet"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:31
+msgid "Application scope"
+msgstr "Applikasjons område"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:42
+msgid "Indicators"
+msgstr "Indikatorer"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:46
+msgid "Battery"
+msgstr "Batteri"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:52
+msgid "Unity 8"
+msgstr "Unity 8"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:56
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:29
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:61
+msgid "Usage mode"
+msgstr "Brukermodus"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:61
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:29
+msgid "Launcher"
+msgstr "Oppstarter"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:66
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:31
+msgid "Edge sensitivity"
+msgstr "Edge følsomhet"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:42
+msgid "Edge barrier sensitivity"
+msgstr "Edge grensefølsomhet"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:50
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:209
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
+#, qt-format
+msgid "Current value: %1"
+msgstr "Gjeldende verdi: %1"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:51
+msgid "Sensitivity of screen edge barriers for the mouse pointer."
+msgstr "Følsomhet for skjermkantgrense for musepeker."
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:52
+msgid ""
+"Some UI actions like revealing the launcher or the applications spread are "
+"triggered by pushing the mouse pointer against a screen edge. This key "
+"defines how much you have to push in order to trigger the associated action."
+msgstr ""
+"Noen brukergrensesnitthandlinger som å vise oppstarteren eller applikasjoner "
+"trigges ved å trykke musepekeren mot skjermkanten. Dette definerer hvor mye "
+"du må trykke for å aktivere den koblede hendelsen."
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:94
+msgid "Edge barrier minimum push"
+msgstr "Kantgrensens minimumtrykk"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:103
+msgid "Minimum push needed to overcome edge barrier."
+msgstr "Minimum trykk for å overkomme kantgrensen."
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:104
+msgid ""
+"How much you have to push (in grid units) the mouse against an edge barrier "
+"when sensibility is 100."
+msgstr ""
+"Hvor mye du må trykke (i skjermenheter) musen mot kanten når følsomheten er "
+"100."
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:146
+msgid "Edge barrier maximum push"
+msgstr "Kantgrense maksimum press"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:155
+msgid "Maximum push needed to overcome edge barrier."
+msgstr "Maksimum press for å oberkomme kantgrensen"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:156
+msgid ""
+"How much you have to push (in grid units) the mouse against an edge barrier "
+"when sensibility is 1."
+msgstr ""
+"Hvor mye du må presse ( i skjermenheter) musen mot en kantgrense når "
+"følsomheten er 1."
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:198
+msgid "Edge drag areas width"
+msgstr "Kantflyttingsområde bredde"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:210
+msgid "The width of the edge drag areas"
+msgstr "Bredden av kantflyttingsområde"
+
+#: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:211
+msgid "How big (in grid units) the edge-drag sensitive area should be."
+msgstr ""
+"Hvor stort ( i skjermenheter) kantflyttingsområdets følsomhetsområde burde "
+"være."
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
+msgid "Autohide"
+msgstr "Skjul automatisk"
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:43
+msgid "Autohide the launcher"
+msgstr "Skjul starteren automatisk"
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:44
+msgid ""
+"This will only be applied in windowed mode. In staged mode, the launcher "
+"will always hide."
+msgstr ""
+"Dette er kun for vindusmodus. I mobilmodus, oppstarteren vil alltid skjules."
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:55
+msgid "Launcher width"
+msgstr "Oppstarter bredde"
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:64
+msgid "Width of the launcher in grid units."
+msgstr "Oppstarter bredde i skjermenheter."
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:65
+msgid "Changes the width of the launcher in all usage modes."
+msgstr "Endrer bredden av oppstarteren i alle modi."
+
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
+msgid ""
+"This setting allows you to switch from the stage mode (default for mobile "
+"device) to the windowed mode."
+msgstr ""
+"Denne modus tillater deg å bytte mellom mobilmodus (vanlig for mobilenheter) "
+"til vindusmodus."
+
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:64
+msgid "Staged"
+msgstr "Mobilmodus"
+
+#: ../src/app/qml/behaviourTab/Unity8Mode.qml:64
+msgid "Windowed"
+msgstr "Vindusmodus"
+
+#: ../src/app/qml/components/FilePickerPage.qml:30
+msgid "Pick a file"
+msgstr "Velg fil"
+
+#: ../src/app/qml/main.qml:62
+msgid "Behavior"
+msgstr "Adferd"
+
+#: ../src/app/qml/main.qml:68
+msgid "Apps & Scopes"
+msgstr ""
+
+#: ../src/app/qml/main.qml:74 ../src/app/qml/systemTab/SystemTab.qml:33
+msgid "System"
+msgstr "System"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:27
+msgid "Battery information"
+msgstr "Batteri-informasjon"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:43
+msgid "Level:"
+msgstr "Nivå:"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:48
+msgid "Cycle count:"
+msgstr "Repetisjoner:"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:53
+msgid "Maximum capacity:"
+msgstr "Maksimum kapasitet:"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:58
+msgid "Remaining capacity:"
+msgstr "Gjenværende kapasitet:"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:63
+msgid "Capacity:"
+msgstr "Kapasitet:"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:68
+msgid "Health:"
+msgstr "Tilstand:"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:72
+#: ../src/app/qml/systemTab/SystemInfo.qml:29
+msgid "<i>Unknown</i>"
+msgstr "<i>Ukjent</i>"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:74
+#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:50
+#: ../src/plugin/pamauthentication/NotifyDialog.qml:25
+msgid "Ok"
+msgstr "Ok"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:76
+msgid "Bad"
+msgstr "Ikke bra"
+
+#: ../src/app/qml/systemTab/BatteryInfo.qml:82
+msgid "Temperature:"
+msgstr "Temperatur:"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:32
+#: ../src/app/qml/systemTab/ClickInstall.qml:141
+#: ../src/app/qml/systemTab/SystemTab.qml:39
+msgid "Install click package"
+msgstr "Installer klikkpakke"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:53
+msgid "Selected package"
+msgstr "Velg pakke"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:54
+msgid "<i>None</i>"
+msgstr "<i>Ingen</i>"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:58
+msgid "Pick..."
+msgstr "Velg..."
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:69
+msgid "Install"
+msgstr "Installer"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:83
+msgid "Output:"
+msgstr "Resultat:"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:110
+msgid "Choose a package"
+msgstr "Velg pakke"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:126
+msgid "Error"
+msgstr "Feilmelding"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:130
+#: ../src/app/qml/systemTab/ClickInstall.qml:145
+msgid "Close"
+msgstr "Lukk"
+
+#: ../src/app/qml/systemTab/ClickInstall.qml:142
+msgid "The package has been successfully installed."
+msgstr "Pakken er installert."
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:31
+#: ../src/app/qml/systemTab/SystemTab.qml:44
+msgid "Make image writable"
+msgstr "Gjør systempakken skrivbar"
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:44
+msgid ""
+"Be very careful when editing the filesystem image. There is a high risk of "
+"breaking OTA updates."
+msgstr ""
+"Vær veldig forsiktig når du redigerer filsystemets systempakke. Det er stor "
+"risioko for å ødelegge for videre oppdateringer."
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:50
+msgid "Write permissions"
+msgstr "Skrivetillatelser"
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:79
+msgid "Reboot device"
+msgstr "Enhet omstart"
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:80
+msgid ""
+"This change require a reboot to take effect. Do you want to reboot the "
+"device now?"
+msgstr ""
+"Denne forandringen krever en omstart av enheten. Vil du ta en omstart nå?"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:40
+msgid "System information"
+msgstr "System informasjon"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:54
+msgid "Ubuntu Touch information"
+msgstr "Ubuntu Touch informasjon"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:58
+msgid "Kernel:"
+msgstr "Kjerne:"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:63
+msgid "System platform:"
+msgstr "Systemplatform:"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:68
+msgid "Distro:"
+msgstr "Utgivelse:"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:73
+msgid "Desktop environment:"
+msgstr "Skrivebordsmiljø"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:80
+msgid "Hardware information"
+msgstr "Maskinvareinformasjon"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:84
+msgid "Device name:"
+msgstr "Enhetsnavn:"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:89
+msgid "CPU:"
+msgstr "Prosessor:"
+
+#: ../src/app/qml/systemTab/SystemInfo.qml:94
+msgid "Memory:"
+msgstr "Minne:"
+
+#: ../src/app/qml/systemTab/SystemTab.qml:50
+msgid "System informations"
+msgstr "Systeminformasjon:"
+
+#: ../src/app/qml/systemTab/SystemTab.qml:67
+msgid "USB settings"
+msgstr "USB oppsett"
+
+#: ../src/app/qml/systemTab/SystemTab.qml:72
+#: ../src/app/qml/systemTab/UsbMode.qml:31
+msgid "ADB settings"
+msgstr "ADB oppsett"
+
+#: ../src/app/qml/systemTab/UsbMode.qml:44
+msgid "USB mode"
+msgstr "USB modus"
+
+#: ../src/app/qml/systemTab/UsbMode.qml:50
+msgid "MTP - Media Transfer Protocol"
+msgstr "MTP - Media overføringsprotokoll"
+
+#: ../src/app/qml/systemTab/UsbMode.qml:51
+msgid "RNDIS - Remote Network Driver Interface Specification"
+msgstr ""
+
+#: ../src/app/qml/systemTab/UsbMode.qml:77
+msgid "Debugging"
+msgstr "Feilsøking"
+
+#: ../src/app/qml/systemTab/UsbMode.qml:83
+#: ../src/app/qml/systemTab/UsbMode.qml:102
+msgid "Revoke USB debugging authorizations"
+msgstr "Tilbakekall USB debugtillatelser"
+
+#: ../src/app/qml/systemTab/UsbMode.qml:103
+msgid ""
+"Revoke access to USB debugging from all computers you've previously "
+"authorized?"
+msgstr ""
+"Tilbakekall tilgang til USB debug fra alle datamaskiner du tidligere har "
+"gitt tilgang?"
+
+#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:25
+msgid "Authentication required"
+msgstr "Autentisering kreves"
+
+#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:27
+msgid "Enter passcode or passphrase:"
+msgstr "Skriv inn tilgangskode eller tilgangsfrase:"
+
+#: ../src/plugin/pamauthentication/AuthenticationDialog.qml:40
+msgid "passcode or passphrase"
+msgstr "tilgangskode eller tilgangsfrase"
+
+#: ../src/plugin/pamauthentication/AuthenticationService.qml:59
+msgid "Authentication failed"
+msgstr "Autentisering mislyktes"
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:67
+msgid "Failed with miscellaneous internal error."
+msgstr "Mislyktes med forskjellige inerne feil."
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:70
+msgid "Failed with syntax error, or failed to parse command."
+msgstr "Mislyktes med syktaksfeil eller mislykked kommandoanalyse."
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:73
+msgid "Failed as a file or directory was not found."
+msgstr "Mislykked da ikke fil eller mappe ble funnet."
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:76
+msgid "Nothing useful was done."
+msgstr "Ingenting av nytte ble utført."
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:79
+msgid "The initial setup failed, e.g. setting the network proxy."
+msgstr "Begynneroppsett feilet, altså oppsett av nettverks proxy."
+
+#: ../src/plugin/tweaktool/clickinstaller.cpp:82
+msgid "The transaction failed, see the detailed error for more information."
+msgstr "Overførsel mislyktes, les detaljert feilrapport for mer informasjon."
+
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+msgid "UT Tweak Tool"
+msgstr ""
+
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+msgid "tweak;tool;settings;"
+msgstr ""
+
+#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+msgid "Advanced settings for your Ubuntu device"
+msgstr "Avansert oppsett for din Ubuntu enhet"
