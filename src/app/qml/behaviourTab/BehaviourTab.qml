@@ -66,5 +66,10 @@ ScrollView {
             text: i18n.tr("Edge sensitivity")
             pageUrl: Qt.resolvedUrl("Unity8EdgeSensitivity.qml")
         }
+
+        ListItems.Page {
+            text: i18n.tr("Indicator menu")
+            pageUrl: Qt.resolvedUrl("Unity8IndicatorMenu.qml")
+        }
     }
 }

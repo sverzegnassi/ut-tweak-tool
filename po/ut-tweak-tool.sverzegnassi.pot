@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-30 20:58+0000\n"
+"POT-Creation-Date: 2016-11-30 21:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -366,6 +366,10 @@ msgstr ""
 msgid "Edge sensitivity"
 msgstr ""
 
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:71
+msgid "Indicator menu"
+msgstr ""
+
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:42
 msgid "Edge barrier sensitivity"
 msgstr ""
@@ -428,6 +432,22 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:211
 msgid "How big (in grid units) the edge-drag sensitive area should be."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:29
+msgid "Indicator Menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:40
+msgid "Enable Indicator Menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:43
+msgid "Enable the indicator menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:44
+msgid "Enable or disable the indicator menu"
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
