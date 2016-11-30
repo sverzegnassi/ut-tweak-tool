@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-02 15:42+0200\n"
+"POT-Creation-Date: 2016-11-30 20:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -456,6 +456,18 @@ msgstr ""
 msgid "Changes the width of the launcher in all usage modes."
 msgstr ""
 
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:106
+msgid "Enable Launcher"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:109
+msgid "Enable the launcher"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:110
+msgid "Enable or disable the launcher"
+msgstr ""
+
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
 msgid ""
 "This setting allows you to switch from the stage mode (default for mobile "
@@ -721,14 +733,14 @@ msgstr ""
 msgid "The transaction failed, see the detailed error for more information."
 msgstr ""
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: /home/brian/dev/ubuntu/ubuntu-touch-tweak-tool/build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr ""
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /home/brian/dev/ubuntu/ubuntu-touch-tweak-tool/build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /home/brian/dev/ubuntu/ubuntu-touch-tweak-tool/build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr ""

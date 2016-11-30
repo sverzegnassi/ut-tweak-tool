@@ -1,0 +1,8 @@
+{
+  "package": "ut-tweak-tool.sverzegnassi",
+  "app": "ut-tweak-tool",
+  "sdk": "ubuntu-sdk-15.04",
+  "arch": "armhf",
+  "template": "cmake",
+  "kill": "ut-tweak-tool"
+}

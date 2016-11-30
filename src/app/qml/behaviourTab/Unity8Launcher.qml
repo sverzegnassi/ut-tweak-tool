@@ -24,7 +24,7 @@ import "../components/ListItems" as ListItems
 
 Page {
     id: rootItem
-          
+
     header: PageHeader {
         title: i18n.tr("Launcher")
         flickable: view.flickableItem
@@ -102,9 +102,24 @@ Page {
                     }
                 }
             }
+
+            ListItems.SectionDivider { text: i18n.tr("Enable Launcher") }
+
+            ListItems.Control {
+                title.text: i18n.tr("Enable the launcher")
+                summary.text: i18n.tr("Enable or disable the launcher")
+                summary.maximumLineCount: Number.MAX_VALUE
+
+                control: Switch {
+                    Component.onCompleted: checked = settings.enableLauncher
+                    onClicked: {
+                        settings.enableLauncher = !settings.enableLauncher
+                    }
+                }
+            }
         }
     }
-    
+
     GSettings {
         id: settings
         schema.id: "com.canonical.Unity8"
