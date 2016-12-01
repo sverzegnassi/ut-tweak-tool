@@ -1,6 +1,6 @@
 /*
   This file is part of ut-tweak-tool
-  Copyright (C) 2015, 2016 Stefano Verzegnassi
+  Copyright (C) 2015 Stefano Verzegnassi
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License 3 as published by
@@ -24,9 +24,9 @@ import "../components/ListItems" as ListItems
 
 Page {
     id: rootItem
-          
+
     header: PageHeader {
-        title: i18n.tr("Battery indicator")
+        title: i18n.tr("Indicators")
         flickable: view.flickableItem
     }
 
@@ -37,21 +37,42 @@ Page {
         Column {
             width: view.width
 
-            ListItems.SectionDivider { text: i18n.tr("Available settings") }
+            ListItems.SectionDivider { text: i18n.tr("General") }
+
+            ListItems.Control {
+                title.text: i18n.tr("Enable the indicator menu")
+                summary.text: i18n.tr("Enable or disable the indicator menu")
+                summary.maximumLineCount: Number.MAX_VALUE
+
+                control: Switch {
+                    Component.onCompleted: checked = settings.enableIndicatorMenu
+                    onClicked: {
+                        settings.enableIndicatorMenu = !settings.enableIndicatorMenu
+                    }
+                }
+            }
+
+            ListItems.SectionDivider { text: i18n.tr("Battery") }
 
             ListItems.Control {
                 title.text: i18n.tr("Show percentage on panel")
 
                 Switch {
-                    Component.onCompleted: checked = settings.showPercentage
-                    onClicked: settings.showPercentage = checked
+                    Component.onCompleted: checked = powerSettings.showPercentage
+                    onClicked: powerSettings.showPercentage = checked
                 }
             }
         }
     }
-    
+
     GSettings {
         id: settings
+        schema.id: "com.canonical.Unity8"
+    }
+
+
+    GSettings {
+        id: powerSettings
         schema.id: "com.canonical.indicator.power"
     }
 }
