@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-02 15:42+0200\n"
+"POT-Creation-Date: 2016-11-30 21:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -366,6 +366,10 @@ msgstr ""
 msgid "Edge sensitivity"
 msgstr ""
 
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:71
+msgid "Indicator menu"
+msgstr ""
+
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:42
 msgid "Edge barrier sensitivity"
 msgstr ""
@@ -430,6 +434,22 @@ msgstr ""
 msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr ""
 
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:29
+msgid "Indicator Menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:40
+msgid "Enable Indicator Menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:43
+msgid "Enable the indicator menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8IndicatorMenu.qml:44
+msgid "Enable or disable the indicator menu"
+msgstr ""
+
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
 msgid "Autohide"
 msgstr ""
@@ -454,6 +474,18 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:65
 msgid "Changes the width of the launcher in all usage modes."
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:106
+msgid "Enable Launcher"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:109
+msgid "Enable the launcher"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:110
+msgid "Enable or disable the launcher"
 msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:58
@@ -721,14 +753,14 @@ msgstr ""
 msgid "The transaction failed, see the detailed error for more information."
 msgstr ""
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: /home/brian/dev/ubuntu/ubuntu-touch-tweak-tool/build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr ""
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /home/brian/dev/ubuntu/ubuntu-touch-tweak-tool/build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /home/brian/dev/ubuntu/ubuntu-touch-tweak-tool/build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr ""
