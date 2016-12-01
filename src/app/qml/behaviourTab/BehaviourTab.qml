@@ -38,16 +38,6 @@ ScrollView {
 
         // Unity 8 section
         ListItems.SectionDivider {
-            iconName: "gps"
-            text: i18n.tr("Indicators")
-        }
-
-        ListItems.Page {
-            text: i18n.tr("Battery")
-            pageUrl: Qt.resolvedUrl("BatteryIndicator.qml")
-        }
-
-        ListItems.SectionDivider {
             iconName: "computer-symbolic"
             text: i18n.tr("Unity 8")
         }
@@ -63,13 +53,13 @@ ScrollView {
         }
 
         ListItems.Page {
-            text: i18n.tr("Edge sensitivity")
-            pageUrl: Qt.resolvedUrl("Unity8EdgeSensitivity.qml")
+            text: i18n.tr("Indicators")
+            pageUrl: Qt.resolvedUrl("Unity8Indicators.qml")
         }
 
         ListItems.Page {
-            text: i18n.tr("Indicator menu")
-            pageUrl: Qt.resolvedUrl("Unity8IndicatorMenu.qml")
+            text: i18n.tr("Edge sensitivity")
+            pageUrl: Qt.resolvedUrl("Unity8EdgeSensitivity.qml")
         }
     }
 }

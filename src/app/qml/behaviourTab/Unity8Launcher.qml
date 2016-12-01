@@ -37,10 +37,23 @@ Page {
         Column {
             width: view.width
 
-            ListItems.SectionDivider { text: i18n.tr("Autohide") }
+            ListItems.SectionDivider { text: i18n.tr("General") }
 
             ListItems.Control {
-                title.text: i18n.tr("Autohide the launcher")
+                title.text: i18n.tr("Enable the launcher")
+                summary.text: i18n.tr("Enable or disable the launcher")
+                summary.maximumLineCount: Number.MAX_VALUE
+
+                control: Switch {
+                    Component.onCompleted: checked = settings.enableLauncher
+                    onClicked: {
+                        settings.enableLauncher = !settings.enableLauncher
+                    }
+                }
+            }
+
+            ListItems.Control {
+                title.text: i18n.tr("Autohide")
                 summary.text: i18n.tr("This will only be applied in windowed mode. In staged mode, the launcher will always hide.")
                 summary.maximumLineCount: Number.MAX_VALUE
 
@@ -99,21 +112,6 @@ Page {
                     }
                     onValueChanged: {
                         settings.launcherWidth = value.toFixed(0)
-                    }
-                }
-            }
-
-            ListItems.SectionDivider { text: i18n.tr("Enable Launcher") }
-
-            ListItems.Control {
-                title.text: i18n.tr("Enable the launcher")
-                summary.text: i18n.tr("Enable or disable the launcher")
-                summary.maximumLineCount: Number.MAX_VALUE
-
-                control: Switch {
-                    Component.onCompleted: checked = settings.enableLauncher
-                    onClicked: {
-                        settings.enableLauncher = !settings.enableLauncher
                     }
                 }
             }
