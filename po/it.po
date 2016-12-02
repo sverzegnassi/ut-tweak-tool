@@ -7,21 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-06-02 15:42+0200\n"
+"POT-Creation-Date: 2016-12-01 13:45+0100\n"
 "PO-Revision-Date: 2016-06-02 15:14+0000\n"
 "Last-Translator: Stefano Verzegnassi <stefano92.100@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-03 06:27+0000\n"
-"X-Generator: Launchpad (build 18086)\n"
+"X-Launchpad-Export-Date: 2016-12-02 05:42+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
 msgid "Details"
 msgstr "Dettagli"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:18
+#: ../src/app/qml/behaviourTab/Unity8Indicators.qml:40
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
 msgid "General"
 msgstr "Generale"
 
@@ -302,7 +304,7 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:118
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:170
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:227
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:79
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:92
 msgid "Reset"
 msgstr "Azzera"
 
@@ -323,47 +325,31 @@ msgstr "Aggiungi nuovo preferito"
 msgid "Available apps"
 msgstr "Applicazioni disponibili"
 
-#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:29
-msgid "Battery indicator"
-msgstr "Indicatore batteria"
-
-#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:40
-#: ../src/app/qml/systemTab/ImageWritable.qml:47
-msgid "Available settings"
-msgstr "Impostazioni disponibili"
-
-#: ../src/app/qml/behaviourTab/BatteryIndicator.qml:43
-msgid "Show percentage on panel"
-msgstr "Mostra percentuale sul pannello"
-
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:31
 msgid "Application scope"
 msgstr "Scope applicazioni"
 
 #: ../src/app/qml/behaviourTab/BehaviourTab.qml:42
-msgid "Indicators"
-msgstr "Indicatori"
-
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:46
-msgid "Battery"
-msgstr "Batteria"
-
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:52
 msgid "Unity 8"
 msgstr "Unity 8"
 
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:56
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:46
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:29
 #: ../src/app/qml/behaviourTab/Unity8Mode.qml:61
 msgid "Usage mode"
 msgstr "Modalità di utilizzo"
 
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:61
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:51
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:29
 msgid "Launcher"
 msgstr "Launcher"
 
-#: ../src/app/qml/behaviourTab/BehaviourTab.qml:66
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:56
+#: ../src/app/qml/behaviourTab/Unity8Indicators.qml:29
+msgid "Indicators"
+msgstr "Indicatori"
+
+#: ../src/app/qml/behaviourTab/BehaviourTab.qml:61
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:31
 msgid "Edge sensitivity"
 msgstr "Sensibilità bordo"
@@ -376,7 +362,7 @@ msgstr ""
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:102
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:154
 #: ../src/app/qml/behaviourTab/Unity8EdgeSensitivity.qml:209
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:63
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:76
 #, qt-format
 msgid "Current value: %1"
 msgstr "Valore attuale: %1"
@@ -436,15 +422,35 @@ msgstr ""
 msgid "How big (in grid units) the edge-drag sensitive area should be."
 msgstr ""
 
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:40
+#: ../src/app/qml/behaviourTab/Unity8Indicators.qml:43
+msgid "Enable the indicator menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Indicators.qml:44
+msgid "Enable or disable the indicator menu"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Indicators.qml:55
+msgid "Battery"
+msgstr "Batteria"
+
+#: ../src/app/qml/behaviourTab/Unity8Indicators.qml:58
+msgid "Show percentage on panel"
+msgstr "Mostra percentuale sul pannello"
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:43
+msgid "Enable the launcher"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:44
+msgid "Enable or disable the launcher"
+msgstr ""
+
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:56
 msgid "Autohide"
 msgstr "Nascondi automaticamente"
 
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:43
-msgid "Autohide the launcher"
-msgstr "Nascondi automaticamente il launcher"
-
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:44
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:57
 msgid ""
 "This will only be applied in windowed mode. In staged mode, the launcher "
 "will always hide."
@@ -452,15 +458,15 @@ msgstr ""
 "Questo si applica solo in modalità a finestra. Nella modalità \"stage\", il "
 "launcher rimane sempre invisible."
 
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:55
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:68
 msgid "Launcher width"
 msgstr "Larghezza del launcher"
 
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:64
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:77
 msgid "Width of the launcher in grid units."
 msgstr "Larghezza del launcher in \"grid units\"."
 
-#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:65
+#: ../src/app/qml/behaviourTab/Unity8Launcher.qml:78
 msgid "Changes the width of the launcher in all usage modes."
 msgstr "Modifica la larghezza del launcher in tutte le modalità d'uso."
 
@@ -596,6 +602,10 @@ msgid ""
 msgstr ""
 "Si prega di fare attenzione quando si modifica l'immagine di sistema. Vi è "
 "un alto rischio che gli aggiornamenti OTA possano fallire."
+
+#: ../src/app/qml/systemTab/ImageWritable.qml:47
+msgid "Available settings"
+msgstr "Impostazioni disponibili"
 
 #: ../src/app/qml/systemTab/ImageWritable.qml:50
 msgid "Write permissions"
@@ -735,16 +745,16 @@ msgstr ""
 msgid "The transaction failed, see the detailed error for more information."
 msgstr ""
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
+#: /tmp/build-more-unity8-settings-Desktop-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:1
 msgid "UT Tweak Tool"
 msgstr "UT Tweak Tool"
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
+#: /tmp/build-more-unity8-settings-Desktop-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:2
 msgid "tweak;tool;settings;"
 msgstr ""
 "tweak;tool;settings;impostazioni;impostazione;strumento;personalizzazione"
 
-#: /tmp/ubuntu-touch-tweak-tool-build/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
+#: /tmp/build-more-unity8-settings-Desktop-Default/po/ut-tweak-tool.sverzegnassi.desktop.in.in.h:3
 msgid "Advanced settings for your Ubuntu device"
 msgstr "Impostazioni avanzate per il tuo dispositivo Ubuntu"
 
