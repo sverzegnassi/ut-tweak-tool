@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: ubuntu-touch-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-01 13:45+0100\n"
-"PO-Revision-Date: 2016-06-04 08:45+0000\n"
-"Last-Translator: alexisme <alexanderc.spa@openmailbox.org>\n"
+"PO-Revision-Date: 2016-12-03 11:50+0000\n"
+"Last-Translator: cm-t arudy <arudy@singularity.fr>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-02 05:42+0000\n"
+"X-Launchpad-Export-Date: 2016-12-04 05:54+0000\n"
 "X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/app/qml/applicationsTab/ApplicationPage.qml:14
@@ -440,7 +440,7 @@ msgstr ""
 
 #: ../src/app/qml/behaviourTab/Unity8Indicators.qml:44
 msgid "Enable or disable the indicator menu"
-msgstr ""
+msgstr "Activer ou désactiver le menu 'indicator'"
 
 #: ../src/app/qml/behaviourTab/Unity8Indicators.qml:55
 msgid "Battery"
@@ -452,11 +452,11 @@ msgstr "Afficher le pourcentage sur le panneau"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:43
 msgid "Enable the launcher"
-msgstr ""
+msgstr "Activer le lanceur d'application"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:44
 msgid "Enable or disable the launcher"
-msgstr ""
+msgstr "Activer ou désactiver le lanceur d'application"
 
 #: ../src/app/qml/behaviourTab/Unity8Launcher.qml:56
 msgid "Autohide"
