@@ -44,6 +44,10 @@ Page {
                 summary.text: i18n.tr("Enable or disable the launcher")
                 summary.maximumLineCount: Number.MAX_VALUE
 
+                // Check for "undefined"
+                // Ref. http://askubuntu.com/questions/527799/how-do-you-check-if-a-property-is-undefined-in-qml
+                visible: settings.enableLauncher ? true : false
+
                 control: Switch {
                     Component.onCompleted: checked = settings.enableLauncher
                     onClicked: {

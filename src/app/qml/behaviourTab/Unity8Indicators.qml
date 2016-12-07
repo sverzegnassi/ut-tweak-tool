@@ -37,12 +37,22 @@ Page {
         Column {
             width: view.width
 
-            ListItems.SectionDivider { text: i18n.tr("General") }
+            ListItems.SectionDivider {
+                text: i18n.tr("General")
+
+                // Check for "undefined"
+                // Ref. http://askubuntu.com/questions/527799/how-do-you-check-if-a-property-is-undefined-in-qml
+                visible: settings.enableIndicatorMenu ? true : false
+            }
 
             ListItems.Control {
                 title.text: i18n.tr("Enable the indicator menu")
                 summary.text: i18n.tr("Enable or disable the indicator menu")
                 summary.maximumLineCount: Number.MAX_VALUE
+
+                // Check for "undefined"
+                // Ref. http://askubuntu.com/questions/527799/how-do-you-check-if-a-property-is-undefined-in-qml
+                visible: settings.enableIndicatorMenu ? true : false
 
                 control: Switch {
                     Component.onCompleted: checked = settings.enableIndicatorMenu
