@@ -46,7 +46,7 @@ Page {
 
                 // Check for "undefined"
                 // Ref. http://askubuntu.com/questions/527799/how-do-you-check-if-a-property-is-undefined-in-qml
-                visible: settings.enableLauncher ? true : false
+                visible: (settings.enableLauncher !== undedined)
 
                 control: Switch {
                     Component.onCompleted: checked = settings.enableLauncher

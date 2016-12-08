@@ -42,7 +42,7 @@ Page {
 
                 // Check for "undefined"
                 // Ref. http://askubuntu.com/questions/527799/how-do-you-check-if-a-property-is-undefined-in-qml
-                visible: settings.enableIndicatorMenu ? true : false
+                visible: (settings.enableIndicatorMenu !== undedined)
             }
 
             ListItems.Control {
@@ -52,7 +52,7 @@ Page {
 
                 // Check for "undefined"
                 // Ref. http://askubuntu.com/questions/527799/how-do-you-check-if-a-property-is-undefined-in-qml
-                visible: settings.enableIndicatorMenu ? true : false
+                visible: (settings.enableIndicatorMenu !== undedined)
 
                 control: Switch {
                     Component.onCompleted: checked = settings.enableIndicatorMenu
