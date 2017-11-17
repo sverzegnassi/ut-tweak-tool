@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qrc/applicationsTab/ApplicationPage.qml</file>
+        <file>qrc/applicationsTab/ApplicationPageHooksTab.qml</file>
+        <file>qrc/applicationsTab/ApplicationPageOverviewTab.qml</file>
+        <file>qrc/applicationsTab/ApplicationsTab.qml</file>
+        <file>qrc/behaviourTab/graphics/apps-scope.png</file>
+        <file>qrc/behaviourTab/AppsScopeFavs.qml</file>
+        <file>qrc/behaviourTab/AppsScopeFavsAddFromInstalled.qml</file>
+        <file>qrc/behaviourTab/BehaviourTab.qml</file>
+        <file>qrc/behaviourTab/Unity8EdgeSensitivity.qml</file>
+        <file>qrc/behaviourTab/Unity8Indicators.qml</file>
+        <file>qrc/behaviourTab/Unity8Launcher.qml</file>
+        <file>qrc/behaviourTab/Unity8Mode.qml</file>
+        <file>qrc/components/ListItems/AppLauncher.qml</file>
+        <file>qrc/components/ListItems/Control.qml</file>
+        <file>qrc/components/ListItems/OptionSelector.qml</file>
+        <file>qrc/components/ListItems/Page.qml</file>
+        <file>qrc/components/ListItems/SectionDivider.qml</file>
+        <file>qrc/components/ListItems/SingleValue.qml</file>
+        <file>qrc/components/ListItems/Warning.qml</file>
+        <file>qrc/components/EmptyState.qml</file>
+        <file>qrc/components/FilePickerPage.qml</file>
+        <file>qrc/components/Functions.js</file>
+        <file>qrc/pam/AuthenticationDialog.qml</file>
+        <file>qrc/pam/AuthenticationService.qml</file>
+        <file>qrc/pam/NotifyDialog.qml</file>
+        <file>qrc/systemTab/BatteryInfo.qml</file>
+        <file>qrc/systemTab/ClickInstall.qml</file>
+        <file>qrc/systemTab/ImageWritable.qml</file>
+        <file>qrc/systemTab/SystemInfo.qml</file>
+        <file>qrc/systemTab/SystemTab.qml</file>
+        <file>qrc/systemTab/UsbMode.qml</file>
+        <file>qrc/main.qml</file>
+    </qresource>
+</RCC>

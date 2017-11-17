@@ -3,6 +3,6 @@
   "app": "ut-tweak-tool",
   "sdk": "ubuntu-sdk-15.04",
   "arch": "armhf",
-  "template": "cmake",
+  "template": "qmake",
   "kill": "ut-tweak-tool"
 }

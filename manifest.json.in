@@ -2,15 +2,14 @@
     "name": "ut-tweak-tool.sverzegnassi",
     "title": "UT Tweak Tool",
     "description": "Advanced settings for your Ubuntu device",
-    "framework": "ubuntu-sdk-15.04.4",
+    "framework": "ubuntu-sdk-15.04.6",
     "architecture": "@CLICK_ARCH@",
-    "icon": "@ICON@",
     "hooks": {
         "ut-tweak-tool": {
-            "apparmor": "ut-tweak-tool.apparmor",
-            "desktop": "@DESKTOP_FILE@"
+            "apparmor": "ut-tweak-tool/ut-tweak-tool.apparmor",
+            "desktop": "ut-tweak-tool/ut-tweak-tool.desktop"
         }
     },
-    "version": "0.3.@BZR_REVNO@",
+    "version": "0.4.0",
     "maintainer": "Stefano Verzegnassi <verzegnassi.stefano@gmail.com>"
 }
