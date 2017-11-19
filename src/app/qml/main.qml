@@ -77,6 +77,19 @@ MainView {
                     }
                 ]
 
+                trailingActionBar {
+                    actions: [
+                        Action {
+                            id: startAction
+                            text: i18n.tr('About')
+                            iconName: "info"
+                            onTriggered: {
+                                mainPage.pageStack.push(Qt.resolvedUrl("aboutTab/AboutPage.qml"))
+                            }
+                        }
+                    ]
+                }
+
                 contents: ListItemLayout {
                     anchors.centerIn: parent
                     anchors.verticalCenterOffset: units.gu(0.25)
