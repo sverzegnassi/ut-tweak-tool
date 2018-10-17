@@ -156,6 +156,7 @@ void PackagesModel::appendSystemApps()
     systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/messaging-app.desktop";
     systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/ubuntu-system-settings.desktop";
     systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/webbrowser-app.desktop";
+    systemApps << QString(DESKTOP_FILES_FOLDER_SYSTEM) + "/morph-browser.desktop";
 
     Q_FOREACH(const QString &path, systemApps) {
         if (QFileInfo::exists(path)) {
